@@ -19,15 +19,18 @@ sudo pacman -S --needed --noconfirm \
     hyprland xdg-desktop-portal-hyprland \
     kitty fish \
     quickshell swww matugen \
-    steam lutris heroic-games-launcher \
+    portproton lutris heroic-games-launcher \
     gamemode lib32-gamemode \
     mangohud goverlay protonup-qt \
-    wine winetricks protontricks \
     gamescope vulkan-tools \
     power-profiles-daemon cpupower \
     nvidia-utils lib32-nvidia-utils \
     vulkan-icd-loader lib32-vulkan-icd-loader \
+    proton-vpn-daemon proton-vpn-gtk-app \
     firefox
+
+echo "[2.5/11] Enabling Proton VPN daemon..."
+sudo systemctl enable --now proton-vpn-daemon.service || true
 
 echo "[3/11] Backing up old configs..."
 BACKUP="$HOME/.config-backup-xlllos-$(date +%s)"
