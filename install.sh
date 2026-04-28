@@ -32,6 +32,58 @@ sudo pacman -S --needed --noconfirm \
 echo "[2.5/11] Enabling Proton VPN daemon..."
 sudo systemctl enable --now proton-vpn-daemon.service || true
 
+
+echo "[2.6/11] Installing all packages from package lists..."
+
+if [ -f "$REPO_DIR/packages-pacman.txt" ]; then
+    echo "Installing native pacman packages from packages-pacman.txt..."
+
+    pacman -Slq | sort -u > /tmp/xlllos-repo-packages.txt
+    sort -u "$REPO_DIR/packages-pacman.txt" > /tmp/xlllos-wanted-pacman.txt
+
+    comm -12 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-install-pacman.txt
+    comm -23 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-missing-pacman.txt
+
+    if [ -s /tmp/xlllos-install-pacman.txt ]; then
+        sudo pacman -S --needed --noconfirm - < /tmp/xlllos-install-pacman.txt
+    fi
+
+    if [ -s /tmp/xlllos-missing-pacman.txt ]; then
+        echo "These pacman packages were not found in enabled repos:"
+        cat /tmp/xlllos-missing-pacman.txt
+    fi
+fi
+
+if [ -f "$REPO_DIR/packages-aur.txt" ]; then
+    echo "Installing AUR/foreign packages from packages-aur.txt..."
+
+    AUR_HELPER=""
+
+    if command -v paru >/dev/null 2>&1; then
+        AUR_HELPER="paru"
+    elif command -v yay >/dev/null 2>&1; then
+        AUR_HELPER="yay"
+    fi
+
+    if [ -z "$AUR_HELPER" ]; then
+        echo "No AUR helper found. Installing paru..."
+        sudo pacman -S --needed --noconfirm git base-devel
+
+        TMP_PARU="/tmp/paru-build-xlllos"
+        rm -rf "$TMP_PARU"
+        git clone https://aur.archlinux.org/paru.git "$TMP_PARU"
+        cd "$TMP_PARU"
+        makepkg -si --noconfirm
+        cd "$REPO_DIR"
+        AUR_HELPER="paru"
+    fi
+
+    if [ -s "$REPO_DIR/packages-aur.txt" ]; then
+        xargs -r "$AUR_HELPER" -S --needed --noconfirm < "$REPO_DIR/packages-aur.txt" || true
+    fi
+fi
+
+
 echo "[3/11] Backing up old configs..."
 BACKUP="$HOME/.config-backup-xlllos-$(date +%s)"
 mkdir -p "$BACKUP"
