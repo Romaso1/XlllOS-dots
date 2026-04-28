@@ -33,17 +33,15 @@ VK_KHR_xlib_surface                    : extension revision 6
 VK_LUNARG_direct_driver_loading        : extension revision 1
 VK_NV_display_stereo                   : extension revision 1
 
-Instance Layers: count = 9
+Instance Layers: count = 7
 --------------------------
-VK_LAYER_FROG_gamescope_wsi_x86_64 Gamescope WSI (XWayland Bypass) Layer (x86_64) 1.3.221  version 1
-VK_LAYER_MANGOHUD_overlay_x86      Vulkan Hud Overlay                             1.3.0    version 1
-VK_LAYER_MANGOHUD_overlay_x86_64   Vulkan Hud Overlay                             1.3.0    version 1
-VK_LAYER_NV_optimus                NVIDIA Optimus layer                           1.4.329  version 1
-VK_LAYER_NV_present                NVIDIA Presentation Layer                      1.4.329  version 1
-VK_LAYER_VALVE_steam_fossilize_32  Steam Pipeline Caching Layer                   1.3.207  version 1
-VK_LAYER_VALVE_steam_fossilize_64  Steam Pipeline Caching Layer                   1.3.207  version 1
-VK_LAYER_VALVE_steam_overlay_32    Steam Overlay Layer                            1.3.207  version 1
-VK_LAYER_VALVE_steam_overlay_64    Steam Overlay Layer                            1.3.207  version 1
+VK_LAYER_MANGOHUD_overlay_x86_64  Vulkan Hud Overlay           1.3.0    version 1
+VK_LAYER_NV_optimus               NVIDIA Optimus layer         1.4.329  version 1
+VK_LAYER_NV_present               NVIDIA Presentation Layer    1.4.329  version 1
+VK_LAYER_VALVE_steam_fossilize_32 Steam Pipeline Caching Layer 1.3.207  version 1
+VK_LAYER_VALVE_steam_fossilize_64 Steam Pipeline Caching Layer 1.3.207  version 1
+VK_LAYER_VALVE_steam_overlay_32   Steam Overlay Layer          1.3.207  version 1
+VK_LAYER_VALVE_steam_overlay_64   Steam Overlay Layer          1.3.207  version 1
 
 Devices:
 ========

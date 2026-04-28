@@ -18,8 +18,6 @@ btop
 btrfs-assistant
 btrfs-progs
 cachyos-fish-config
-cachyos-gaming-applications
-cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
 cachyos-kernel-manager
@@ -160,7 +158,6 @@ poppler-glib
 portproton
 power-profiles-daemon
 proton-vpn-gtk-app
-protonup-qt
 pv
 python
 python-defusedxml
@@ -174,7 +171,6 @@ shelly
 smartmontools
 snapper
 sof-firmware
-steam
 sudo
 sysfsutils
 telegram-desktop

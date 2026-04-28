@@ -6,7 +6,7 @@ sr0
 zram0       swap   1     zram0 5756a26e-b643-4072-b76f-7c49b6162cfa                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,3G    17% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  913,5G     4% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  922,9G     3% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /srv

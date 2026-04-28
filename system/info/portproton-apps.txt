@@ -1,0 +1,461 @@
+=== PortProton related files ===
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/tmp/.private/steamuser
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/users/steamuser
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/users/steamuser/Documents/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/users/steamuser/AppData/Local/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/users/steamuser/Temp/steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/users/Public/Documents/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Common Files/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Common Files/Steam/steamservice.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/cef/cef.win7/steamwebhelper.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/cef/cef.win7x64/steamwebhelper.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/cef/cef.win64/steamwebhelper.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/SteamService.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/SteamService.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/steamxboxutil.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/steamxboxutil64.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/bin/steam_monitor.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/ErrorSteamAlreadyRunningDialog.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_brazilian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_bulgarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_czech.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_danish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_dutch.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_finnish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_french.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_german.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_hungarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_indonesian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_italian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_japanese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_korean.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_koreana.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_latam.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_norwegian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_polish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_portuguese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_romanian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_russian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_spanish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_swedish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_tchinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_thai.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_turkish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_ukrainian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steambootstrapper_vietnamese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_brazilian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_czech.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_danish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_dutch.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_finnish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_french.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_german.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_hungarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_italian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_japanese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_korean.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_norwegian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_polish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_portuguese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_romanian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_russian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_spanish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_swedish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_tchinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_thai.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_turkish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamclean_ukrainian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamhtml_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/SteamInputControllerConfigNotification.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/SteamLoginDialog.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_brazilian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_bulgarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_czech.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_danish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_dutch.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_finnish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_french.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_german.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_hungarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_indonesian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_italian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_japanese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_korean.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_koreana.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_latam.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_norwegian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_pirate.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_polish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_portuguese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_postlogon_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_romanian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_russian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_sc_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_spanish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_swedish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_tchinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_thai.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_turkish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_ukrainian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamui_vietnamese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steamvr_action_manifest.json
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_cloudsync.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_cloudsync_posix.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_logo.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_messages.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_offline.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_offline.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_offline_posix.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_tray.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_tray.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_tray_48.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_tray_mono.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_tray_posix.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_updating.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_updating.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_updating_posix.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_voice.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_welcome_large.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_welcome_tooltray.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_working1.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/public/steam_working_large.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam.exe.ppdb
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamsysinfo.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamui_html.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/transport_steamui.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamui_system.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamui_audio.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamui_update.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/logs/steamui_login.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steamui_websrc_movies_all.zip.f556f4b9c7e087e07c0fef2da2b1d9f27f734cff
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steamui_websrc_sounds_all.zip.vz.5ba6acd8f4dfe4b93437895b20344fab5bb3ff96_3714779
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_client_metrics.bin
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_client_win32.installed
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_client_win32.manifest
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steamui_websrc_all.zip.vz.123317ca751c8681b29c13d3775f3be354537a47_25270429
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_win64_steamrow.zip.vz.34e6e5bea10eea4e0398dcce396ccc6a3c6db2a2_2147949
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_client_win64.installed
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/package/steam_client_win64.manifest
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/clientui/vr/rendermodels/steamvr_quad_2
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/clientui/vr/rendermodels/steamvr_quad_2/steam_quad.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/clientui/vr/icon_steam_vr.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sc_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sc_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sc_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sc_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sd_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sd_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sd_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/dark/sd_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sc_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sc_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sc_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sc_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sd_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sd_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sd_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/knockout/sd_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sc_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sc_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sc_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sc_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sd_button_steam.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sd_button_steam_lg.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sd_button_steam_md.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/images/api/light/sd_button_steam_sm.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_brazilian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_bulgarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_czech.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_danish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_dutch.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_finnish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_french.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_german.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_hungarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_indonesian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_italian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_japanese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_korean.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_koreana.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_latam.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_norwegian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_polish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_portuguese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_romanian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_russian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_spanish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_swedish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_tchinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_thai.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_turkish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_ukrainian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/localization/steam_controller_vietnamese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/chord_steamcontroller_gordon.vdf
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/desktop_steamcontroller_gordon.vdf
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/steamdesktop.vdf
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/controller_base/streaming_steamdesktop.vdf
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/graphics/icon_security_steam.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/menus/steam.menu
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/styles/steam.styles
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/icon_steam.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/icon_steamvr_desktop.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/icon_steam_disabled.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/icon_steam_vr.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/steamchina_logo_overlay.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/steamscheme.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/steam_logo.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/steam_logo_big.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/resource/steam_splash_fallback.tga
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/Receipt_Server_Timeout_Steam3.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/SteamIDProfilePage.res
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_brazilian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_bulgarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_czech.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_danish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_dutch.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_english.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_finnish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_french.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_german.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_greek.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_hungarian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_indonesian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_italian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_japanese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_korean.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_koreana.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_latam.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_norwegian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_polish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_portuguese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_romanian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_russian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_sc_schinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_spanish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_swedish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_tchinese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_thai.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_turkish.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_ukrainian.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steamui_postlogon_vietnamese.txt
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/cached/steam_logo_onwhite.gif
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam/games/SteamMovie.ico
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/controller/controller_config_controller_steam_deck.svg
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/startup_steamos.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/steamdeck_left.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/steamdeck_right.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/steam_os_family_startup.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/images/steam_spinner.png
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_arabic-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_brazilian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_bulgarian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_czech-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_danish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_dutch-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_english-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_finnish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_french-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_german-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_greek-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_hungarian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_indonesian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_italian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_japanese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_koreana-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_latam-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_norwegian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_polish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_portuguese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_romanian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_russian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_schinese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_spanish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_swedish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_tchinese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_thai-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_turkish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_ukrainian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steampops_vietnamese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_arabic-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_brazilian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_bulgarian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_czech-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_danish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_dutch-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_english-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_finnish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_french-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_german-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_greek-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_hungarian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_indonesian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_italian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_japanese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_koreana-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_latam-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_norwegian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_polish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_portuguese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_romanian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_russian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_schinese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_sc_schinese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_spanish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_swedish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_tchinese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_thai-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_turkish-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_ukrainian-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/localization/steamui_vietnamese-json.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steamdeck_mouse_move_trigger_click.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steamdeck_thumbstick_move.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steamdeck_touchscreen.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steamdeck_trackpad_and_thumbsticks_move.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steam_os_family_startup.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steam_os_startup.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steam_os_suspend.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/movies/steam_os_suspend_from_throbber.webm
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/steam_at_mention.m4a
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/steam_chatroom_notification.m4a
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/steam_os_startup.wav
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/ui_steam_message_old_smooth.m4a
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/ui_steam_smoother_friend_join.m4a
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/sounds/ui_steam_smoother_friend_online.m4a
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamui/steamaudio.js
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/Steam.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam.exe.old
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam.signatures
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/Steam2.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamclient.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamclient64.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamerrorreporter.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamerrorreporter64.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamFossilizeVulkanLayer.json
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamFossilizeVulkanLayer64.json
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamOverlayVulkanLayer.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamOverlayVulkanLayer.json
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamOverlayVulkanLayer64.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamOverlayVulkanLayer64.json
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamsysinfo.exe
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/SteamUI.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamwebrtc.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steamwebrtc64.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/VkLayer_steam_fossilize.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/VkLayer_steam_fossilize64.dll
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/dumps/crash_steam.exe_20260429002604_1.dmp
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Steam
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Steam/Steam.lnk
+/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Steam/Steam Support Center.url
+/home/xiii/PortProton/data/prefixes/WGC
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/tmp/.private/steamuser
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser/Documents/Steam
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Wargaming.net
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Wargaming.net/Wargaming.net Game Center.lnk
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser/AppData/Roaming/Wargaming.net
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/steamuser/AppData/Roaming/Wargaming.net/GameCenter
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/users/Public/Documents/Steam
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Wargaming.net
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Wargaming.net/Wargaming.net Game Center.lnk
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/data/wgc_id.dat
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/data/wgc_path.dat
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/data/wgc_vending_id.dat
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/api/wgc_api.exe
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/dlls/wgc_res.dat
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/dlls/steam_api64.dll
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/dlls/wgc_renderer_host.exe
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/WargamingErrorMonitor.exe
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/wgc.exe
+/home/xiii/PortProton/data/prefixes/WGC/drive_c/ProgramData/Wargaming.net/GameCenter/logs/wgc_20260428_221121_729.log
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-launch-options
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-check-requirements
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-launch-client
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-launcher-interface-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-launcher-service
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-steam-remote
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/bin/steam-runtime-system-info
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/lib/i386-linux-gnu/steam-runtime-tools-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/lib/x86_64-linux-gnu/steam-runtime-tools-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/libexec/steam-runtime-tools-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/glib2.0_2.58.3-2+deb10u6~steamrt1.1.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/json-glib_1.0.2-1~steamrt1.3.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/libffi_3.0.11~rc1-5+steamrt1.1ubuntu0.1.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/waffle_1.6.1-0+steamrt1.1.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/libcap2_2.22-1ubuntu3+steamrt1.1.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/pressure-vessel/metadata/steam-runtime-tools_0.20260218.0.txt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-check-requirements
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-dialog-ui
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-identify-library-abi
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-input-monitor
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-launch-client
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-launcher-interface-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-steam-remote
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-supervisor
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-system-info
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-urlopen
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-dialog
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/bin/steam-runtime-launch-options
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/i386-linux-gnu/libsteam-runtime-tools-0.so.0.20260218.0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/steamrt
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/steamrt/expectations/i386-linux-gnu/libsteam-runtime-tools-0-0.symbols
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/steamrt/expectations/x86_64-linux-gnu/libsteam-runtime-tools-0-0.symbols
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/steamrt/steam-runtime-abi.json
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/lib/x86_64-linux-gnu/libsteam-runtime-tools-0.so.0.20260218.0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/libexec/steam-runtime-tools-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/libsteam-runtime-tools-0-0
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/libsteam-runtime-tools-0-helpers
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steam-runtime-tools-bin
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steam-runtime-tools-minimal
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steam-runtime-tools-ui
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-archive-keyring
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-container
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-container-host-compat
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-customizations
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-libs
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/doc/steamrt-toolbx
+/home/xiii/PortProton/data/tmp/libs_v3.0.20260218/runtime/files/share/keyrings/steamrt-archive-keyring.gpg
+/home/xiii/PortProton/data/img/gui/steam.png
+/home/xiii/PortProton/data/img/gui/wgc.png
+/home/xiii/PortProton/data/img/Wargaming_Game_Center_48.png
+/home/xiii/PortProton/data/img/Wargaming_Game_Center.png
+/home/xiii/PortProton/data/img/STEAM_PP_48.png
+/home/xiii/PortProton/data/img/STEAM_PP.png
+/home/xiii/PortProton/data/img/Steam_48.png
+/home/xiii/PortProton/data/img/Steam.png
+/home/xiii/PortProton/data/scripts/add_in_steam.sh
+/home/xiii/PortProton/data/scripts/portwine_db/steam.ppdb
+/home/xiii/PortProton/data/scripts/portwine_db/wgc.ppdb
+/home/xiii/PortProton/data/scripts/pw_autoinstall/PW_STEAM
+/home/xiii/PortProton/data/scripts/pw_autoinstall/PW_WGC
+/home/xiii/PortProton/steam_scripts
+/home/xiii/PortProton/steam_scripts/Wargaming Game Center.sh
+/home/xiii/PortProton/Wargaming Game Center.desktop
+/home/xiii/PortProton/STEAM_PP.desktop
+/home/xiii/.local/share/applications/Wargaming Game Center.desktop
+/home/xiii/.local/share/applications/STEAM_PP.desktop
+
+=== PortProton package ===
+portproton 1.7.5-1
+proton-vpn-daemon 0.13.6-2
+proton-vpn-gtk-app 4.15.2-1
+python-proton-vpn-api-core 4.19.1-1
+python-proton-vpn-local-agent 1.6.1-1.1
