@@ -416,6 +416,8 @@ knewstuff
 knighttime
 knotifications
 knotifications5
+knotifyconfig
+konsole
 kpackage
 kpackage5
 kparts
@@ -434,6 +436,7 @@ ktexteditor
 ktextwidgets
 ktextwidgets5
 kuserfeedback
+kvantum
 kwallet
 kwallet5
 kwayland
@@ -771,6 +774,7 @@ libtiger
 libtirpc
 libtommath
 libtool
+libtorrent-rasterbar
 libtsan
 libubsan
 libunibreak
@@ -1124,6 +1128,7 @@ python-wheel
 python-yaml
 python-yarl
 python-zipp
+qbittorrent
 qca-qt6
 qcoro
 qhull
@@ -1141,6 +1146,7 @@ qt5-svg
 qt5-translations
 qt5-wayland
 qt5-x11extras
+qt5ct
 qt6-5compat
 qt6-avif-image-plugin
 qt6-base
@@ -1162,6 +1168,7 @@ qt6-wayland
 qt6-webchannel
 qt6-webengine
 qt6-websockets
+qt6ct
 qt6pas
 raptor
 rasqal

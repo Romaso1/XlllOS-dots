@@ -77,6 +77,8 @@ iwd
 jdownloader2
 jfsutils
 kate
+konsole
+kvantum
 less
 lib32-gamemode
 lib32-libpulse
@@ -147,6 +149,9 @@ pv
 python
 python-defusedxml
 python-packaging
+qbittorrent
+qt5ct
+qt6ct
 rebuild-detector
 reflector
 s-nail
