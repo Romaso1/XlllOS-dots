@@ -18,7 +18,7 @@
         "tool": "functions"
     },
     "appearance": {
-        "extraBackgroundTint": true,
+        "extraBackgroundTint": false,
         "fakeScreenRounding": 2,
         "fonts": {
             "expressive": "Space Grotesk",
@@ -34,10 +34,10 @@
             "type": "scheme-content"
         },
         "transparency": {
-            "automatic": true,
-            "backgroundTransparency": 0.11,
-            "contentTransparency": 0.57,
-            "enable": false
+            "automatic": false,
+            "backgroundTransparency": 0.25,
+            "contentTransparency": 0.25,
+            "enable": true
         },
         "wallpaperTheming": {
             "enableAppsAndShell": true,
@@ -80,7 +80,7 @@
             "workspaceZoom": 1.07
         },
         "thumbnailPath": "",
-        "wallpaperPath": "/home/xiii/Wallpapers/random_wallpaper_upscayl_4x_digital-art-4x.png",
+        "wallpaperPath": "/home/xiii/Wallpapers/ChatGPT Image 28 апр. 2026 г., 12_12_28_upscayl_2x_digital-art-4x.png",
         "widgets": {
             "clock": {
                 "cookie": {
@@ -223,7 +223,7 @@
         "code": "0;P;d;1;0l;10;0o;2;1b;0"
     },
     "dock": {
-        "enable": false,
+        "enable": true,
         "height": 60,
         "hoverRegionHeight": 2,
         "hoverToReveal": true,
