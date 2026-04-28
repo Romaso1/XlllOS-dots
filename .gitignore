@@ -12,6 +12,7 @@ Thumbs.db
 .cache/
 __pycache__/
 *.pyc
+node_modules/
 
 # Logs
 *.log
@@ -24,10 +25,18 @@ __pycache__/
 *.token
 .env
 .env.*
+id_rsa
+id_ed25519
+known_hosts
 
-# Quickshell / local generated cache
-home/.cache/
-home/.config/quickshell/**/*.log
+# Browser/user private data
+home/.mozilla/
+home/.config/google-chrome/
+home/.config/chromium/
+home/.config/discord/
+home/.config/vesktop/
+home/.config/Steam/
+home/.steam/
 
 # Git internals from copied folders
 **/.git/
