@@ -251,24 +251,25 @@ performance
 performance
 ```
 
-## PortProton
+## PortProton / Proton VPN
 
 После установки:
 
-1. Открой Steam.
-2. Settings -> Compatibility.
-3. Включи Steam Play.
-4. Установи Proton Experimental или GE-Proton.
-5. Запусти Windows-игру один раз.
-6. После этого Protontricks увидит игру.
+  1. Открой PortProton.
+  2. Установи нужный Windows-лаунчер или игру.
+  3. Steam и Wargaming Center внутри PortProton каждый пользователь ставит сам.
+  4. Вход в аккаунты Steam/Wargaming выполняется только на своей системе.
 
-Открыть Protontricks:
+Proton VPN устанавливается через install.sh:
 
-```bash
-protontricks --gui
-```
+    proton-vpn-daemon
+    proton-vpn-gtk-app
 
-## Steam Launch Options
+Демон Proton VPN включается автоматически:
+
+    sudo systemctl enable --now proton-vpn-daemon.service
+
+## Game Launch Options
 
 Обычный вариант:
 
