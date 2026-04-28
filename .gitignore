@@ -1,0 +1,27 @@
+# Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+known_hosts
+*.token
+*.secret
+
+# Caches
+.cache/
+**/.cache/
+*.log
+
+# Steam / games / browser profiles
+.steam/
+Steam/
+.local/share/Steam/
+.mozilla/
+.config/google-chrome/
+.config/chromium/
+.config/discord/
+
+# Trash
+.Trash/
