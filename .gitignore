@@ -1,27 +1,33 @@
-# Secrets
-*.key
-*.pem
-*.p12
-*.pfx
-id_rsa
-id_ed25519
-known_hosts
-*.token
-*.secret
+# Trash
+.DS_Store
+Thumbs.db
+
+# Backups
+*.bak
+*.old
+*.backup
+*~
 
 # Caches
 .cache/
-**/.cache/
+__pycache__/
+*.pyc
+
+# Logs
 *.log
 
-# Steam / games / browser profiles
-.steam/
-Steam/
-.local/share/Steam/
-.mozilla/
-.config/google-chrome/
-.config/chromium/
-.config/discord/
+# Secrets / tokens
+*.key
+*.pem
+*.p12
+*.crt
+*.token
+.env
+.env.*
 
-# Trash
-.Trash/
+# Quickshell / local generated cache
+home/.cache/
+home/.config/quickshell/**/*.log
+
+# Git internals from copied folders
+**/.git/

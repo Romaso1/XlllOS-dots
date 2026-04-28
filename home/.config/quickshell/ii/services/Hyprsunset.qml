@@ -83,11 +83,11 @@ Singleton {
     }
 
     function startHyprsunset() {
-        // disabled hyprsunset autostart
+        // DISABLED_YELLOW_FILTER: hyprsunset autostart disabled
     }
 
     function load() {
-        // // root.startHyprsunset();
+        // DISABLED_YELLOW_FILTER: root.startHyprsunset();
         root.ensureState();
     }
 
@@ -105,7 +105,7 @@ Singleton {
         root.temperatureActive = true;
 
         // console.log("[Hyprsunset] Enabling");
-        // // root.startHyprsunset();
+        // DISABLED_YELLOW_FILTER: root.startHyprsunset();
         Quickshell.execDetached(["bash", "-c", `hyprctl hyprsunset temperature ${root.colorTemperature}`]);
     }
 
@@ -120,7 +120,7 @@ Singleton {
 
         root.gammaChangeAttempt();
 
-        // // root.startHyprsunset();
+        // DISABLED_YELLOW_FILTER: root.startHyprsunset();
         Quickshell.execDetached(["bash", "-c", `hyprctl hyprsunset gamma ${root.gamma}`]);
     }
 

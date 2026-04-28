@@ -2,4 +2,3 @@
 # nwg-displays is a graphical tool for managing monitors. 
 # - Installation for Arch Linux: sudo pacman -S nwg-displays
 # - Repo: https://github.com/nwg-piotr/nwg-displays
-monitor = DP-1, 3440x1440@180, 0x0, 1
