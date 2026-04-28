@@ -8,10 +8,12 @@ if ! command -v pacman >/dev/null 2>&1; then
     exit 1
 fi
 
-echo "[1/10] Updating system..."
+REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+echo "[1/11] Updating system..."
 sudo pacman -Syu --noconfirm
 
-echo "[2/10] Installing packages..."
+echo "[2/11] Installing packages..."
 sudo pacman -S --needed --noconfirm \
     git curl wget rsync base-devel \
     hyprland xdg-desktop-portal-hyprland \
@@ -27,7 +29,7 @@ sudo pacman -S --needed --noconfirm \
     vulkan-icd-loader lib32-vulkan-icd-loader \
     firefox
 
-echo "[3/10] Backing up old configs..."
+echo "[3/11] Backing up old configs..."
 BACKUP="$HOME/.config-backup-xlllos-$(date +%s)"
 mkdir -p "$BACKUP"
 
@@ -38,28 +40,59 @@ for dir in hypr quickshell illogical-impulse kitty fish; do
     fi
 done
 
-echo "[4/10] Copying configs..."
+echo "[4/11] Copying user configs..."
 mkdir -p "$HOME/.config"
-rsync -a home/.config/ "$HOME/.config/"
+rsync -a "$REPO_DIR/home/.config/" "$HOME/.config/"
 
-if [ -d "home/Pictures" ]; then
+if [ -d "$REPO_DIR/home/Pictures" ]; then
     mkdir -p "$HOME/Pictures"
-    rsync -a home/Pictures/ "$HOME/Pictures/"
+    rsync -a "$REPO_DIR/home/Pictures/" "$HOME/Pictures/"
 fi
 
-if [ -d "home/.local" ]; then
+if [ -d "$REPO_DIR/home/Wallpapers" ]; then
+    mkdir -p "$HOME/Wallpapers"
+    rsync -a "$REPO_DIR/home/Wallpapers/" "$HOME/Wallpapers/"
+fi
+
+if [ -d "$REPO_DIR/home/.local" ]; then
     mkdir -p "$HOME/.local"
-    rsync -a home/.local/ "$HOME/.local/"
+    rsync -a "$REPO_DIR/home/.local/" "$HOME/.local/"
 fi
 
-echo "[5/10] Forcing universal monitor config..."
+echo "[5/11] Fixing user-specific paths..."
+python - <<'PY'
+import json
+from pathlib import Path
+
+p = Path.home() / ".config/illogical-impulse/config.json"
+
+if p.exists():
+    with open(p, encoding="utf-8") as f:
+        cfg = json.load(f)
+
+    def fix_paths(x):
+        if isinstance(x, dict):
+            return {k: fix_paths(v) for k, v in x.items()}
+        if isinstance(x, list):
+            return [fix_paths(v) for v in x]
+        if isinstance(x, str):
+            return x.replace("/home/xiii", str(Path.home()))
+        return x
+
+    cfg = fix_paths(cfg)
+
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(cfg, f, indent=4, ensure_ascii=False)
+PY
+
+echo "[6/11] Setting universal monitor config..."
 cat > "$HOME/.config/hypr/monitors.conf" <<'EOF'
 # Universal monitor config
 # Uses preferred resolution/refresh rate and default scale
 monitor = , preferred, auto, 1
 EOF
 
-echo "[6/10] Setting fish as default shell..."
+echo "[7/11] Setting fish as default shell..."
 if command -v fish >/dev/null 2>&1; then
     if ! grep -q "$(command -v fish)" /etc/shells; then
         command -v fish | sudo tee -a /etc/shells
@@ -67,15 +100,15 @@ if command -v fish >/dev/null 2>&1; then
     chsh -s "$(command -v fish)" "$USER" || true
 fi
 
-echo "[7/10] Restoring system performance configs..."
-if [ -f system/etc/default/cpupower-service.conf ]; then
-    sudo cp system/etc/default/cpupower-service.conf /etc/default/cpupower-service.conf
+echo "[8/11] Restoring performance configs..."
+if [ -f "$REPO_DIR/system/etc/default/cpupower-service.conf" ]; then
+    sudo cp "$REPO_DIR/system/etc/default/cpupower-service.conf" /etc/default/cpupower-service.conf
 fi
 
-if [ -f system/etc/systemd/system/force-cpu-performance.service ]; then
-    sudo cp system/etc/systemd/system/force-cpu-performance.service /etc/systemd/system/force-cpu-performance.service
+if [ -f "$REPO_DIR/system/etc/systemd/system/force-cpu-performance.service" ]; then
+    sudo cp "$REPO_DIR/system/etc/systemd/system/force-cpu-performance.service" /etc/systemd/system/force-cpu-performance.service
 else
-    sudo tee /etc/systemd/system/force-cpu-performance.service >/dev/null <<'EOF'
+    sudo tee /etc/systemd/system/force-cpu-performance.service >/dev/null <<'SERVICEEOF'
 [Unit]
 Description=Force CPU governor and EPP to performance
 After=cpupower.service power-profiles-daemon.service multi-user.target
@@ -87,7 +120,7 @@ ExecStart=/usr/bin/bash -lc 'sleep 3; shopt -s nullglob; for g in /sys/devices/s
 
 [Install]
 WantedBy=multi-user.target
-EOF
+SERVICEEOF
 fi
 
 sudo systemctl daemon-reload
@@ -96,7 +129,7 @@ sudo systemctl enable --now cpupower.service || true
 sudo systemctl enable --now force-cpu-performance.service || true
 powerprofilesctl set performance || true
 
-echo "[8/10] Setting SDDM autologin to normal Hyprland..."
+echo "[9/11] Setting SDDM autologin to normal Hyprland..."
 sudo mkdir -p /etc/sddm.conf.d
 sudo tee /etc/sddm.conf.d/autologin.conf >/dev/null <<EOF
 [Autologin]
@@ -105,30 +138,35 @@ Session=hyprland.desktop
 Relogin=true
 EOF
 
-echo "[9/10] Applying Firefox prefs..."
+echo "[10/11] Applying Firefox prefs..."
 FIREFOX_PROFILE="$(find "$HOME/.mozilla/firefox" -maxdepth 1 -type d -name "*.default*" 2>/dev/null | head -n1 || true)"
 
 if [ -n "$FIREFOX_PROFILE" ]; then
-    cat >> "$FIREFOX_PROFILE/user.js" <<EOF
+cat >> "$FIREFOX_PROFILE/user.js" <<EOF
 user_pref("layout.frame_rate", 180);
 user_pref("widget.wayland.vsync.enabled", true);
 EOF
-    echo "Firefox user.js updated: $FIREFOX_PROFILE/user.js"
+echo "Firefox user.js updated: $FIREFOX_PROFILE/user.js"
 else
-    echo "Firefox profile not found. Open Firefox once and set layout.frame_rate=180 manually if needed."
+echo "Firefox profile not found. Open Firefox once and set layout.frame_rate=180 manually if needed."
 fi
 
-echo "[10/10] Disabling yellow night filter if present..."
+echo "[11/11] Disabling yellow night filter if present..."
 if [ -f "$HOME/.config/quickshell/ii/services/Hyprsunset.qml" ]; then
-    cp "$HOME/.config/quickshell/ii/services/Hyprsunset.qml" "$HOME/.config/quickshell/ii/services/Hyprsunset.qml.bak" 2>/dev/null || true
-    python - <<'PY'
+cp "$HOME/.config/quickshell/ii/services/Hyprsunset.qml" "$HOME/.config/quickshell/ii/services/Hyprsunset.qml.bak" 2>/dev/null || true
+python - <<'PY'
 from pathlib import Path
+
 p = Path.home() / ".config/quickshell/ii/services/Hyprsunset.qml"
+
 if p.exists():
-    s = p.read_text()
-    s = s.replace("root.startHyprsunset();", "// root.startHyprsunset();")
-    s = s.replace('Quickshell.execDetached(["bash", "-c", `pidof hyprsunset || hyprsunset`]);', "// disabled hyprsunset autostart")
-    p.write_text(s)
+s = p.read_text(encoding="utf-8", errors="ignore")
+s = s.replace("root.startHyprsunset();", "// root.startHyprsunset();")
+s = s.replace(
+'Quickshell.execDetached(["bash", "-c", `pidof hyprsunset || hyprsunset`]);',
+"// disabled hyprsunset autostart"
+)
+p.write_text(s, encoding="utf-8")
 PY
 fi
 
