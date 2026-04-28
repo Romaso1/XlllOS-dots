@@ -29,7 +29,7 @@
 - CPU governor performance
 - EPP performance
 - Power profile performance
-- Steam / Proton / Protontricks
+- PortProton / Proton VPN
 - MangoHud / Gamescope / GameMode
 - Firefox frame_rate 180
 
@@ -251,7 +251,7 @@ performance
 performance
 ```
 
-## Steam / Proton
+## PortProton
 
 После установки:
 
