@@ -571,6 +571,3 @@ frame.top=10
 text.disabled.color=#0F1416
 draw_tree_branch_lines=false
 treeBranchLines=false
-striped_view=false
-alternate_rows=false
-view_item_separators=false

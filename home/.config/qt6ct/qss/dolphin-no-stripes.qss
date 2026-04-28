@@ -1,0 +1,47 @@
+/* Dolphin transparent background + no black stripes */
+
+/* Main areas */
+DolphinViewContainer,
+DolphinViewContainer QAbstractItemView,
+DolphinPlacesView,
+KFilePlacesView,
+QTreeView,
+QTreeView::viewport,
+QTreeView::branch,
+QTreeView::item,
+QListView,
+QListView::viewport,
+QListView::item,
+QAbstractScrollArea,
+QAbstractScrollArea::viewport {
+    background: transparent;
+    alternate-background-color: transparent;
+}
+
+/* Top toolbar / path bar */
+QToolBar,
+QToolBar QWidget,
+QToolBar QToolButton,
+QMenuBar,
+KUrlNavigator,
+KUrlNavigator QWidget,
+KUrlNavigator QLineEdit,
+KUrlNavigatorButton,
+QFrame {
+    background: transparent;
+    border: none;
+}
+
+/* Remove toolbar separators */
+QToolBar::separator {
+    background: transparent;
+    width: 0px;
+    height: 0px;
+}
+
+/* Keep selection visible */
+QTreeView::item:selected,
+QListView::item:selected,
+QAbstractItemView::item:selected {
+    background: rgba(120, 140, 180, 75);
+}
