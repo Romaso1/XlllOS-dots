@@ -72,20 +72,7 @@ hdparm
 heroic-games-launcher-bin
 hwdetect
 hwinfo
-illogical-impulse-audio
-illogical-impulse-backlight
-illogical-impulse-basic
-illogical-impulse-bibata-modern-classic-bin
-illogical-impulse-fonts-themes
-illogical-impulse-hyprland
-illogical-impulse-kde
-illogical-impulse-microtex-git
-illogical-impulse-portal
-illogical-impulse-python
-illogical-impulse-quickshell-git
-illogical-impulse-screencapture
-illogical-impulse-toolkit
-illogical-impulse-widgets
+icoutils
 inetutils
 intel-ucode
 iwd
@@ -94,8 +81,11 @@ jfsutils
 kate
 less
 lib32-gamemode
+lib32-libpulse
 lib32-nvidia-utils
+lib32-opencl-icd-loader
 lib32-opencl-nvidia
+lib32-v4l-utils
 lib32-vulkan-icd-loader
 libdvdcss
 libgsf
@@ -140,6 +130,7 @@ noto-fonts-emoji
 nss-mdns
 nvidia-settings
 nvidia-utils
+opencl-icd-loader
 opencl-nvidia
 openssh
 os-prober
@@ -153,6 +144,7 @@ plocate
 plymouth
 poppler-glib
 power-profiles-daemon
+proton-vpn-gtk-app
 protonup-qt
 pv
 python
@@ -172,6 +164,7 @@ sudo
 sysfsutils
 telegram-desktop
 texinfo
+tree
 ttf-bitstream-vera
 ttf-dejavu
 ttf-liberation
@@ -181,7 +174,6 @@ ufw
 ufw-extras
 unrar
 unzip
-upscayl-bin
 usb_modeswitch
 usbutils
 uwsm

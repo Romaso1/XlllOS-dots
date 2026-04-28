@@ -1,7 +1,3 @@
-adw-gtk-theme-git
-breeze-plus
-darkly-bin
-html2markdown
 illogical-impulse-audio
 illogical-impulse-backlight
 illogical-impulse-basic
@@ -16,10 +12,5 @@ illogical-impulse-quickshell-git
 illogical-impulse-screencapture
 illogical-impulse-toolkit
 illogical-impulse-widgets
-otf-space-grotesk
-qt6-avif-image-plugin
-ttf-material-symbols-variable-git
-ttf-readex-pro
-ttf-rubik-vf
-ttf-twemoji
+portproton
 upscayl-bin
