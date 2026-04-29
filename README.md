@@ -445,7 +445,6 @@ cmatrix    # Matrix-анимация
 pipes.sh   # анимированные трубы в терминале
 starship   # красивый prompt для shell
 
-<!-- Updated for PortProton + Proton VPN -->
 
 ## Extra terminal tools
 
