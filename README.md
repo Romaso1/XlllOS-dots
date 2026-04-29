@@ -1,6 +1,6 @@
 <!-- XlllOS preview start -->
 <p align="center">
-  <img src="assets/preview.jpg" alt="XlllOS Preview" width="100%">
+  <img src="assets/preview.png" alt="XlllOS Preview" width="100%">
 </p>
 <!-- XlllOS preview end -->
 
