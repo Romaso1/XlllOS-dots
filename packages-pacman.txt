@@ -35,7 +35,9 @@ cachyos-v4-mirrorlist
 cachyos-wallpapers
 cachyos-zsh-config
 cantarell-fonts
+cava
 chwd
+cmatrix
 cpupower
 cryptsetup
 device-mapper
@@ -109,8 +111,8 @@ lsscsi
 lutris
 lvm2
 man-db
-man-pages
 mangohud
+man-pages
 mdadm
 meld
 mesa-utils
@@ -154,13 +156,14 @@ qt5ct
 qt6ct
 rebuild-detector
 reflector
-s-nail
 sddm
 sg3_utils
 shelly
 smartmontools
+s-nail
 snapper
 sof-firmware
+starship
 sudo
 sysfsutils
 telegram-desktop

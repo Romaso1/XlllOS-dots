@@ -1,3 +1,5 @@
+asciiquarium-transparent-git
+cbonsai
 illogical-impulse-audio
 illogical-impulse-backlight
 illogical-impulse-basic
@@ -12,5 +14,6 @@ illogical-impulse-quickshell-git
 illogical-impulse-screencapture
 illogical-impulse-toolkit
 illogical-impulse-widgets
+pipes.sh
 portproton
 upscayl-bin
