@@ -4,7 +4,9 @@ PreviewSize=32
 [General]
 GlobalViewProps=false
 ShowFullPath=true
-ShowStatusBar=FullWidth
+ShowSpaceInfo=false
+ShowStatusBar=false
+ShowZoomSlider=false
 Version=202
 
 [KFileDialog Settings]

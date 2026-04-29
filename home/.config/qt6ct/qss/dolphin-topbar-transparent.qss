@@ -1,0 +1,89 @@
+/* Dolphin: Kvantum transparency + hidden bottom status bar */
+
+/* Top bar transparent */
+QToolBar,
+QToolBar QWidget,
+QToolBar QToolButton,
+QToolButton,
+QMenuBar,
+QStatusBar,
+KUrlNavigator,
+KUrlNavigator QWidget,
+KUrlNavigator QFrame,
+KUrlNavigator QLineEdit,
+KUrlNavigatorButton {
+    background: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+/* Left Places panel transparent */
+DolphinPlacesView,
+DolphinPlacesView::viewport,
+KFilePlacesView,
+KFilePlacesView::viewport,
+QListView#placesView,
+QListView#placesView::viewport,
+QTreeView#placesView,
+QTreeView#placesView::viewport {
+    background: transparent;
+    background-color: transparent;
+    alternate-background-color: transparent;
+    border: none;
+}
+
+/* remove separators */
+QToolBar::separator,
+QToolBar::handle,
+QSplitter::handle {
+    background: transparent;
+    border: none;
+}
+
+/* Hide Dolphin bottom status bar */
+StatusBar,
+StatusBar QWidget,
+StatusBar QLabel,
+StatusBar QFrame,
+StatusBar QSlider,
+StatusBar QProgressBar,
+QStatusBar,
+QStatusBar QWidget,
+QStatusBar QLabel,
+QStatusBar QFrame,
+QStatusBar QSlider,
+QStatusBar QProgressBar {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    min-height: 0px;
+    max-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+}
+
+/* FORCE hide Dolphin bottom status text: "8 папок", free space, zoom */
+DolphinStatusBar,
+DolphinStatusBar *,
+StatusBar,
+StatusBar *,
+QStatusBar,
+QStatusBar *,
+KCapacityBar,
+KCapacityBar *,
+QWidget#statusBar,
+QWidget#statusBar * {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    min-height: 0px;
+    max-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+}
