@@ -268,3 +268,21 @@ elif command -v yay >/dev/null 2>&1; then
 else
     echo "paru/yay not found. Skipping AUR package: asciiquarium-transparent-git"
 fi
+
+# XlllOS DNS config
+echo "Setting DNS to Quad9 + Cloudflare via systemd-resolved..."
+
+sudo mkdir -p /etc/systemd/resolved.conf.d
+sudo tee /etc/systemd/resolved.conf.d/99-xlllos-dns.conf >/dev/null <<EOF
+[Resolve]
+DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com
+FallbackDNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com
+DNSOverTLS=opportunistic
+DNSSEC=no
+Cache=yes
+EOF
+
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo systemctl enable --now systemd-resolved.service
+sudo systemctl restart systemd-resolved.service
+resolvectl flush-caches 2>/dev/null || true
