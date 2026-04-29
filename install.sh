@@ -270,6 +270,7 @@ else
 fi
 
 
+
 # XlllOS DNS config
 echo "Setting DNS to Quad9 + Cloudflare via systemd-resolved..."
 
@@ -288,7 +289,7 @@ sudo systemctl enable --now systemd-resolved.service
 sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 if command -v nmcli >/dev/null 2>&1; then
-    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | awk -F: '$2 != "lo" {print $1; exit}')"
+    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | grep -v ":lo$" | head -n1 | cut -d: -f1)"
     if [ -n "$ACTIVE_CONNECTION" ]; then
         echo "Applying DNS to NetworkManager connection: $ACTIVE_CONNECTION"
         sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.ignore-auto-dns yes
@@ -300,3 +301,4 @@ fi
 
 sudo systemctl restart systemd-resolved.service
 resolvectl flush-caches 2>/dev/null || true
+echo "DNS configured: Quad9 + Cloudflare"
