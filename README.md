@@ -407,3 +407,25 @@ Check DNS status after installation:
 ```bash
 resolvectl status
 ```
+
+<!-- XlllOS one-command GPU install -->
+
+## Быстрая установка одной командой
+
+### NVIDIA
+
+Для NVIDIA / CachyOS / Arch / EndeavourOS:
+
+```bash
+bash -lc "sudo pacman -Syu --needed --noconfirm git base-devel && if [ -d \"$HOME/XlllOS-dots/.git\" ]; then git -C \"$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"$HOME/XlllOS-dots\"; fi && cd \"$HOME/XlllOS-dots\" && chmod +x install.sh && ./install.sh && sudo reboot"
+```
+
+### AMD
+
+Для AMD-видеокарт:
+
+```bash
+bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d \"$HOME/XlllOS-dots/.git\" ]; then git -C \"$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"$HOME/XlllOS-dots\"; fi; cd \"$HOME/XlllOS-dots\"; chmod +x install.sh; ./install.sh; sudo pacman -S --needed --noconfirm mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau; pkgs=\"nvidia-utils nvidia-settings lib32-nvidia-utils opencl-nvidia lib32-opencl-nvidia libva-nvidia-driver linux-cachyos-nvidia-open linux-cachyos-lts-nvidia-open\"; installed=\$(pacman -Qq \$pkgs 2>/dev/null || true); if [ -n \"\$installed\" ]; then sudo pacman -Rns --noconfirm \$installed || true; fi; sudo mkinitcpio -P; sudo reboot"
+```
+
+AMD-команда сначала ставит XlllOS-dots, потом ставит Mesa/Vulkan для AMD, удаляет NVIDIA-пакеты, если они установились, обновляет initramfs и перезагружает ПК.
