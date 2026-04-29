@@ -1,5 +1,25 @@
 # XlllOS Dots
 
+## Быстрая установка одной командой
+
+### NVIDIA
+
+Для NVIDIA / CachyOS / Arch / EndeavourOS:
+
+```bash
+bash -lc "sudo pacman -Syu --needed --noconfirm git base-devel && if [ -d \"\$HOME/XlllOS-dots/.git\" ]; then git -C \"\$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"\$HOME/XlllOS-dots\"; fi && cd \"\$HOME/XlllOS-dots\" && chmod +x install.sh && ./install.sh && sudo reboot"
+```
+
+### AMD
+
+Для AMD-видеокарт:
+
+```bash
+bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d \"\$HOME/XlllOS-dots/.git\" ]; then git -C \"\$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"\$HOME/XlllOS-dots\"; fi; cd \"\$HOME/XlllOS-dots\"; chmod +x install.sh; ./install.sh; sudo pacman -S --needed --noconfirm mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau; pkgs=\"nvidia-utils nvidia-settings lib32-nvidia-utils opencl-nvidia lib32-opencl-nvidia libva-nvidia-driver linux-cachyos-nvidia-open linux-cachyos-lts-nvidia-open\"; installed=\"\$(pacman -Qq \$pkgs 2>/dev/null || true)\"; if [ -n \"\$installed\" ]; then sudo pacman -Rns --noconfirm \$installed || true; fi; sudo mkinitcpio -P; sudo reboot"
+```
+
+AMD-команда сначала ставит XlllOS-dots, потом ставит Mesa/Vulkan для AMD, удаляет NVIDIA-пакеты, если они установились, обновляет initramfs и перезагружает ПК.
+
 Моя настройка CachyOS Hyprland.
 
 Это не отдельный Linux-дистрибутив, а набор dotfiles + установочный скрипт, который переносит мой внешний вид, Hyprland-конфиги, Quickshell/Illogical Impulse, терминал, fish shell, игровые пакеты и performance-настройки.
@@ -33,51 +53,6 @@
 - MangoHud / Gamescope / GameMode
 - Firefox frame_rate 180
 
-## Установка
-
-### 1. Установить git
-
-```bash
-sudo pacman -Syu git
-```
-
-### 2. Скачать dotfiles
-
-```bash
-git clone https://github.com/Romaso1/XlllOS-dots.git
-```
-
-Если репозиторий Private, используй SSH:
-
-```bash
-git clone git@github.com:Romaso1/XlllOS-dots.git
-```
-
-### 3. Перейти в папку
-
-```bash
-cd XlllOS-dots
-```
-
-### 4. Сделать install.sh исполняемым
-
-```bash
-chmod +x install.sh
-```
-
-### 5. Запустить установку
-
-```bash
-./install.sh
-```
-
-### 6. Перезагрузить систему
-
-```bash
-reboot
-```
-
-После перезагрузки система должна запуститься с моими настройками Hyprland/Quickshell.
 
 ## Важно про Private-репозиторий
 
@@ -301,25 +276,7 @@ WINEDLLOVERRIDES="winmm,version=n,b" game-performance %command%
 WINEDLLOVERRIDES="winmm,version=n,b" mangohud game-performance %command%
 ```
 
-## Как обновить dotfiles у себя
 
-Если я поменял конфиги у себя и хочу обновить репозиторий:
-
-```bash
-cd ~/XlllOS-dots
-git add -A
-git commit -m "Update configs"
-git push
-```
-
-## Как другому человеку обновить dotfiles
-
-```bash
-cd ~/XlllOS-dots
-git pull
-./install.sh
-reboot
-```
 
 ## Важно
 
@@ -410,22 +367,3 @@ resolvectl status
 
 <!-- XlllOS one-command GPU install -->
 
-## Быстрая установка одной командой
-
-### NVIDIA
-
-Для NVIDIA / CachyOS / Arch / EndeavourOS:
-
-```bash
-bash -lc "sudo pacman -Syu --needed --noconfirm git base-devel && if [ -d \"$HOME/XlllOS-dots/.git\" ]; then git -C \"$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"$HOME/XlllOS-dots\"; fi && cd \"$HOME/XlllOS-dots\" && chmod +x install.sh && ./install.sh && sudo reboot"
-```
-
-### AMD
-
-Для AMD-видеокарт:
-
-```bash
-bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d \"$HOME/XlllOS-dots/.git\" ]; then git -C \"$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"$HOME/XlllOS-dots\"; fi; cd \"$HOME/XlllOS-dots\"; chmod +x install.sh; ./install.sh; sudo pacman -S --needed --noconfirm mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau; pkgs=\"nvidia-utils nvidia-settings lib32-nvidia-utils opencl-nvidia lib32-opencl-nvidia libva-nvidia-driver linux-cachyos-nvidia-open linux-cachyos-lts-nvidia-open\"; installed=\$(pacman -Qq \$pkgs 2>/dev/null || true); if [ -n \"\$installed\" ]; then sudo pacman -Rns --noconfirm \$installed || true; fi; sudo mkinitcpio -P; sudo reboot"
-```
-
-AMD-команда сначала ставит XlllOS-dots, потом ставит Mesa/Vulkan для AMD, удаляет NVIDIA-пакеты, если они установились, обновляет initramfs и перезагружает ПК.
