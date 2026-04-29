@@ -257,3 +257,14 @@ elif command -v yay >/dev/null 2>&1; then
 else
     echo "paru/yay not found. Skipping AUR packages: tty-clock peaclock"
 fi
+
+# XlllOS aquarium terminal widget
+echo "Installing aquarium terminal widget..."
+
+if command -v paru >/dev/null 2>&1; then
+    paru -S --needed --noconfirm asciiquarium-transparent-git
+elif command -v yay >/dev/null 2>&1; then
+    yay -S --needed --noconfirm asciiquarium-transparent-git
+else
+    echo "paru/yay not found. Skipping AUR package: asciiquarium-transparent-git"
+fi
