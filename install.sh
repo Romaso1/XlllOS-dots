@@ -30,7 +30,6 @@ sudo pacman -S --needed --noconfirm \
     firefox
 
 echo "[2.5/11] Enabling Proton VPN daemon..."
-sudo systemctl enable --now proton-vpn-daemon.service || true
 
 
 echo "[2.6/11] Installing all packages from package lists..."
@@ -300,3 +299,11 @@ fi
 sudo systemctl restart systemd-resolved.service
 resolvectl flush-caches 2>/dev/null || true
 echo "DNS configured: Quad9 + Cloudflare"
+
+# XlllOS Proton VPN note
+echo "Proton VPN package installed. GUI command: protonvpn-app"
+if command -v protonvpn-app >/dev/null 2>&1; then
+    echo "Proton VPN GUI is available."
+else
+    echo "Proton VPN GUI command not found yet. Try relogin or reinstall proton-vpn-gtk-app."
+fi

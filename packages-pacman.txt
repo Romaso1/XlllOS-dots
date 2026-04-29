@@ -156,6 +156,7 @@ plocate
 plymouth
 poppler-glib
 power-profiles-daemon
+proton-vpn-daemon
 proton-vpn-gtk-app
 pv
 python
