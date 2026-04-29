@@ -49,6 +49,7 @@ discord
 dmidecode
 dmraid
 dnsmasq
+dolphin
 dosfstools
 duf
 e2fsprogs
