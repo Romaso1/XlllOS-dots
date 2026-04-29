@@ -244,3 +244,16 @@ elif command -v yay >/dev/null 2>&1; then
 else
     echo "paru/yay not found. Skipping AUR packages: cbonsai pipes.sh"
 fi
+
+# XlllOS extra terminal tools
+echo "Installing extra terminal tools..."
+
+sudo pacman -S --needed --noconfirm fastfetch btop eza bat fzf yazi glow chafa
+
+if command -v paru >/dev/null 2>&1; then
+    paru -S --needed --noconfirm tty-clock peaclock
+elif command -v yay >/dev/null 2>&1; then
+    yay -S --needed --noconfirm tty-clock peaclock
+else
+    echo "paru/yay not found. Skipping AUR packages: tty-clock peaclock"
+fi

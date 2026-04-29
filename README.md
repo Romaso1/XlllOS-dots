@@ -349,3 +349,45 @@ pipes.sh   # анимированные трубы в терминале
 starship   # красивый prompt для shell
 
 <!-- Updated for PortProton + Proton VPN -->
+
+## Extra terminal tools
+
+These dotfiles can automatically install extra beautiful and useful terminal tools:
+
+```bash
+fastfetch   # красивое инфо о системе
+btop        # красивый мониторинг системы
+eza         # красивый ls
+bat         # красивый cat с подсветкой
+yazi        # файловый менеджер в терминале
+glow        # красивый просмотр README.md
+chafa       # превью картинок в терминале
+tty-clock   # большие часы
+peaclock    # красивые часы/таймер
+```
+
+Pacman packages:
+
+```bash
+sudo pacman -S --needed fastfetch btop eza bat fzf yazi glow chafa
+```
+
+AUR packages:
+
+```bash
+paru -S --needed tty-clock peaclock
+```
+
+Run manually:
+
+```bash
+fastfetch
+btop
+eza -lah --icons
+bat README.md
+yazi
+glow README.md
+chafa ~/Pictures/image.png
+tty-clock
+peaclock
+```

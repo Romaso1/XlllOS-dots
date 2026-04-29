@@ -9,6 +9,7 @@ awesome-terminal-fonts
 base
 base-devel
 bash-completion
+bat
 bind
 bluez
 bluez-hid2hci
@@ -37,6 +38,7 @@ cachyos-wallpapers
 cachyos-zsh-config
 cantarell-fonts
 cava
+chafa
 chwd
 cmatrix
 cpupower
@@ -55,15 +57,18 @@ efitools
 egl-wayland
 ethtool
 exfatprogs
+eza
 f2fs-tools
 fastfetch
 ffmpegthumbnailer
 firefox
 firefox-i18n-ru
 fsarchiver
+fzf
 gamemode
 git
 glances
+glow
 goverlay
 gst-libav
 gst-plugin-pipewire
@@ -194,3 +199,4 @@ xfsprogs
 xl2tpd
 xorg-xwayland
 yay
+yazi
