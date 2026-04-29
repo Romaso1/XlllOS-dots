@@ -307,3 +307,8 @@ if command -v protonvpn-app >/dev/null 2>&1; then
 else
     echo "Proton VPN GUI command not found yet. Try relogin or reinstall proton-vpn-gtk-app."
 fi
+
+# XlllOS disable Ananicy
+echo "Disabling Ananicy services..."
+sudo systemctl disable --now ananicy-cpp.service 2>/dev/null || true
+sudo systemctl disable --now ananicy.service 2>/dev/null || true
