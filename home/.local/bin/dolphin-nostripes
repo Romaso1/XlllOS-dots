@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-exec env QT_STYLE_OVERRIDE=kvantum /usr/bin/dolphin -stylesheet "$HOME/.config/qt6ct/qss/dolphin-topbar-transparent.qss" "$@"
+exec env QT_STYLE_OVERRIDE=kvantum /usr/bin/dolphin -stylesheet "$HOME/.config/qt6ct/qss/dolphin-kvantum-fix.qss" "$@"
