@@ -269,8 +269,6 @@ else
     echo "paru/yay not found. Skipping AUR package: asciiquarium-transparent-git"
 fi
 
-
-
 # XlllOS DNS config
 echo "Setting DNS to Quad9 + Cloudflare via systemd-resolved..."
 
@@ -289,7 +287,7 @@ sudo systemctl enable --now systemd-resolved.service
 sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
 if command -v nmcli >/dev/null 2>&1; then
-    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | grep -v ":lo$" | head -n1 | cut -d: -f1)"
+    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | grep -v ':lo$' | head -n1 | cut -d: -f1)"
     if [ -n "$ACTIVE_CONNECTION" ]; then
         echo "Applying DNS to NetworkManager connection: $ACTIVE_CONNECTION"
         sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.ignore-auto-dns yes
