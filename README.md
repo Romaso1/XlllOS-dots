@@ -336,4 +336,16 @@ reboot
 - токены
 - личные документы
 
+
+## Terminal animations and effects
+
+В конфиг также можно добавить красивые терминальные утилиты:
+
+```bash
+cava        # аудио-визуализатор музыки
+cbonsai    # красивое ASCII-дерево
+cmatrix    # Matrix-анимация
+pipes.sh   # анимированные трубы в терминале
+starship   # красивый prompt для shell
+
 <!-- Updated for PortProton + Proton VPN -->

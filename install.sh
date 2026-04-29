@@ -231,3 +231,16 @@ echo
 echo "=== Done ==="
 echo "Перезагрузи систему:"
 echo "reboot"
+
+# XlllOS terminal animations and effects
+echo "Installing terminal animations and effects..."
+
+sudo pacman -S --needed --noconfirm cava cmatrix starship
+
+if command -v paru >/dev/null 2>&1; then
+    paru -S --needed --noconfirm cbonsai pipes.sh
+elif command -v yay >/dev/null 2>&1; then
+    yay -S --needed --noconfirm cbonsai pipes.sh
+else
+    echo "paru/yay not found. Skipping AUR packages: cbonsai pipes.sh"
+fi
