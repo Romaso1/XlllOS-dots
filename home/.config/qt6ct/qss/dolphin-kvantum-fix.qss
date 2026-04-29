@@ -1,4 +1,5 @@
-/* Dolphin: Kvantum handles main transparency. QSS only fixes top/left panels. */
+/* Dolphin: Kvantum handles background color/transparency.
+   QSS only removes black top/left artifacts. */
 
 /* Top bar */
 QToolBar,
@@ -34,7 +35,7 @@ QDockWidget::title {
     border: none;
 }
 
-/* Items should stay readable */
+/* Left panel items */
 DolphinPlacesView::item,
 KFilePlacesView::item,
 QListView#placesView::item,
@@ -56,4 +57,35 @@ QToolBar::handle,
 QSplitter::handle {
     background: transparent;
     border: none;
+}
+
+/* Hide Dolphin bottom status bar: "8 папок", free space, zoom */
+DolphinStatusBar,
+DolphinStatusBar QWidget,
+DolphinStatusBar QLabel,
+DolphinStatusBar QFrame,
+DolphinStatusBar QSlider,
+StatusBar,
+StatusBar QWidget,
+StatusBar QLabel,
+StatusBar QFrame,
+StatusBar QSlider,
+QStatusBar,
+QStatusBar QWidget,
+QStatusBar QLabel,
+QStatusBar QFrame,
+QStatusBar QSlider,
+KCapacityBar,
+KCapacityBar *,
+QWidget#statusBar,
+QWidget#statusBar * {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    min-height: 0px;
+    max-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
 }

@@ -1,0 +1,106 @@
+/* Dolphin matched to Quickshell/bar background. Icons/text stay opaque. */
+
+/* Top bar */
+QToolBar,
+QToolBar QWidget,
+QToolBar QToolButton,
+QToolButton,
+QMenuBar,
+KUrlNavigator,
+KUrlNavigator QWidget,
+KUrlNavigator QFrame,
+KUrlNavigator QLineEdit,
+KUrlNavigatorButton {
+    background-color: rgba(18,19,26,191);
+    border: none;
+}
+
+/* Main file area */
+DolphinViewContainer QAbstractItemView,
+DolphinViewContainer QAbstractItemView::viewport,
+QAbstractItemView,
+QAbstractItemView::viewport,
+QListView,
+QListView::viewport,
+QTreeView,
+QTreeView::viewport {
+    background-color: rgba(18,19,26,191);
+    alternate-background-color: rgba(18,19,26,191);
+    border: none;
+}
+
+/* Left Places panel */
+DolphinPlacesView,
+DolphinPlacesView::viewport,
+KFilePlacesView,
+KFilePlacesView::viewport,
+QListView#placesView,
+QListView#placesView::viewport,
+QTreeView#placesView,
+QTreeView#placesView::viewport,
+QDockWidget,
+QDockWidget QWidget,
+QDockWidget::title {
+    background-color: rgba(18,19,26,191);
+    alternate-background-color: rgba(18,19,26,191);
+    border: none;
+}
+
+/* Right info panel */
+QTextBrowser,
+QTextBrowser::viewport,
+QTextEdit,
+QTextEdit::viewport,
+QLabel {
+    background-color: rgba(18,19,26,191);
+    border: none;
+}
+
+/* Items: icons/text stay normal */
+DolphinPlacesView::item,
+KFilePlacesView::item,
+QListView#placesView::item,
+QTreeView#placesView::item,
+QTreeView::item,
+QListView::item,
+QAbstractItemView::item {
+    background: transparent;
+}
+
+/* Selection */
+QTreeView::item:selected,
+QListView::item:selected,
+QAbstractItemView::item:selected,
+DolphinPlacesView::item:selected,
+KFilePlacesView::item:selected {
+    background-color: rgba(130,150,200,90);
+}
+
+/* Hide bottom status bar */
+DolphinStatusBar,
+DolphinStatusBar *,
+StatusBar,
+StatusBar *,
+QStatusBar,
+QStatusBar *,
+KCapacityBar,
+KCapacityBar *,
+QWidget#statusBar,
+QWidget#statusBar * {
+    background: transparent;
+    color: transparent;
+    border: none;
+    min-height: 0px;
+    max-height: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Remove separators */
+QToolBar::separator,
+QToolBar::handle,
+QSplitter::handle {
+    background: transparent;
+    border: none;
+}
