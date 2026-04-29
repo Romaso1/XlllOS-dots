@@ -371,21 +371,35 @@ performance
 
 ## PortProton / Proton VPN
 
-После установки:
+### PortProton
 
-  1. Открой PortProton.
-  2. Установи нужный Windows-лаунчер или игру.
-  3. Steam и Wargaming Center внутри PortProton каждый пользователь ставит сам.
-  4. Вход в аккаунты Steam/Wargaming выполняется только на своей системе.
+После установки PortProton уже будет установлен автоматически.
 
-Proton VPN устанавливается через install.sh:
+Что делать дальше:
 
-    proton-vpn-daemon
-    proton-vpn-gtk-app
+1. Открой PortProton из меню приложений.
+2. Установи нужный Windows-лаунчер или игру.
+3. Steam, Wargaming Center и другие лаунчеры внутри PortProton каждый пользователь ставит сам.
+4. Вход в аккаунты Steam / Wargaming выполняется только на своей системе.
 
-Демон Proton VPN включается автоматически:
+### Proton VPN
 
-    sudo systemctl enable --now proton-vpn-daemon.service
+Proton VPN устанавливается автоматически через `install.sh`:
+
+```bash
+proton-vpn-daemon
+proton-vpn-gtk-app
+```
+
+Графическое приложение запускается так:
+
+```bash
+protonvpn-app
+```
+
+Также Proton VPN можно открыть из меню приложений как обычную программу.
+
+Важно: вручную включать `proton-vpn-daemon.service` не нужно. В этой сборке используется Proton VPN GTK app, а не старый `protonvpn-cli`.
 
 ## Game Launch Options
 
@@ -530,19 +544,3 @@ warp off
 
 WARP не включается автоматически при запуске системы. Его нужно включать вручную только при необходимости.
 
-## Proton VPN
-
-В dotfiles используется Proton VPN GTK app:
-
-```bash
-proton-vpn-daemon
-proton-vpn-gtk-app
-```
-
-Графическое приложение запускается так:
-
-```bash
-protonvpn-app
-```
-
-Также Proton VPN можно открыть из меню приложений как обычную программу.
