@@ -62,6 +62,7 @@ eza
 f2fs-tools
 fastfetch
 ffmpegthumbnailer
+ffmpegthumbs
 firefox
 firefox-i18n-ru
 fsarchiver
@@ -86,6 +87,8 @@ iwd
 jdownloader2
 jfsutils
 kate
+kdegraphics-thumbnailers
+kio-extras
 konsole
 kvantum
 less
