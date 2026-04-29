@@ -269,10 +269,12 @@ else
     echo "paru/yay not found. Skipping AUR package: asciiquarium-transparent-git"
 fi
 
+
 # XlllOS DNS config
 echo "Setting DNS to Quad9 + Cloudflare via systemd-resolved..."
 
 sudo mkdir -p /etc/systemd/resolved.conf.d
+
 sudo tee /etc/systemd/resolved.conf.d/99-xlllos-dns.conf >/dev/null <<EOF
 [Resolve]
 DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com
@@ -282,7 +284,19 @@ DNSSEC=no
 Cache=yes
 EOF
 
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 sudo systemctl enable --now systemd-resolved.service
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+
+if command -v nmcli >/dev/null 2>&1; then
+    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | awk -F: '$2 != "lo" {print $1; exit}')"
+    if [ -n "$ACTIVE_CONNECTION" ]; then
+        echo "Applying DNS to NetworkManager connection: $ACTIVE_CONNECTION"
+        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.ignore-auto-dns yes
+        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.dns "9.9.9.9 149.112.112.112 1.1.1.1 1.0.0.1"
+        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv6.ignore-auto-dns yes
+        sudo nmcli connection up "$ACTIVE_CONNECTION" || true
+    fi
+fi
+
 sudo systemctl restart systemd-resolved.service
 resolvectl flush-caches 2>/dev/null || true
