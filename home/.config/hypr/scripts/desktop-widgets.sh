@@ -4,7 +4,7 @@ set -u
 pkill -f "xlll-bonsai|xlll-clock|xlll-aquarium|xlll-matrix|xlll-pipes|xlll-desktop-widgets" 2>/dev/null || true
 tmux kill-session -t xlll-widgets 2>/dev/null || true
 
-sleep 0.8
+sleep 2.5
 
 hyprctl dispatch workspace 1 >/dev/null 2>&1 || true
 sleep 0.3
@@ -31,7 +31,7 @@ kitty --class xlll-bonsai --title "Bonsai" \
 wait_class xlll-bonsai
 hyprctl dispatch focuswindow "class:^(xlll-bonsai)$" >/dev/null 2>&1 || true
 hyprctl dispatch settiled "class:^(xlll-bonsai)$" >/dev/null 2>&1 || true
-sleep 0.4
+sleep 0.9
 
 # 2. Aquarium - center
 hyprctl dispatch layoutmsg preselect r >/dev/null 2>&1 || true
@@ -39,7 +39,7 @@ kitty --class xlll-aquarium --title "Aquarium" --override font_size=8 bash -lc '
 wait_class xlll-aquarium
 hyprctl dispatch focuswindow "class:^(xlll-aquarium)$" >/dev/null 2>&1 || true
 hyprctl dispatch settiled "class:^(xlll-aquarium)$" >/dev/null 2>&1 || true
-sleep 0.4
+sleep 0.9
 
 # 3. Matrix - right
 hyprctl dispatch layoutmsg preselect r >/dev/null 2>&1 || true
@@ -47,11 +47,11 @@ kitty --class xlll-matrix --title "Matrix" --override font_size=5 --override scr
 wait_class xlll-matrix
 hyprctl dispatch focuswindow "class:^(xlll-matrix)$" >/dev/null 2>&1 || true
 hyprctl dispatch settiled "class:^(xlll-matrix)$" >/dev/null 2>&1 || true
-sleep 0.4
+sleep 0.9
 
 # 4. Clock - left bottom
 hyprctl dispatch focuswindow "class:^(xlll-bonsai)$" >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch layoutmsg preselect d >/dev/null 2>&1 || true
 kitty --class xlll-clock --title "Clock" --override font_size=7 bash -lc 'peaclock' &
 wait_class xlll-clock
@@ -61,19 +61,19 @@ sleep 1.0
 
 # Equal left windows + main layout
 hyprctl dispatch resizewindowpixel "exact 850 675,class:^(xlll-bonsai)$" >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch resizewindowpixel "exact 850 675,class:^(xlll-clock)$" >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch resizewindowpixel "exact 850 1350,class:^(xlll-aquarium)$" >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch resizewindowpixel "exact 1740 1350,class:^(xlll-matrix)$" >/dev/null 2>&1 || true
-sleep 0.8
+sleep 2.5
 
 # Force redraw after final layout
 hyprctl dispatch focuswindow "class:^(xlll-bonsai)$" >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch resizeactive 1 1 >/dev/null 2>&1 || true
-sleep 0.2
+sleep 0.4
 hyprctl dispatch resizeactive -1 -1 >/dev/null 2>&1 || true
 
 hyprctl dispatch focuswindow "class:^(xlll-clock)$" >/dev/null 2>&1 || true
