@@ -58,3 +58,7 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+# XlllOS private/sensitive Quickshell helpers
+home/.config/quickshell/ii/scripts/keyring/
+home/.config/quickshell/ii/services/gCloud/token_from_key.py
+home/.config/quickshell/ii/services/gCloud/token-from-key-venv.sh
