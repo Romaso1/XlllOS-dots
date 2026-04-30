@@ -312,3 +312,6 @@ fi
 echo "Disabling Ananicy services..."
 sudo systemctl disable --now ananicy-cpp.service 2>/dev/null || true
 sudo systemctl disable --now ananicy.service 2>/dev/null || true
+
+# XlllOS default Linux Steam install
+bash "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/scripts/install-steam.sh"

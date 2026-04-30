@@ -556,3 +556,15 @@ pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
 ~~~
 
 Или просто сделайте перезагрузку системы.
+
+## Linux Steam
+
+Linux Steam устанавливается автоматически вместе с системой через пакет `steam`.
+
+Скрипт также включает репозиторий `multilib`, если он ещё не включён, потому что Steam на Arch/CachyOS требует multilib.
+
+Проверить после установки:
+
+~~~bash
+steam
+~~~
