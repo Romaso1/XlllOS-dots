@@ -19,7 +19,7 @@ sudo pacman -S --needed --noconfirm \
     hyprland xdg-desktop-portal-hyprland \
     kitty fish \
     quickshell awww matugen \
-    portproton lutris heroic-games-launcher \
+     lutris heroic-games-launcher \
     gamemode lib32-gamemode \
     mangohud goverlay protonup-qt \
     gamescope vulkan-tools \
@@ -318,5 +318,5 @@ bash "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/scripts/install-steam.sh"
 
 # XlllOS AUR PortProton install
 if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm portproton || true
+    paru -S --needed --noconfirm  || true
 fi
