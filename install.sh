@@ -18,7 +18,7 @@ sudo pacman -S --needed --noconfirm \
     git curl wget rsync base-devel \
     hyprland xdg-desktop-portal-hyprland \
     kitty fish \
-    quickshell swww matugen \
+    quickshell awww matugen \
     portproton lutris heroic-games-launcher \
     gamemode lib32-gamemode \
     mangohud goverlay protonup-qt \
@@ -315,3 +315,8 @@ sudo systemctl disable --now ananicy.service 2>/dev/null || true
 
 # XlllOS default Linux Steam install
 bash "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/scripts/install-steam.sh"
+
+# XlllOS AUR PortProton install
+if command -v paru >/dev/null 2>&1; then
+    paru -S --needed --noconfirm portproton || true
+fi
