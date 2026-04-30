@@ -551,7 +551,8 @@ WARP не включается автоматически при запуске 
 
 Фикс:
 
-
+~~~bash
+pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
+~~~
 
 Или просто сделайте перезагрузку системы.
-
