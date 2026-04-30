@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 echo "=== XlllOS Hyprland dots installer ==="
 
@@ -22,28 +22,13 @@ sudo pacman -S --needed --noconfirm git curl wget rsync base-devel hyprland xdg-
 echo "[2.5/11] Enabling Proton VPN daemon..."
 sudo systemctl enable --now proton-vpn-daemon 2>/dev/null || true
 
-echo "[2.6/11] Installing all packages from package lists..."
-
+echo "[2.6/11] Installing pacman packages..."
 if [ -f "$REPO_DIR/packages-pacman.txt" ]; then
-    echo "Installing native pacman packages from packages-pacman.txt..."
-    pacman -Slq | sort -u > /tmp/xlllos-repo-packages.txt
-    sort -u "$REPO_DIR/packages-pacman.txt" > /tmp/xlllos-wanted-pacman.txt
-    comm -12 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-install-pacman.txt
-    comm -23 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-missing-pacman.txt
-
-    if [ -s /tmp/xlllos-install-pacman.txt ]; then
-        sudo pacman -S --needed --noconfirm - < /tmp/xlllos-install-pacman.txt
-    fi
-
-    if [ -s /tmp/xlllos-missing-pacman.txt ]; then
-        echo "These pacman packages were not found in enabled repos:"
-        cat /tmp/xlllos-missing-pacman.txt
-    fi
+    sudo pacman -S --needed --noconfirm - < "$REPO_DIR/packages-pacman.txt" || true
 fi
 
+echo "[2.7/11] Installing AUR packages..."
 if [ -f "$REPO_DIR/packages-aur.txt" ]; then
-    echo "Installing AUR/foreign packages from packages-aur.txt..."
-
     AUR_HELPER=""
     if command -v paru >/dev/null 2>&1; then
         AUR_HELPER="paru"
@@ -51,25 +36,15 @@ if [ -f "$REPO_DIR/packages-aur.txt" ]; then
         AUR_HELPER="yay"
     fi
 
-    if [ -z "$AUR_HELPER" ]; then
-        echo "No AUR helper found. Installing paru..."
-        sudo pacman -S --needed --noconfirm git base-devel
-        TMP_PARU="/tmp/paru-build-xlllos"
-        rm -rf "$TMP_PARU"
-        git clone https://aur.archlinux.org/paru.git "$TMP_PARU"
-        cd "$TMP_PARU"
-        makepkg -si --noconfirm
-        cd "$REPO_DIR"
-        AUR_HELPER="paru"
-    fi
-
-    if [ -s "$REPO_DIR/packages-aur.txt" ]; then
+    if [ -n "$AUR_HELPER" ]; then
         xargs -r "$AUR_HELPER" -S --needed --noconfirm < "$REPO_DIR/packages-aur.txt" || true
+    else
+        echo "AUR helper not found. Install paru/yay manually if AUR packages are needed."
     fi
 fi
 
 echo "[3/11] Backing up old configs..."
-BACKUP="$HOME/.config-backup-xlllos-$(date +%s)"
+BACKUP="$HOME/.config-backup-xlllos-$(date +%F-%H%M%S)"
 mkdir -p "$BACKUP"
 
 for dir in hypr illogical-impulse kitty fish; do
@@ -79,7 +54,7 @@ for dir in hypr illogical-impulse kitty fish; do
     fi
 done
 
-echo "[4/11] Copying user configs..."
+echo "[4/11] Copying configs..."
 mkdir -p "$HOME/.config"
 
 if [ -d "$REPO_DIR/home/.config" ]; then
@@ -101,7 +76,7 @@ if [ -d "$REPO_DIR/home/.local" ]; then
     rsync -a "$REPO_DIR/home/.local/" "$HOME/.local/"
 fi
 
-echo "[5/11] Setting universal monitor config in custom..."
+echo "[5/11] Setting monitor config in custom..."
 mkdir -p "$HOME/.config/hypr/custom"
 printf "%s
 " "# Universal monitor config" "monitor = , preferred, auto, 1" > "$HOME/.config/hypr/custom/monitors.conf"
@@ -114,12 +89,29 @@ if command -v fish >/dev/null 2>&1; then
     chsh -s "$(command -v fish)" "$USER" || true
 fi
 
-echo "[7/11] Restoring performance configs..."
+echo "[7/11] Performance mode..."
 sudo systemctl enable --now power-profiles-daemon.service || true
 sudo systemctl enable --now cpupower.service || true
 powerprofilesctl set performance || true
 
-echo "[8/11] Setting SDDM autologin to normal Hyprland..."
+sudo tee /etc/systemd/system/force-cpu-performance.service >/dev/null <<FORCECPU
+[Unit]
+Description=Force CPU governor and EPP to performance
+After=cpupower.service power-profiles-daemon.service multi-user.target
+Wants=power-profiles-daemon.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -lc "sleep 3; shopt -s nullglob; for g in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > \$g 2>/dev/null || true; done; for e in /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo performance > \$e 2>/dev/null || true; done; exit 0"
+
+[Install]
+WantedBy=multi-user.target
+FORCECPU
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now force-cpu-performance.service || true
+
+echo "[8/11] Setting SDDM autologin..."
 sudo mkdir -p /etc/sddm.conf.d
 printf "%s
 " "[Autologin]" "User=$USER" "Session=hyprland.desktop" | sudo tee /etc/sddm.conf.d/autologin.conf >/dev/null
@@ -129,17 +121,12 @@ FIREFOX_PROFILE="$(find "$HOME/.mozilla/firefox" -maxdepth 1 -type d -name "*.de
 if [ -n "$FIREFOX_PROFILE" ]; then
     printf "%s
 " "// XlllOS" "user_pref("layout.frame_rate", 180);" >> "$FIREFOX_PROFILE/user.js"
-else
-    echo "Firefox profile not found. Open Firefox once and set layout.frame_rate=180 manually if needed."
 fi
 
-echo "[10/11] Disabling yellow night filter if present..."
+echo "[10/11] Disabling yellow night filter..."
 systemctl --user disable --now hyprsunset.service 2>/dev/null || true
 pkill -f hyprsunset 2>/dev/null || true
 
-find "$HOME/.config/hypr" -type f \( -name "*.conf" -o -name "*.new" \) 2>/dev/null | while read -r f; do
-    sed -i "/hyprsunset/d" "$f" 2>/dev/null || true
-done
-
+echo "[11/11] Done."
 echo "=== XlllOS install complete ==="
 echo "Reboot is recommended."

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 echo "[GPU/NVIDIA] Removing AMD-specific packages..."
 sudo pacman -Rns --noconfirm amdvlk lib32-amdvlk vulkan-radeon lib32-vulkan-radeon vulkan-amdgpu-pro amf-amdgpu-pro opencl-amd rocm-opencl-runtime libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau xf86-video-amdgpu 2>/dev/null || true

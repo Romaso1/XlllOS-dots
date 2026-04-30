@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
 
 echo "[GPU/AMD] Removing NVIDIA packages..."
 sudo pacman -Rns --noconfirm nvidia nvidia-dkms nvidia-lts nvidia-open nvidia-open-dkms nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia lib32-opencl-nvidia libva-nvidia-driver linux-cachyos-nvidia-open linux-cachyos-lts-nvidia-open 2>/dev/null || true

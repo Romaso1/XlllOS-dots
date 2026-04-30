@@ -1,6 +1,7 @@
 asciiquarium-transparent-git
 cbonsai
 cloudflare-warp-bin
+heroic-games-launcher-bin
 illogical-impulse-basic
 illogical-impulse-bibata-modern-classic-bin
 illogical-impulse-fonts-themes
@@ -12,4 +13,3 @@ pipes.sh
 portproton
 tty-clock
 upscayl-bin
-heroic-games-launcher-bin

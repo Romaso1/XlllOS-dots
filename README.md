@@ -6,68 +6,36 @@
 
 Моя настройка CachyOS Hyprland.
 
-Это не отдельный Linux-дистрибутив, а набор dotfiles + установочный скрипт, который переносит внешний вид, Hyprland-конфиги, Quickshell/Illogical Impulse, терминал, fish shell, игровые пакеты и performance-настройки.
-
 ## Быстрая установка одной командой
 
 ### NVIDIA
-
-Для NVIDIA / CachyOS / Arch / EndeavourOS:
 
 ~~~bash
 bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-nvidia.sh; sudo reboot"
 ~~~
 
-NVIDIA-команда ставит XlllOS-dots, удаляет AMD-специфичные Vulkan/Mesa/AMDGPU-пакеты и ставит NVIDIA-драйверы, OpenCL, Vulkan ICD, lib32-компоненты и NVIDIA VA-API.
-
 ### AMD
-
-Для AMD-видеокарт:
 
 ~~~bash
 bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-amd.sh; sudo reboot"
 ~~~
 
-AMD-команда ставит XlllOS-dots, удаляет NVIDIA-пакеты и ставит Mesa/RADV, Vulkan Radeon, lib32-компоненты, VA-API/VDPAU для Mesa и AMDGPU Xorg-драйвер.
-
 ## Что устанавливается
 
-### Основные компоненты и настройки
-
-- Hyprland config
-- Hyprlock / Hypridle
+- Hyprland / Hyprlock / Hypridle
 - Quickshell / Illogical Impulse config
-- Kitty terminal config
-- Fish shell config
-- Starship prompt
-- Обои и визуальный стиль
-- Kvantum / Qt theme-настройки
-- Dolphin / KDE file manager-настройки
-- Alt + Shift для смены языка
-- Отключение ускорения мыши
-- Прозрачность терминала
-- Отключение жёлтого фильтра / hyprsunset
-- Автологин в обычный Hyprland
-- CPU governor performance
-- EPP performance
-- Power profile performance
-- Linux Steam
-- PortProton
+- Kitty, Fish, Starship
+- Dolphin / Kvantum / Qt theme
+- Steam, PortProton, Lutris, Heroic Games Launcher
+- MangoHud, Gamescope, GameMode, ProtonUp-Qt
 - Proton VPN
-- Lutris
-- Heroic Games Launcher
-- MangoHud
-- Gamescope
-- GameMode
-- ProtonUp-Qt
-- Vulkan tools
-- NVIDIA / AMD GPU setup через отдельные скрипты
-- Firefox frame_rate 180, если найден профиль Firefox
-- WARP helper-команды
-- Quickshell widgets / desktop widgets
-- Настройка монитора через custom-конфиг
+- Performance CPU profile
+- NVIDIA или AMD GPU setup отдельным скриптом
+- Firefox frame_rate 180
+- Desktop widgets с задержкой 8 секунд
+- Monitor config в `~/.config/hypr/custom/monitors.conf`
 
-### Pacman-пакеты из `packages-pacman.txt`
+### Pacman-пакеты
 
 <details>
 <summary>Показать полный список</summary>
@@ -157,7 +125,7 @@ icoutils
 inetutils
 intel-ucode
 iwd
-jdownloader2
+jdownloader2-latest
 jfsutils
 kate
 kdegraphics-thumbnailers
@@ -240,6 +208,7 @@ s-nail
 snapper
 sof-firmware
 starship
+steam
 sudo
 sysfsutils
 telegram-desktop
@@ -270,12 +239,11 @@ xl2tpd
 xorg-xwayland
 yay
 yazi
-steam
 ~~~
 
 </details>
 
-### AUR / foreign-пакеты из `packages-aur.txt`
+### AUR-пакеты
 
 <details>
 <summary>Показать полный список</summary>
@@ -284,6 +252,7 @@ steam
 asciiquarium-transparent-git
 cbonsai
 cloudflare-warp-bin
+heroic-games-launcher-bin
 illogical-impulse-basic
 illogical-impulse-bibata-modern-classic-bin
 illogical-impulse-fonts-themes
@@ -295,14 +264,13 @@ pipes.sh
 portproton
 tty-clock
 upscayl-bin
-heroic-games-launcher-bin
 ~~~
 
 </details>
 
 ## Настройка монитора
 
-Настройка монитора находится в custom:
+Файл:
 
 ~~~text
 ~/.config/hypr/custom/monitors.conf
@@ -314,119 +282,44 @@ heroic-games-launcher-bin
 monitor = , preferred, auto, 1
 ~~~
 
-Для 3440x1440 180 Hz:
-
-~~~ini
-monitor = DP-1, 3440x1440@180, 0x0, 1
-~~~
-
-После изменения:
-
-~~~bash
-hyprctl reload
-~~~
-
 ## Бинды после установки
 
-Основные бинды можно открыть прямо в системе через cheatsheet:
+Открыть cheatsheet:
 
 ~~~text
 Super + /
 ~~~
 
-### Shell
+Основные:
 
 | Бинд | Действие |
 |---|---|
-| Super | Toggle search |
-| Super + Tab | Toggle overview |
-| Super + V | Clipboard history |
-| Super + Period | Emoji |
-| Super + A | Toggle left sidebar |
-| Super + N | Toggle right sidebar |
-| Super + / | Toggle cheatsheet |
-| Super + K | Toggle on-screen keyboard |
-| Super + M | Toggle media controls |
-| Super + G | Toggle overlay |
-| Ctrl + Alt + Delete | Toggle session menu |
-| Super + J | Toggle bar |
-| Ctrl + Super + T | Wallpaper selector |
-| Ctrl + Super + R | Restart widgets |
-
-### Utilities
-
-| Бинд | Действие |
-|---|---|
-| Super + Shift + S | Screen snip |
-| Super + Shift + A | Google Lens |
-| Super + Shift + X | OCR |
-| Super + Shift + T | Translate screen |
-| Super + Shift + C | Pick color |
-| Super + Shift + R | Record region |
-| Super + Shift + Alt + R | Record screen with sound |
-| Print | Screenshot |
-| Ctrl + Print | Screenshot to file |
-
-### Window / Workspace / Apps
-
-| Бинд | Действие |
-|---|---|
-| Super + LMB | Move window |
-| Super + RMB | Resize window |
-| Super + Q | Close window |
-| Super + F | Fullscreen |
-| Super + D | Maximize |
-| Super + number | Focus workspace |
-| Super + S | Toggle scratchpad |
+| Super | Search |
+| Super + Tab | Overview |
 | Super + Enter | Terminal |
 | Super + E | File manager |
 | Super + W | Browser |
-| Super + C | Code editor |
-| Super + X | Text editor |
-| Super + I | Settings app |
-| Ctrl + Shift + Escape | Task manager |
+| Super + Q | Close window |
+| Super + F | Fullscreen |
+| Super + D | Maximize |
+| Super + S | Scratchpad |
+| Super + Shift + S | Screenshot region |
+| Ctrl + Super + R | Restart widgets |
 
 ## Linux Steam
 
-Linux Steam устанавливается автоматически через `scripts/install-steam.sh`.
-
-Проверить после установки:
-
-~~~bash
-steam
-~~~
+Steam ставится автоматически через `scripts/install-steam.sh`.
 
 ## PortProton / Proton VPN
 
-После установки PortProton уже будет установлен автоматически.
+PortProton и Proton VPN ставятся автоматически.
 
-Steam, Wargaming Center и другие Windows-лаунчеры внутри PortProton каждый пользователь ставит сам.
-
-Проверить Proton VPN:
-
-~~~bash
-systemctl status proton-vpn-daemon
-~~~
-
-## Quickshell быстро открывается и моментально закрывается
-
-Если меню Quickshell, например звук, трей или быстрые настройки, открывается и сразу закрывается, скорее всего это из-за PortProton.
+## Quickshell popup закрывается сразу
 
 Фикс:
 
 ~~~bash
 pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
-~~~
-
-Или просто сделайте перезагрузку системы.
-
-## Game Launch Options
-
-~~~text
-game-performance %command%
-mangohud game-performance %command%
-gamescope -f -W 3440 -H 1440 -r 180 -- game-performance %command%
-WINEDLLOVERRIDES="winmm,version=n,b" game-performance %command%
 ~~~
 
 ## WARP helper
@@ -437,19 +330,6 @@ warp off
 warp status
 ~~~
 
-WARP не включается автоматически при запуске системы. Его нужно включать вручную только при необходимости.
-
 ## Важно
 
-Не добавлять в репозиторий:
-
-- `~/.ssh`
-- `~/.gnupg`
-- `~/.mozilla`
-- `~/.steam`
-- `~/.local/share/Steam`
-- `~/.cache`
-- браузерные профили
-- пароли
-- токены
-- личные документы
+Не добавлять в репозиторий пароли, токены, `~/.ssh`, `~/.steam`, браузерные профили и личные документы.

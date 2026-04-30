@@ -82,7 +82,7 @@ icoutils
 inetutils
 intel-ucode
 iwd
-jdownloader2
+jdownloader2-latest
 jfsutils
 kate
 kdegraphics-thumbnailers
@@ -165,6 +165,7 @@ s-nail
 snapper
 sof-firmware
 starship
+steam
 sudo
 sysfsutils
 telegram-desktop
@@ -195,4 +196,3 @@ xl2tpd
 xorg-xwayland
 yay
 yazi
-steam
