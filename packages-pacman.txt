@@ -114,8 +114,8 @@ lsscsi
 lutris
 lvm2
 man-db
-man-pages
 mangohud
+man-pages
 mdadm
 meld
 mesa-utils
@@ -146,6 +146,7 @@ plocate
 plymouth
 poppler-glib
 power-profiles-daemon
+protontricks
 proton-vpn-daemon
 proton-vpn-gtk-app
 pv
@@ -189,6 +190,7 @@ vlc-plugins-all
 vulkan-icd-loader
 vulkan-tools
 which
+winetricks
 wofi
 wpa_supplicant
 xfsprogs
