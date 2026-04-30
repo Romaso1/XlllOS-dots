@@ -21,3 +21,4 @@ pipes.sh
 portproton
 tty-clock
 upscayl-bin
+heroic-games-launcher-bin

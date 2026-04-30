@@ -77,7 +77,6 @@ gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-ugly
 hdparm
-heroic-games-launcher-bin
 hwdetect
 hwinfo
 icoutils
