@@ -5,10 +5,7 @@
 *.conf text eol=lf
 *.service text eol=lf
 *.desktop text eol=lf
-*.fish text eol=lf
 *.json text eol=lf
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.webp binary
-*.gif binary
+*.qml text eol=lf
+*.py text eol=lf
+*.fish text eol=lf

@@ -13,6 +13,13 @@ if ! grep -q '^\[multilib\]' /etc/pacman.conf; then
     fi
 fi
 
-echo "[Steam] Installing Linux Steam..."
+if ! grep -q '^\[multilib\]' /etc/pacman.conf; then
+    echo "[Steam] ERROR: multilib was not enabled in /etc/pacman.conf"
+    exit 1
+fi
+
+echo "[Steam] Refreshing package databases..."
 sudo pacman -Sy --noconfirm
+
+echo "[Steam] Installing Linux Steam..."
 sudo pacman -S --needed --noconfirm steam

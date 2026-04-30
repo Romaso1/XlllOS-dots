@@ -1,26 +1,23 @@
-# Secrets and private data
+# Private/user data
 .ssh/
 .gnupg/
 .mozilla/
 .steam/
 .local/share/Steam/
-.local/share/Trash/
 .cache/
-config/google-chrome/
-config/chromium/
-config/discord/Local State
-config/discord/*/Local Storage/
 
-# Logs and temporary files
+# Logs/backups
 *.log
-*.tmp
 *.bak
-*.old
-*.swp
+*.backup
+*.tmp
 *~
+
+# OS/editor files
 .DS_Store
 Thumbs.db
+.directory
 
-# Local repair artifacts
-xlllos-repo-repair-*.log
-xlllos-install-*.log
+# Python
+__pycache__/
+*.pyc

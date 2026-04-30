@@ -13,7 +13,7 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "[1/11] Updating system..."
 sudo pacman -Syu --noconfirm
 
-echo "[1.5/11] Installing Linux Steam..."
+echo "[1.5/11] Enabling multilib and installing Linux Steam..."
 bash "$REPO_DIR/scripts/install-steam.sh"
 
 echo "[2/11] Installing base packages..."
@@ -34,24 +34,12 @@ sudo pacman -S --needed --noconfirm \
 echo "[2.5/11] Enabling Proton VPN daemon..."
 sudo systemctl enable --now proton-vpn-daemon 2>/dev/null || true
 
-echo "[2.6/11] Installing native pacman packages from packages-pacman.txt..."
+echo "[2.6/11] Installing pacman packages from packages-pacman.txt..."
 if [ -f "$REPO_DIR/packages-pacman.txt" ]; then
-    pacman -Slq | sort -u > /tmp/xlllos-repo-packages.txt
-    grep -vE '^\s*(#|$)' "$REPO_DIR/packages-pacman.txt" | sort -u > /tmp/xlllos-wanted-pacman.txt
-    comm -12 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-install-pacman.txt
-    comm -23 /tmp/xlllos-wanted-pacman.txt /tmp/xlllos-repo-packages.txt > /tmp/xlllos-missing-pacman.txt
-
-    if [ -s /tmp/xlllos-install-pacman.txt ]; then
-        xargs -r sudo pacman -S --needed --noconfirm < /tmp/xlllos-install-pacman.txt
-    fi
-
-    if [ -s /tmp/xlllos-missing-pacman.txt ]; then
-        echo "These pacman packages were not found in enabled repositories:"
-        cat /tmp/xlllos-missing-pacman.txt
-    fi
+    xargs -r sudo pacman -S --needed --noconfirm < "$REPO_DIR/packages-pacman.txt" || true
 fi
 
-echo "[2.7/11] Installing AUR/foreign packages from packages-aur.txt..."
+echo "[2.7/11] Installing AUR packages from packages-aur.txt..."
 if [ -f "$REPO_DIR/packages-aur.txt" ]; then
     AUR_HELPER=""
     if command -v paru >/dev/null 2>&1; then
@@ -60,20 +48,10 @@ if [ -f "$REPO_DIR/packages-aur.txt" ]; then
         AUR_HELPER="yay"
     fi
 
-    if [ -z "$AUR_HELPER" ]; then
-        echo "No AUR helper found. Installing paru..."
-        sudo pacman -S --needed --noconfirm git base-devel
-        TMP_PARU="/tmp/paru-build-xlllos"
-        rm -rf "$TMP_PARU"
-        git clone https://aur.archlinux.org/paru.git "$TMP_PARU"
-        cd "$TMP_PARU"
-        makepkg -si --noconfirm
-        cd "$REPO_DIR"
-        AUR_HELPER="paru"
-    fi
-
-    if [ -s "$REPO_DIR/packages-aur.txt" ]; then
+    if [ -n "$AUR_HELPER" ]; then
         xargs -r "$AUR_HELPER" -S --needed --noconfirm < "$REPO_DIR/packages-aur.txt" || true
+    else
+        echo "AUR helper not found. Install paru/yay manually if AUR packages are needed."
     fi
 fi
 
@@ -88,7 +66,7 @@ for dir in hypr illogical-impulse kitty fish; do
     fi
 done
 
-echo "[4/11] Copying user configs..."
+echo "[4/11] Copying configs..."
 mkdir -p "$HOME/.config"
 
 if [ -d "$REPO_DIR/home/.config" ]; then
@@ -118,21 +96,23 @@ from pathlib import Path
 p = Path.home() / ".config/illogical-impulse/config.json"
 
 if p.exists():
-    cfg = json.loads(p.read_text(encoding="utf-8"))
-
-    def fix_paths(x):
-        if isinstance(x, dict):
-            return {k: fix_paths(v) for k, v in x.items()}
-        if isinstance(x, list):
-            return [fix_paths(v) for v in x]
-        if isinstance(x, str):
-            return x.replace("/home/xiii", str(Path.home()))
-        return x
-
-    p.write_text(json.dumps(fix_paths(cfg), indent=4, ensure_ascii=False), encoding="utf-8")
+    try:
+        cfg = json.loads(p.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"Could not read {p}: {exc}")
+    else:
+        def fix_paths(x):
+            if isinstance(x, dict):
+                return {k: fix_paths(v) for k, v in x.items()}
+            if isinstance(x, list):
+                return [fix_paths(v) for v in x]
+            if isinstance(x, str):
+                return x.replace("/home/xiii", str(Path.home()))
+            return x
+        p.write_text(json.dumps(fix_paths(cfg), indent=4, ensure_ascii=False), encoding="utf-8")
 PYUSERPATH
 
-echo "[6/11] Setting universal monitor config in custom..."
+echo "[6/11] Setting monitor config in custom..."
 mkdir -p "$HOME/.config/hypr/custom"
 printf "%s\n" "# Universal monitor config" "monitor = , preferred, auto, 1" > "$HOME/.config/hypr/custom/monitors.conf"
 
@@ -144,7 +124,7 @@ if command -v fish >/dev/null 2>&1; then
     chsh -s "$(command -v fish)" "$USER" || true
 fi
 
-echo "[8/11] Restoring performance configs..."
+echo "[8/11] Performance mode..."
 sudo systemctl enable --now power-profiles-daemon.service || true
 sudo systemctl enable --now cpupower.service || true
 powerprofilesctl set performance || true
@@ -166,7 +146,7 @@ FORCECPU
 sudo systemctl daemon-reload
 sudo systemctl enable --now force-cpu-performance.service || true
 
-echo "[9/11] Setting SDDM autologin to normal Hyprland..."
+echo "[9/11] Setting SDDM autologin..."
 sudo mkdir -p /etc/sddm.conf.d
 printf "%s\n" "[Autologin]" "User=$USER" "Session=hyprland.desktop" | sudo tee /etc/sddm.conf.d/autologin.conf >/dev/null
 
@@ -174,17 +154,11 @@ echo "[10/11] Applying Firefox prefs..."
 FIREFOX_PROFILE="$(find "$HOME/.mozilla/firefox" -maxdepth 1 -type d -name "*.default-release" 2>/dev/null | head -n1 || true)"
 if [ -n "$FIREFOX_PROFILE" ]; then
     printf "%s\n" "// XlllOS" "user_pref(\"layout.frame_rate\", 180);" >> "$FIREFOX_PROFILE/user.js"
-else
-    echo "Firefox profile not found. Open Firefox once and set layout.frame_rate=180 manually if needed."
 fi
 
-echo "[11/11] Disabling yellow night filter if present..."
+echo "[11/11] Disabling yellow night filter..."
 systemctl --user disable --now hyprsunset.service 2>/dev/null || true
 pkill -f hyprsunset 2>/dev/null || true
-
-find "$HOME/.config/hypr" -type f \( -name "*.conf" -o -name "*.new" \) 2>/dev/null | while read -r f; do
-    sed -i "/hyprsunset/d" "$f" 2>/dev/null || true
-done
 
 echo "=== XlllOS install complete ==="
 echo "Reboot is recommended."

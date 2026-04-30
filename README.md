@@ -1423,6 +1423,18 @@ Super + /
 | Super + Shift + S | Screenshot region |
 | Ctrl + Super + R | Restart widgets |
 
+## Multilib
+
+`scripts/install-steam.sh` automatically enables the `[multilib]` repository before installing Steam.
+
+The installer creates a backup of `/etc/pacman.conf` before editing it:
+
+```text
+/etc/pacman.conf.bak-xlllos-steam-YYYY-MM-DD-HHMMSS
+```
+
+This is required for Steam and `lib32-*` gaming packages on Arch/CachyOS.
+
 ## Linux Steam
 
 Steam ставится автоматически через `scripts/install-steam.sh`.
