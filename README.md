@@ -1457,11 +1457,40 @@ pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
 
 ## Game Launch Options
 
+Открыть в Steam:
+
 ```text
-game-performance %command%
-mangohud game-performance %command%
-gamescope -f -W 3440 -H 1440 -r 180 -- game-performance %command%
-WINEDLLOVERRIDES="winmm,version=n,b" game-performance %command%
+Steam → Библиотека → ПКМ по игре → Свойства → Общие → Параметры запуска
+```
+
+Обычный GameMode:
+
+```text
+gamemoderun %command%
+```
+
+MangoHud + GameMode:
+
+```text
+mangohud gamemoderun %command%
+```
+
+NVIDIA/NVAPI + MangoHud + GameMode:
+
+```text
+PROTON_ENABLE_NVAPI=1 DXVK_ENABLE_NVAPI=1 mangohud gamemoderun %command%
+```
+
+NVIDIA/NVAPI + DLL overrides для модов:
+
+```text
+PROTON_ENABLE_NVAPI=1 DXVK_ENABLE_NVAPI=1 WINEDLLOVERRIDES="winmm=n,b;version=n,b" mangohud gamemoderun %command%
+```
+
+Gamescope 3440x1440 180 Hz + NVIDIA/NVAPI + MangoHud + GameMode:
+
+```text
+PROTON_ENABLE_NVAPI=1 DXVK_ENABLE_NVAPI=1 gamescope -f -W 3440 -H 1440 -r 180 -- mangohud gamemoderun %command%
 ```
 
 ## WARP helper
