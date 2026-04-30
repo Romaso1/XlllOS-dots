@@ -11,18 +11,21 @@
 Для NVIDIA / CachyOS / Arch / EndeavourOS:
 
 ~~~bash
-bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d \"\$HOME/XlllOS-dots/.git\" ]; then git -C \"\$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"\$HOME/XlllOS-dots\"; fi; cd \"\$HOME/XlllOS-dots\"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; sudo reboot"
+bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-nvidia.sh; sudo reboot"
 ~~~
+
+NVIDIA-команда ставит XlllOS-dots, затем удаляет AMD-специфичные Vulkan/Mesa/AMDGPU-пакеты и ставит NVIDIA-драйверы, OpenCL, Vulkan ICD, lib32-компоненты и NVIDIA VA-API.
 
 ### AMD
 
 Для AMD-видеокарт:
 
 ~~~bash
-bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d \"\$HOME/XlllOS-dots/.git\" ]; then git -C \"\$HOME/XlllOS-dots\" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git \"\$HOME/XlllOS-dots\"; fi; cd \"\$HOME/XlllOS-dots\"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; sudo pacman -Rns --noconfirm nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia lib32-opencl-nvidia libva-nvidia-driver linux-cachyos-nvidia-open linux-cachyos-lts-nvidia-open 2>/dev/null || true; sudo pacman -Syu --needed --noconfirm mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau mesa-utils vulkan-tools xf86-video-amdgpu; sudo mkinitcpio -P; sudo reboot"
+bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-amd.sh; sudo reboot"
 ~~~
 
-AMD-команда сначала ставит XlllOS-dots, потом ставит Mesa/Vulkan для AMD, удаляет NVIDIA-пакеты, если они были установлены, обновляет initramfs и перезагружает ПК.
+AMD-команда ставит XlllOS-dots, затем удаляет NVIDIA-пакеты и ставит Mesa/RADV, Vulkan Radeon, lib32-компоненты, VA-API/VDPAU для Mesa и AMDGPU Xorg-драйвер.
+
 
 ## Что устанавливается
 
