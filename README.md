@@ -11,13 +11,13 @@
 ### NVIDIA
 
 ~~~bash
-bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-nvidia.sh; sudo reboot"
+bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-nvidia.sh; sudo reboot'
 ~~~
 
 ### AMD
 
 ~~~bash
-bash -lc "set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "\$HOME/XlllOS-dots/.git" ]; then git -C "\$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "\$HOME/XlllOS-dots"; fi; cd "\$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-amd.sh; sudo reboot"
+bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-amd.sh; sudo reboot'
 ~~~
 
 ## Что устанавливается
