@@ -13,6 +13,9 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo "[1/11] Updating system..."
 sudo pacman -Syu --noconfirm
 
+# XlllOS default Linux Steam install
+bash scripts/install-steam.sh
+
 echo "[2/11] Installing packages..."
 sudo pacman -S --needed --noconfirm \
     git curl wget rsync base-devel \
