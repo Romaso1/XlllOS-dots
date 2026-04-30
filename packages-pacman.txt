@@ -1,4 +1,3 @@
-
 accountsservice
 alacritty
 alsa-firmware
