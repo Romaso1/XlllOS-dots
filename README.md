@@ -1384,7 +1384,7 @@ upscayl-bin
 Универсальный вариант:
 
 ```ini
-monitor = , preferred, auto, 1
+monitor=,preferred,auto,1
 ```
 
 Для 3440x1440 180 Hz можно вручную поставить:

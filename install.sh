@@ -114,7 +114,7 @@ PYUSERPATH
 
 echo "[6/11] Setting monitor config in custom..."
 mkdir -p "$HOME/.config/hypr/custom"
-printf "%s\n" "# Universal monitor config" "monitor = , preferred, auto, 1" > "$HOME/.config/hypr/custom/monitors.conf"
+printf "%s\n" "# Universal monitor config" "monitor=,preferred,auto,1" > "$HOME/.config/hypr/custom/monitors.conf"
 
 echo "[7/11] Setting fish as default shell..."
 if command -v fish >/dev/null 2>&1; then
