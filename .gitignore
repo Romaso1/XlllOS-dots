@@ -5,13 +5,50 @@
 .steam/
 .local/share/Steam/
 .cache/
+.config/google-chrome/
+.config/chromium/
+.config/discord/
+.config/vesktop/
+.config/Code/User/globalStorage/
+.config/Code/User/workspaceStorage/
+.config/BraveSoftware/
+.config/obsidian/
 
-# Logs/backups
+# Secrets / keys / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+known_hosts
+authorized_keys
+credentials
+credentials.json
+token
+tokens
+*.token
+*.secret
+*.secrets
+*.env
+.env
+.env.*
+auth.json
+cookies
+cookies.sqlite
+keyring
+wallet.dat
+
+# Logs/backups/temp
 *.log
 *.bak
 *.backup
 *.tmp
 *~
+*.old
+*.orig
 
 # OS/editor files
 .DS_Store
