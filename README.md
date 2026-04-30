@@ -6,41 +6,62 @@
 
 Моя настройка CachyOS Hyprland.
 
+Это не отдельный Linux-дистрибутив, а набор dotfiles + установочный скрипт для установки моего Hyprland-окружения, Quickshell/Illogical Impulse, терминала, fish shell, игровых пакетов и performance-настроек.
+
 ## Быстрая установка одной командой
 
 ### NVIDIA
 
-~~~bash
+Для NVIDIA / CachyOS / Arch / EndeavourOS:
+
+```bash
 bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-nvidia.sh; sudo reboot'
-~~~
+```
 
 ### AMD
 
-~~~bash
+Для AMD-видеокарт:
+
+```bash
 bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; ./scripts/gpu-amd.sh; sudo reboot'
-~~~
+```
 
 ## Что устанавливается
 
 - Hyprland / Hyprlock / Hypridle
 - Quickshell / Illogical Impulse config
-- Kitty, Fish, Starship
+- Kitty terminal config
+- Fish shell config
+- Starship prompt
+- Обои и визуальный стиль
 - Dolphin / Kvantum / Qt theme
-- Steam, PortProton, Lutris, Heroic Games Launcher
-- MangoHud, Gamescope, GameMode, ProtonUp-Qt
+- Alt + Shift для смены языка
+- Отключение ускорения мыши
+- Прозрачность терминала
+- Отключение жёлтого фильтра / hyprsunset
+- Автологин в обычный Hyprland
+- CPU governor performance
+- EPP performance
+- Power profile performance
+- Linux Steam
+- PortProton
 - Proton VPN
-- Performance CPU profile
+- Lutris
+- Heroic Games Launcher
+- MangoHud / Gamescope / GameMode
+- ProtonUp-Qt
+- Vulkan tools
 - NVIDIA или AMD GPU setup отдельным скриптом
 - Firefox frame_rate 180
-- Desktop widgets с задержкой 8 секунд
-- Monitor config в `~/.config/hypr/custom/monitors.conf`
+- Desktop widgets с задержкой запуска 8 секунд
+- Monitor config в ~/.config/hypr/custom/monitors.conf
 
-### Pacman-пакеты
+## Pacman-пакеты
 
 <details>
 <summary>Показать полный список</summary>
 
-~~~text
+```text
 accountsservice
 alacritty
 alsa-firmware
@@ -239,16 +260,16 @@ xl2tpd
 xorg-xwayland
 yay
 yazi
-~~~
+```
 
 </details>
 
-### AUR-пакеты
+## AUR-пакеты
 
 <details>
 <summary>Показать полный список</summary>
 
-~~~text
+```text
 asciiquarium-transparent-git
 cbonsai
 cloudflare-warp-bin
@@ -264,33 +285,43 @@ pipes.sh
 portproton
 tty-clock
 upscayl-bin
-~~~
+```
 
 </details>
 
 ## Настройка монитора
 
-Файл:
+Настройка монитора находится в:
 
-~~~text
+```text
 ~/.config/hypr/custom/monitors.conf
-~~~
+```
 
 Универсальный вариант:
 
-~~~ini
+```ini
 monitor = , preferred, auto, 1
-~~~
+```
+
+Для 3440x1440 180 Hz можно вручную поставить:
+
+```ini
+monitor = DP-1, 3440x1440@180, 0x0, 1
+```
+
+После изменения:
+
+```bash
+hyprctl reload
+```
 
 ## Бинды после установки
 
 Открыть cheatsheet:
 
-~~~text
+```text
 Super + /
-~~~
-
-Основные:
+```
 
 | Бинд | Действие |
 |---|---|
@@ -316,20 +347,46 @@ PortProton и Proton VPN ставятся автоматически.
 
 ## Quickshell popup закрывается сразу
 
+Если popup-меню Quickshell открывается и сразу закрывается, часто виноват зависший PortProton.
+
 Фикс:
 
-~~~bash
+```bash
 pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
-~~~
+```
+
+Или просто сделайте перезагрузку системы.
+
+## Game Launch Options
+
+```text
+game-performance %command%
+mangohud game-performance %command%
+gamescope -f -W 3440 -H 1440 -r 180 -- game-performance %command%
+WINEDLLOVERRIDES="winmm,version=n,b" game-performance %command%
+```
 
 ## WARP helper
 
-~~~fish
+```fish
 warp on
 warp off
 warp status
-~~~
+```
+
+WARP не включается автоматически при запуске системы. Его нужно включать вручную только при необходимости.
 
 ## Важно
 
-Не добавлять в репозиторий пароли, токены, `~/.ssh`, `~/.steam`, браузерные профили и личные документы.
+Не добавлять в репозиторий:
+
+- `~/.ssh`
+- `~/.gnupg`
+- `~/.mozilla`
+- `~/.steam`
+- `~/.local/share/Steam`
+- `~/.cache`
+- браузерные профили
+- пароли
+- токены
+- личные документы
