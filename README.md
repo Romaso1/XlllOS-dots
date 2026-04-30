@@ -117,6 +117,9 @@ scripts/gpu-amd.sh    - удаляет NVIDIA-пакеты и ставит AMD M
 
 ### Список файлов из папки `home/`, которые будут перенесены
 
+<details>
+<summary>Показать полный список файлов</summary>
+
 ```text
 home/.config/dolphinrc
 home/.config/fish/auto-Hypr.fish
@@ -1134,6 +1137,8 @@ home/Wallpapers/ChatGPT Image 28 апр. 2026 г., 12_12_28_upscayl_2x_digital-a
 home/Wallpapers/random_wallpaper-1.png
 home/Wallpapers/random_wallpaper_upscayl_4x_digital-art-4x.png
 ```
+
+</details>
 
 ## Pacman-пакеты
 
