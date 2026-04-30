@@ -206,127 +206,15 @@ echo "Firefox profile not found. Open Firefox once and set layout.frame_rate=180
 fi
 
 echo "[11/11] Disabling yellow night filter if present..."
-if [ -f "$HOME/.config/quickshell/ii/services/Hyprsunset.qml" ]; then
-cp "$HOME/.config/quickshell/ii/services/Hyprsunset.qml" "$HOME/.config/quickshell/ii/services/Hyprsunset.qml.bak" 2>/dev/null || true
-python - <<'PY'
-from pathlib import Path
 
-p = Path.home() / ".config/quickshell/ii/services/Hyprsunset.qml"
+# Disable Hyprsunset / night color filter if present
+systemctl --user disable --now hyprsunset.service 2>/dev/null || true
+pkill -f hyprsunset 2>/dev/null || true
 
-if p.exists():
-s = p.read_text(encoding="utf-8", errors="ignore")
-s = s.replace("root.startHyprsunset();", "// root.startHyprsunset();")
-s = s.replace(
-'Quickshell.execDetached(["bash", "-c", `pidof hyprsunset || hyprsunset`]);',
-"// disabled hyprsunset autostart"
-)
-p.write_text(s, encoding="utf-8")
-PY
-fi
+# Remove common hyprsunset autostart lines from user configs
+find "$HOME/.config/hypr" -type f \( -name "*.conf" -o -name "*.new" \) 2>/dev/null | while read -r f; do
+    sed -i "/hyprsunset/d" "$f" 2>/dev/null || true
+done
 
-pkill hyprsunset 2>/dev/null || true
-
-echo
-echo "=== Done ==="
-echo "Перезагрузи систему:"
-echo "reboot"
-
-# XlllOS terminal animations and effects
-echo "Installing terminal animations and effects..."
-
-sudo pacman -S --needed --noconfirm cava cmatrix starship
-
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm cbonsai pipes.sh
-elif command -v yay >/dev/null 2>&1; then
-    yay -S --needed --noconfirm cbonsai pipes.sh
-else
-    echo "paru/yay not found. Skipping AUR packages: cbonsai pipes.sh"
-fi
-
-# XlllOS extra terminal tools
-echo "Installing extra terminal tools..."
-
-sudo pacman -S --needed --noconfirm fastfetch btop eza bat fzf yazi glow chafa
-
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm tty-clock peaclock
-elif command -v yay >/dev/null 2>&1; then
-    yay -S --needed --noconfirm tty-clock peaclock
-else
-    echo "paru/yay not found. Skipping AUR packages: tty-clock peaclock"
-fi
-
-# XlllOS aquarium terminal widget
-echo "Installing aquarium terminal widget..."
-
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm asciiquarium-transparent-git
-elif command -v yay >/dev/null 2>&1; then
-    yay -S --needed --noconfirm asciiquarium-transparent-git
-else
-    echo "paru/yay not found. Skipping AUR package: asciiquarium-transparent-git"
-fi
-
-# XlllOS DNS config
-echo "Setting DNS to Quad9 + Cloudflare via systemd-resolved..."
-
-sudo mkdir -p /etc/systemd/resolved.conf.d
-
-sudo tee /etc/systemd/resolved.conf.d/99-xlllos-dns.conf >/dev/null <<EOF
-[Resolve]
-DNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com
-FallbackDNS=9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 1.1.1.1#cloudflare-dns.com 1.0.0.1#cloudflare-dns.com
-DNSOverTLS=opportunistic
-DNSSEC=no
-Cache=yes
-EOF
-
-sudo systemctl enable --now systemd-resolved.service
-sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
-
-if command -v nmcli >/dev/null 2>&1; then
-    ACTIVE_CONNECTION="$(nmcli -t -f NAME,DEVICE connection show --active | grep -v ':lo$' | head -n1 | cut -d: -f1)"
-    if [ -n "$ACTIVE_CONNECTION" ]; then
-        echo "Applying DNS to NetworkManager connection: $ACTIVE_CONNECTION"
-        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.ignore-auto-dns yes
-        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv4.dns "9.9.9.9 149.112.112.112 1.1.1.1 1.0.0.1"
-        sudo nmcli connection modify "$ACTIVE_CONNECTION" ipv6.ignore-auto-dns yes
-        sudo nmcli connection up "$ACTIVE_CONNECTION" || true
-    fi
-fi
-
-sudo systemctl restart systemd-resolved.service
-resolvectl flush-caches 2>/dev/null || true
-echo "DNS configured: Quad9 + Cloudflare"
-
-# XlllOS Proton VPN note
-echo "Proton VPN package installed. GUI command: protonvpn-app"
-if command -v protonvpn-app >/dev/null 2>&1; then
-    echo "Proton VPN GUI is available."
-else
-    echo "Proton VPN GUI command not found yet. Try relogin or reinstall proton-vpn-gtk-app."
-fi
-
-# XlllOS disable Ananicy
-echo "Disabling Ananicy services..."
-sudo systemctl disable --now ananicy-cpp.service 2>/dev/null || true
-sudo systemctl disable --now ananicy.service 2>/dev/null || true
-
-# XlllOS default Linux Steam install
-bash "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/scripts/install-steam.sh"
-
-# XlllOS AUR PortProton install
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm  || true
-fi
-
-# XlllOS AUR Heroic Games Launcher install
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm heroic-games-launcher-bin || true
-fi
-
-# XlllOS AUR Illogical Impulse Quickshell install
-if command -v paru >/dev/null 2>&1; then
-    paru -S --needed --noconfirm illogical-impulse-quickshell-git || true
-fi
+echo "=== XlllOS install complete ==="
+echo "Reboot is recommended."
