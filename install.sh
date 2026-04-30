@@ -18,7 +18,7 @@ sudo pacman -S --needed --noconfirm \
     git curl wget rsync base-devel \
     hyprland xdg-desktop-portal-hyprland \
     kitty fish \
-    quickshell awww matugen \
+     awww matugen \
      lutris  \
     gamemode lib32-gamemode \
     mangohud goverlay protonup-qt \
@@ -87,7 +87,7 @@ echo "[3/11] Backing up old configs..."
 BACKUP="$HOME/.config-backup-xlllos-$(date +%s)"
 mkdir -p "$BACKUP"
 
-for dir in hypr quickshell illogical-impulse kitty fish; do
+for dir in hypr  illogical-impulse kitty fish; do
     if [ -e "$HOME/.config/$dir" ]; then
         mv "$HOME/.config/$dir" "$BACKUP/$dir"
         echo "Backup: ~/.config/$dir -> $BACKUP/$dir"
@@ -324,4 +324,9 @@ fi
 # XlllOS AUR Heroic Games Launcher install
 if command -v paru >/dev/null 2>&1; then
     paru -S --needed --noconfirm heroic-games-launcher-bin || true
+fi
+
+# XlllOS AUR Illogical Impulse Quickshell install
+if command -v paru >/dev/null 2>&1; then
+    paru -S --needed --noconfirm illogical-impulse-quickshell-git || true
 fi
