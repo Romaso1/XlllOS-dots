@@ -1399,6 +1399,69 @@ monitor = DP-1, 3440x1440@180, 0x0, 1
 hyprctl reload
 ```
 
+### Как поставить свой личный монитор локально
+
+В репозитории по умолчанию стоит универсальный вариант:
+
+```ini
+monitor=,preferred,auto,1
+```
+
+Это сделано специально, чтобы сборка нормально запускалась на разных ПК и мониторах.
+
+Если нужно поставить свой монитор, например `DP-1`, `3440x1440`, `180 Hz`, делай это **локально после установки**. Эти изменения не нужно пушить в GitHub:
+
+```fish
+mkdir -p ~/.config/hypr/custom
+
+printf '%s\n' \
+'# My personal monitor config' \
+'monitor=DP-1,3440x1440@180,0x0,1' \
+> ~/.config/hypr/custom/monitors.conf
+
+printf '%s\n' \
+'# My personal monitor config' \
+'monitor=DP-1,3440x1440@180,0x0,1' \
+> ~/.config/hypr/monitors.conf
+
+hyprctl reload
+
+echo "=== Local monitor configs ==="
+cat ~/.config/hypr/custom/monitors.conf
+echo
+cat ~/.config/hypr/monitors.conf
+echo
+hyprctl monitors
+```
+
+Пояснение:
+
+```text
+~/.config/hypr/custom/monitors.conf - личная настройка монитора
+~/.config/hypr/monitors.conf        - локальный monitor config
+~/XlllOS-dots/...                   - репозиторий, туда личный DP-1 лучше не пушить
+```
+
+Для другого монитора поменяй строку:
+
+```ini
+monitor=DP-1,3440x1440@180,0x0,1
+```
+
+Например:
+
+```ini
+monitor=HDMI-A-1,1920x1080@144,0x0,1
+```
+
+Посмотреть имя монитора:
+
+```fish
+hyprctl monitors
+```
+
+
+
 ## Бинды после установки
 
 Открыть cheatsheet:
