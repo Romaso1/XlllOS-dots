@@ -114,8 +114,8 @@ lsscsi
 lutris
 lvm2
 man-db
-mangohud
 man-pages
+mangohud
 mdadm
 meld
 mesa-utils

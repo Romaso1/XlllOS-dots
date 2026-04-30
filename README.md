@@ -6,7 +6,7 @@
 
 Моя настройка CachyOS Hyprland.
 
-Это не отдельный Linux-дистрибутив, а набор dotfiles + установочный скрипт для установки моего Hyprland-окружения, Quickshell/Illogical Impulse, терминала, fish shell, игровых пакетов и performance-настроек.
+Это не отдельный Linux-дистрибутив, а набор dotfiles + установочный скрипт для установки моего Hyprland-окружения, Quickshell / Illogical Impulse, терминала, fish shell, игровых пакетов и performance-настроек.
 
 ## Быстрая установка одной командой
 
@@ -54,7 +54,7 @@ bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d 
 - NVIDIA или AMD GPU setup отдельным скриптом
 - Firefox frame_rate 180
 - Desktop widgets с задержкой запуска 8 секунд
-- Monitor config в ~/.config/hypr/custom/monitors.conf
+- Monitor config в `~/.config/hypr/custom/monitors.conf`
 
 ## Pacman-пакеты
 
@@ -178,8 +178,8 @@ lsscsi
 lutris
 lvm2
 man-db
-mangohud
 man-pages
+mangohud
 mdadm
 meld
 mesa-utils
@@ -322,6 +322,8 @@ hyprctl reload
 ```text
 Super + /
 ```
+
+Основные бинды:
 
 | Бинд | Действие |
 |---|---|

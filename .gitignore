@@ -1,42 +1,17 @@
-# Trash
+# Private data
+.ssh/
+.gnupg/
+.mozilla/
+.steam/
+.local/share/Steam/
+.cache/
+*.log
+*.bak
+*.tmp
+*.old
+
+# OS/editor trash
 .DS_Store
 Thumbs.db
-
-# Backups
-*.bak
-*.old
-*.backup
-*~
-
-# Caches
-.cache/
-__pycache__/
-*.pyc
-node_modules/
-
-# Logs
-*.log
-
-# Secrets / tokens
-*.key
-*.pem
-*.p12
-*.crt
-*.token
-.env
-.env.*
-id_rsa
-id_ed25519
-known_hosts
-
-# Browser/user private data
-home/.mozilla/
-home/.config/google-chrome/
-home/.config/chromium/
-home/.config/discord/
-home/.config/vesktop/
-home/.config/Steam/
-home/.steam/
-
-# Git internals from copied folders
-**/.git/
+*.swp
+*.swo
