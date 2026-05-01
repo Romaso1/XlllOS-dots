@@ -1,0 +1,2 @@
+WINEDLLOVERRIDES="winmm,version,dxgi,dbghelp,d3d12,nsapi=n,b" PROTON_ENABLE_NVAPI=1 DXVK_ENABLE_NVAPI=1 gamemoderun %command%
+LSFG_PROCESS=3x

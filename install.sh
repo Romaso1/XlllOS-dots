@@ -88,6 +88,18 @@ if [ -d "$REPO_DIR/home/.local" ]; then
     rsync -a "$REPO_DIR/home/.local/" "$HOME/.local/"
 fi
 
+
+echo "[4.5/11] Copying command.txt..."
+
+if [ -f "$REPO_DIR/home/command.txt" ]; then
+
+ mkdir -p "$HOME"
+ cp -f "$REPO_DIR/home/command.txt" "$HOME/command.txt"
+ chmod 644 "$HOME/command.txt" 2>/dev/null || true
+ echo "Installed: ~/command.txt"
+
+fi
+
 echo "[5/11] Fixing user-specific paths..."
 python3 - <<'PYUSERPATH'
 import json
