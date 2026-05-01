@@ -224,3 +224,4 @@ xorg-xwininfo
 yay
 yazi
  lsfg-vk
+lsfg-vk
