@@ -1518,6 +1518,46 @@ pgrep -f "$HOME/PortProton|/usr/bin/portproton|yad_gui_pp" | xargs -r kill -9
 
 Или просто сделайте перезагрузку системы.
 
+## CachyOS Gaming Packages
+
+Для gaming-установки репозиторий ставит официальные CachyOS meta-пакеты:
+
+```text
+cachyos-gaming-meta
+cachyos-gaming-applications
+```
+
+Они подтягивают основные библиотеки, зависимости и приложения для игр на CachyOS.
+
+Дополнительно в списке установки есть частые игровые инструменты:
+
+```text
+Steam
+Steam Native Runtime
+Steam Devices
+GameMode
+MangoHud
+GOverlay
+Gamescope
+ProtonUp-Qt
+Protontricks
+Winetricks
+Lutris
+Bottles
+UMU Launcher
+Wine
+Wine Mono
+Wine Gecko
+vkBasalt
+Vulkan tools
+SDL2/SDL3
+PortProton
+game-devices-udev
+```
+
+Если какой-то пакет отсутствует в подключённых репозиториях, установочный скрипт пропустит его и продолжит установку.
+
+
 ## Game Launch Options
 
 Открыть в Steam:

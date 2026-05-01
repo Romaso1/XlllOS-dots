@@ -1,7 +1,7 @@
 asciiquarium-transparent-git
 cbonsai
 cloudflare-warp-bin
-heroic-games-launcher-bin
+game-devices-udev
 illogical-impulse-basic
 illogical-impulse-bibata-modern-classic-bin
 illogical-impulse-fonts-themes
