@@ -214,8 +214,10 @@ winetricks
 wireplumber
 wofi
 wpa_supplicant
+xdotool
 xfsprogs
 xl2tpd
 xorg-xwayland
+xorg-xwininfo
 yay
 yazi
