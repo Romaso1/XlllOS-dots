@@ -11,5 +11,6 @@ illogical-impulse-toolkit
 peaclock
 pipes.sh
 portproton
+protonplus
 tty-clock
 upscayl-bin
