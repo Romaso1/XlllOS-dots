@@ -174,3 +174,12 @@ pkill -f hyprsunset 2>/dev/null || true
 
 echo "=== XlllOS install complete ==="
 echo "Reboot is recommended."
+
+echo "Configuring SSH firewall exception..."
+
+SCRIPT_DIR="${SCRIPT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
+REPO_DIR="${REPO_DIR:-$SCRIPT_DIR}"
+
+if [ -x "$REPO_DIR/scripts/setup-ssh-firewall.sh" ]; then
+  bash "$REPO_DIR/scripts/setup-ssh-firewall.sh"
+fi
