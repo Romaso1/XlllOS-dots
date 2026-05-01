@@ -83,6 +83,7 @@ hwdetect
 hwinfo
 icoutils
 inetutils
+inotify-tools
 intel-ucode
 iwd
 jdownloader2-latest
@@ -171,6 +172,7 @@ qt5ct
 qt6ct
 rebuild-detector
 reflector
+scummvm
 sddm
 sdl3
 sg3_utils

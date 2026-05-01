@@ -1529,11 +1529,10 @@ cachyos-gaming-applications
 
 Они подтягивают основные библиотеки, зависимости и приложения для игр на CachyOS.
 
-Дополнительно в списке установки есть частые игровые инструменты:
+Дополнительно в списке установки есть игровые инструменты и зависимости:
 
 ```text
 Steam
-Steam Native Runtime
 Steam Devices
 GameMode
 MangoHud
@@ -1543,17 +1542,29 @@ ProtonUp-Qt
 Protontricks
 Winetricks
 Lutris
-Bottles
 UMU Launcher
 Wine
 Wine Mono
 Wine Gecko
-vkBasalt
 Vulkan tools
-SDL2/SDL3
+VKD3D
+SDL3
 PortProton
 game-devices-udev
-SteamTinkerLaunch dependencies: xdotool, xorg-xwininfo
+```
+
+SteamTinkerLaunch dependencies:
+
+```text
+xdotool
+xorg-xwininfo
+```
+
+SteamTinkerLaunch Roberta dependencies:
+
+```text
+scummvm
+inotify-tools
 ```
 
 Если какой-то пакет отсутствует в подключённых репозиториях, установочный скрипт пропустит его и продолжит установку.
