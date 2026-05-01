@@ -223,3 +223,4 @@ xorg-xwayland
 xorg-xwininfo
 yay
 yazi
+ lsfg-vk
