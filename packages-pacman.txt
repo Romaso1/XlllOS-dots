@@ -147,6 +147,7 @@ plymouth
 poppler-glib
 power-profiles-daemon
 protontricks
+protonup-qt
 proton-vpn-daemon
 proton-vpn-gtk-app
 pv
