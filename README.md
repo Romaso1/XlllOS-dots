@@ -1553,7 +1553,6 @@ Vulkan tools
 SDL2/SDL3
 PortProton
 game-devices-udev
-SteamTinkerLaunch dependencies: xdotool, xorg-xwininfo
 ```
 
 Если какой-то пакет отсутствует в подключённых репозиториях, установочный скрипт пропустит его и продолжит установку.
