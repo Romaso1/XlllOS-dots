@@ -1,10 +1,19 @@
+=== date ===
+субота, 2 травня 2026 22:59:24 +0300
+
 === Steam compatibilitytools.d ===
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/bin
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/include
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/include/wine
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/lib
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/lib32
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/lib32/wine
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/lib/wine
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/applications
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/man
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/wine
 
 === Bottles runners ===
 /home/xiii/.local/share/bottles/runners/caffe-9.7
@@ -60,15 +69,19 @@
 /home/xiii/PortProton/data/vkBasalt.conf
 
 === Wine/Proton tools in PATH ===
-wine             /usr/bin/wine
-winetricks       /usr/bin/winetricks
-protontricks     /usr/bin/protontricks
-protonup-qt      /usr/bin/protonup-qt
-protonplus       /usr/bin/protonplus
-portproton       /usr/bin/portproton
-gamemoderun      /usr/bin/gamemoderun
-mangohud         /usr/bin/mangohud
-goverlay         /usr/bin/goverlay
-bottles          /usr/bin/bottles
-steam            /usr/bin/steam
-steam-native     not found
+steam              /usr/bin/steam
+steam-native       not found
+game-performance   /usr/bin/game-performance
+gamemoderun        /usr/bin/gamemoderun
+mangohud           /usr/bin/mangohud
+goverlay           /usr/bin/goverlay
+gamescope          /usr/bin/gamescope
+lutris             /usr/bin/lutris
+heroic             /usr/bin/heroic
+bottles            /usr/bin/bottles
+wine               /usr/bin/wine
+winetricks         /usr/bin/winetricks
+protontricks       /usr/bin/protontricks
+protonup-qt        /usr/bin/protonup-qt
+protonplus         /usr/bin/protonplus
+portproton         /usr/bin/portproton

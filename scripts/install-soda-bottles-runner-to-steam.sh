@@ -72,7 +72,7 @@ case "$verb" in
     shift || true
     ;;
   getcompatpath)
-    echo "${STEAM_COMPAT_DATA_PATH:-$HOME/.steam/steam/steamapps/compatdata/soda-bottles}"
+    echo "${STEAM_COMPAT_DATA_PATH:-$HOME/.steam/steam/steamapps/compatdata/soda-bottles}/pfx"
     exit 0
     ;;
   getnativepath)

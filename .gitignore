@@ -39,7 +39,6 @@ auth.json
 cookies
 cookies.sqlite
 wallet.dat
-
 # Logs/backups/temp
 *.log
 *.bak
@@ -48,28 +47,26 @@ wallet.dat
 *~
 *.old
 *.orig
-
 # OS/editor files
 .DS_Store
 Thumbs.db
 .directory
-
 # Python
 __pycache__/
 *.pyc
 # XlllOS private/sensitive Quickshell helpers
-
 # Secrets / credentials
 service-account*.json
 client_secret*.json
 home/.local/share/keyrings/
 home/.gnupg/
 home/.ssh/
-
 home/.config/hypr/hyprland.conf.backup-*
-
 # Local private cloud/token files
 home/.config/quickshell/ii/services/gCloud/
 dotfiles/.config/quickshell/ii/services/gCloud/
 **/token_from_key.py
 **/token-from-key-venv.sh
+# XlllOS local backups/private files
+*.backup-*
+*.bak-private
