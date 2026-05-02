@@ -42,15 +42,17 @@ if command -v flatpak >/dev/null 2>&1; then
   fi
 
   if flatpak info com.usebottles.bottles >/dev/null 2>&1; then
+    flatpak override --user --reset com.usebottles.bottles || true
+
     flatpak override --user com.usebottles.bottles \
+      --share=network \
+      --talk-name=org.freedesktop.portal.Desktop \
       --filesystem=xdg-download \
       --filesystem=xdg-documents \
       --filesystem=xdg-desktop \
-      --filesystem=xdg-data/applications:create \
       --filesystem=/mnt \
       --filesystem=/run/media \
-      --filesystem=$HOME/Games:create \
-      --filesystem=$HOME/Downloads:create || true
+      --filesystem=$HOME/Games:create || true
   fi
 else
   echo "Flatpak still not available. Flatpak apps skipped."
