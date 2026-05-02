@@ -16,3 +16,17 @@ bash scripts/install-from-current-system-snapshot.sh
 ```
 
 Important: this repo intentionally does not copy browser profiles, passwords, SSH keys, keyrings, Steam game prefixes, Wine prefixes or full home directory.
+
+## Bottles DWProton
+
+The restore helper automatically downloads and installs `dwproton-10.0-26` into:
+
+```bash
+~/.local/share/bottles/runners/
+```
+
+Override version if needed:
+
+```bash
+DWPROTON_VERSION="10.0-26" bash scripts/install-from-current-system-snapshot.sh
+```
