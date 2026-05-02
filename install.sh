@@ -14,7 +14,6 @@ echo "[1/11] Updating system..."
 sudo pacman -Syu --noconfirm
 
 echo "[1.5/11] Enabling multilib and installing Linux Steam..."
-bash "$REPO_DIR/scripts/install-steam.sh"
 
 echo "[2/11] Installing base packages..."
 sudo pacman -S --needed --noconfirm \

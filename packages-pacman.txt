@@ -185,7 +185,6 @@ s-nail
 snapper
 sof-firmware
 spotify-launcher
-steam
 sudo
 sysfsutils
 telegram-desktop
