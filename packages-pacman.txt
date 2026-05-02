@@ -18,8 +18,8 @@ bluez-utils
 btop
 btrfs-assistant
 btrfs-progs
-cachy-update
 cachyos-fish-config
+cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -37,6 +37,7 @@ cachyos-v3-mirrorlist
 cachyos-v4-mirrorlist
 cachyos-wallpapers
 cachyos-zsh-config
+cachy-update
 cantarell-fonts
 chafa
 chwd
@@ -125,8 +126,8 @@ lsscsi
 lutris
 lvm2
 man-db
-man-pages
 mangohud
+man-pages
 mdadm
 meld
 mesa-utils
@@ -162,10 +163,10 @@ poppler-glib
 power-profiles-daemon
 profile-sync-daemon
 proton-cachyos
-proton-vpn-gtk-app
 protonplus
 protontricks
 protonup-qt
+proton-vpn-gtk-app
 pv
 python
 python-defusedxml
@@ -175,12 +176,12 @@ qt5ct
 qt6ct
 rebuild-detector
 reflector
-s-nail
 scummvm
 sddm
 sg3_utils
 shelly
 smartmontools
+s-nail
 snapper
 sof-firmware
 spotify-launcher
