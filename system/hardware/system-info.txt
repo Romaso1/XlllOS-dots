@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 23:06:13 +0300
+субота, 2 травня 2026 23:15:28 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -23,7 +23,7 @@ LOGO=cachyos
        Icon name: computer-desktop
          Chassis: desktop 🖥️
       Machine ID: da6bdcff9639441180f7d3280ab30b7c
-         Boot ID: 06e656df62534a269996f86ed49e1259
+         Boot ID: 62bfa0ab7c134a0d91dfc78f56a8e763
 Operating System: CachyOS
           Kernel: Linux 7.0.3-1-cachyos
     Architecture: x86-64
@@ -98,7 +98,7 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 3 (3)
+	active workspace: 2 (2)
 	special workspace: 0 ()
 	reserved: 0 40 0 0
 	scale: 1.00
@@ -130,13 +130,13 @@ sda
 ├─sda1                                                                             
 └─sda2      ntfs               3ECC3871CC382615                                    
 sr0                                                                                
-zram0       swap   1     zram0 7e1ea66a-635a-4bf8-b1d4-e41cb7dec39d                [SWAP]
+zram0       swap   1     zram0 89187dfe-a1e4-4700-a974-770b39eaa141                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  848,3G    11% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  848,1G    11% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
-                                                                                   /root
                                                                                    /srv
+                                                                                   /root
                                                                                    /

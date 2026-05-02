@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 23:09:24 +0300
+субота, 2 травня 2026 23:15:28 +0300
 
 === Steam compatibilitytools.d ===
 /home/xiii/.steam/root/compatibilitytools.d/dwproton-10.0-26
@@ -35,38 +35,12 @@
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/man
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/wine
 
-=== Managed Steam tools ===
-итого 272K
-drwxr-xr-x 1 xiii xiii  330 кві 27 03:02 .
-drwxr-xr-x 1 xiii xiii   68 тра  2 23:09 ..
--rw-r--r-- 1 xiii xiii  210 тра  2 23:09 compatibilitytool.vdf
--rw-r--r-- 1 xiii xiii  13K кві 27 02:08 filelock.py
-drwxr-xr-x 1 xiii xiii   40 кві 27 02:51 files
--rw-r--r-- 1 xiii xiii  20K кві 27 02:08 LICENSE
--rw-r--r-- 1 xiii xiii 4,4K кві 27 02:11 LICENSE.OFL
--rw-r--r-- 1 xiii xiii 5,6K кві 27 02:10 PATENTS.AV1
--rwxr-xr-x 1 xiii xiii 108K кві 27 02:08 proton
--rw-r--r-- 1 xiii xiii  89K кві 27 02:08 proton_3.7_tracked_files
-drwxr-xr-x 1 xiii xiii  716 кві 27 02:21 protonfixes
--rw-r--r-- 1 xiii xiii  156 кві 27 02:08 toolmanifest.vdf
--rwxr-xr-x 1 xiii xiii 1,6K кві 27 02:08 user_settings.sample.py
--rw-r--r-- 1 xiii xiii  649 кві 27 02:08 utilities.py
--rw-r--r-- 1 xiii xiii   28 кві 27 03:02 version
+=== Bottles runners ===
 
-итого 8,0K
-drwxr-xr-x 1 xiii xiii 100 тра  2 22:59 .
-drwxr-xr-x 1 xiii xiii  68 тра  2 23:09 ..
-drwxr-xr-x 1 xiii xiii 504 кві 29  2024 bin
--rw-r--r-- 1 xiii xiii 214 тра  2 23:09 compatibilitytool.vdf
-drwxr-xr-x 1 xiii xiii   8 кві 29  2024 include
-drwxr-xr-x 1 xiii xiii   8 кві 29  2024 lib
-drwxr-xr-x 1 xiii xiii   8 кві 29  2024 lib32
--rwxr-xr-x 1 xiii xiii 690 тра  2 22:59 proton
-drwxr-xr-x 1 xiii xiii  38 кві 29  2024 share
-
-=== Bottles status ===
-bottles not found
-pacman bottles not installed
+=== PortProton files ===
+/home/xiii/PortProton/data/dxvk.conf
+/home/xiii/PortProton/data/user.conf
+/home/xiii/PortProton/data/vkBasalt.conf
 
 === Wine/Proton tools in PATH ===
 steam              /usr/bin/steam
@@ -78,6 +52,7 @@ goverlay           /usr/bin/goverlay
 gamescope          /usr/bin/gamescope
 lutris             /usr/bin/lutris
 heroic             /usr/bin/heroic
+bottles            not found
 wine               /usr/bin/wine
 winetricks         /usr/bin/winetricks
 protontricks       /usr/bin/protontricks
