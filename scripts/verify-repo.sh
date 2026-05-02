@@ -3,7 +3,6 @@ set -euo pipefail
 
 echo "=== Local syntax verification ==="
 bash -n install.sh
-bash -n scripts/install-steam.sh
 bash -n scripts/gpu-nvidia.sh
 bash -n scripts/gpu-amd.sh
 
@@ -13,7 +12,6 @@ python3 - <<'PY'
 from pathlib import Path
 minimums = {
     "install.sh": 120,
-    "scripts/install-steam.sh": 18,
     "scripts/gpu-nvidia.sh": 25,
     "scripts/gpu-amd.sh": 25,
     "README.md": 100,
