@@ -60,15 +60,9 @@ __pycache__/
 # XlllOS private/sensitive Quickshell helpers
 
 # Secrets / credentials
-.env
-*.pem
-*.key
-*.p12
-id_rsa
-id_ed25519
-credentials.json
 service-account*.json
 client_secret*.json
 home/.local/share/keyrings/
 home/.gnupg/
 home/.ssh/
+

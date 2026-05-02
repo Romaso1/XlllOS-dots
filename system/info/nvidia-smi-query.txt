@@ -1,7 +1,7 @@
 
 ==============NVSMI LOG==============
 
-Timestamp                                              : Sat May  2 17:58:04 2026
+Timestamp                                              : Sat May  2 18:31:48 2026
 Driver Version                                         : 595.71.05
 CUDA Version                                           : 13.2
 
@@ -73,8 +73,8 @@ GPU 00000000:01:00.0
         GPU Link Info
             PCIe Generation
                 Max                                    : 3
-                Current                                : 2
-                Device Current                         : 2
+                Current                                : 1
+                Device Current                         : 1
                 Device Max                             : 4
                 Host Max                               : 3
             Link Width
@@ -85,8 +85,8 @@ GPU 00000000:01:00.0
             Firmware                                   : N/A
         Replays Since Reset                            : 0
         Replay Number Rollovers                        : 0
-        Tx Throughput                                  : 2099 KB/s
-        Rx Throughput                                  : 6982 KB/s
+        Tx Throughput                                  : 5371 KB/s
+        Rx Throughput                                  : 7910 KB/s
         Atomic Caps Outbound                           : N/A
         Atomic Caps Inbound                            : N/A
     Fan Speed                                          : 0 %
@@ -102,7 +102,7 @@ GPU 00000000:01:00.0
         SW Thermal Slowdown                            : Not Active
         Display Clock Setting                          : Not Active
     Clocks Event Reasons Counters
-        SW Power Capping                               : 117322851 us
+        SW Power Capping                               : 573023410 us
         Sync Boost                                     : 0 us
         SW Thermal Slowdown                            : 0 us
         HW Thermal Slowdown                            : 0 us
@@ -111,8 +111,8 @@ GPU 00000000:01:00.0
     FB Memory Usage
         Total                                          : 8192 MiB
         Reserved                                       : 373 MiB
-        Used                                           : 1078 MiB
-        Free                                           : 6742 MiB
+        Used                                           : 1108 MiB
+        Free                                           : 6713 MiB
     BAR1 Memory Usage
         Total                                          : 256 MiB
         Used                                           : 50 MiB
@@ -123,8 +123,8 @@ GPU 00000000:01:00.0
         Free                                           : 0 MiB
     Compute Mode                                       : Default
     Utilization
-        GPU                                            : 26 %
-        Memory                                         : 31 %
+        GPU                                            : 21 %
+        Memory                                         : 27 %
         Encoder                                        : 0 %
         Decoder                                        : 0 %
         JPEG                                           : 0 %
@@ -172,7 +172,7 @@ GPU 00000000:01:00.0
         Pending Page Blacklist                         : N/A
     Remapped Rows                                      : N/A
     Temperature
-        GPU Current Temp                               : 45 C
+        GPU Current Temp                               : 52 C
         GPU T.Limit Temp                               : N/A
         GPU Shutdown Temp                              : 98 C
         GPU Slowdown Temp                              : 95 C
@@ -181,8 +181,8 @@ GPU 00000000:01:00.0
         Memory Current Temp                            : N/A
         Memory Max Operating Temp                      : N/A
     GPU Power Readings
-        Average Power Draw                             : 24.17 W
-        Instantaneous Power Draw                       : 25.46 W
+        Average Power Draw                             : 24.50 W
+        Instantaneous Power Draw                       : 24.71 W
         Current Power Limit                            : 280.00 W
         Requested Power Limit                          : 280.00 W
         Default Power Limit                            : 280.00 W
@@ -205,8 +205,8 @@ GPU 00000000:01:00.0
         Enforced Profiles                              : N/A
     EDPp Multiplier                                    : N/A
     Clocks
-        Graphics                                       : 420 MHz
-        SM                                             : 420 MHz
+        Graphics                                       : 285 MHz
+        SM                                             : 285 MHz
         Memory                                         : 405 MHz
         Video                                          : 555 MHz
     Applications Clocks
@@ -243,70 +243,70 @@ GPU 00000000:01:00.0
     Processes
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 1456
+        Process ID                        : 1454
             Type                          : G
             Name                          : /usr/lib/Xorg
             Used GPU Memory               : 26 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 1525
+        Process ID                        : 1548
             Type                          : G
             Name                          : Hyprland
             Used GPU Memory               : 127 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 1558
+        Process ID                        : 1581
             Type                          : G
             Name                          : qs
-            Used GPU Memory               : 130 MiB
+            Used GPU Memory               : 127 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 1593
+        Process ID                        : 1617
             Type                          : G
             Name                          : Xwayland
             Used GPU Memory               : 3 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 1661
+        Process ID                        : 1683
             Type                          : G
             Name                          : /usr/lib/xdg-desktop-portal-kde
             Used GPU Memory               : 3 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2008
+        Process ID                        : 2039
             Type                          : G
             Name                          : kitty
             Used GPU Memory               : 55 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2067
+        Process ID                        : 2098
             Type                          : G
             Name                          : kitty
-            Used GPU Memory               : 37 MiB
+            Used GPU Memory               : 43 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2113
+        Process ID                        : 2147
             Type                          : G
             Name                          : kitty
             Used GPU Memory               : 103 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2174
+        Process ID                        : 2209
             Type                          : G
             Name                          : kitty
             Used GPU Memory               : 49 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2293
+        Process ID                        : 2354
             Type                          : G
             Name                          : /usr/lib/firefox/firefox
-            Used GPU Memory               : 215 MiB
+            Used GPU Memory               : 247 MiB
         GPU instance ID                   : N/A
         Compute instance ID               : N/A
-        Process ID                        : 2967
+        Process ID                        : 3962
             Type                          : G
             Name                          : kitty
-            Used GPU Memory               : 45 MiB
+            Used GPU Memory               : 47 MiB
     Capabilities
         EGM                                            : disabled
 

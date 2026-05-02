@@ -3,13 +3,13 @@ sda
 ├─sda1                                                                             
 └─sda2      ntfs               3ECC3871CC382615                                    
 sr0                                                                                
-zram0       swap   1     zram0 8f755be2-f0a7-4f80-9e54-896618c1044f                [SWAP]
+zram0       swap   1     zram0 1a41ca6a-3af4-401f-b942-337a15c9ef0e                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  820,7G    14% /var/log
-                                                                                   /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  821,4G    13% /var/tmp
+                                                                                   /var/log
                                                                                    /var/cache
-                                                                                   /home
                                                                                    /root
+                                                                                   /home
                                                                                    /srv
                                                                                    /
