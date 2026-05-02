@@ -1,7 +1,5 @@
 # Flatpak Bottles DWProton runner
 
-Updated: 2026-05-02_23-57-44
-
 Bottles is installed as Flatpak:
 
 ```bash

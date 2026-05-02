@@ -28,13 +28,18 @@ Backup created before native Bottles deletion:
 /home/xiii/XlllOS-bottles-aur-to-flatpak-backup-2026-05-02_23-46-22
 ```
 
+
 ## Flatpak Bottles DWProton
 
 The restore helper automatically installs DWProton for Flatpak Bottles:
 
-
+```bash
+bash scripts/install-dwproton-flatpak-bottles.sh
+```
 
 Target:
 
-
+```bash
+~/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
+```
 
