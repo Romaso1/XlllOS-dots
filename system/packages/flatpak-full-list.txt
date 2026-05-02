@@ -1,4 +1,5 @@
 Hytale Launcher	com.hypixel.HytaleLauncher		master	hytalelauncher-origin	system
+Bottles	com.usebottles.bottles	63.2	stable	flathub	system
 i386	org.freedesktop.Platform.Compat.i386		25.08	flathub	system
 Mesa	org.freedesktop.Platform.GL.default	26.0.5	25.08	flathub	system
 Mesa (Extra)	org.freedesktop.Platform.GL.default	26.0.5	25.08-extra	flathub	system

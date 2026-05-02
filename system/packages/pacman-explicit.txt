@@ -21,8 +21,6 @@ btrfs-assistant
 btrfs-progs
 cachy-update
 cachyos-fish-config
-cachyos-gaming-applications
-cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
 cachyos-kernel-manager
@@ -56,7 +54,6 @@ dmraid
 dnsmasq
 dosfstools
 duf
-dwproton-bin
 e2fsprogs
 efibootmgr
 efitools
@@ -73,18 +70,14 @@ firefox-i18n-ru
 flatpak
 fsarchiver
 game-devices-udev
-gamemode
-gamescope
 git
 glances
 glow
-goverlay
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-ugly
 hdparm
-heroic-games-launcher
 hwdetect
 hwinfo
 icoutils
@@ -113,9 +106,7 @@ kdegraphics-thumbnailers
 konsole
 kvantum
 less
-lib32-gamemode
 lib32-libpulse
-lib32-mangohud
 lib32-nvidia-utils
 lib32-opencl-icd-loader
 lib32-opencl-nvidia
@@ -142,11 +133,9 @@ logrotate
 lsb-release
 lsfg-vk
 lsscsi
-lutris
 lvm2
 man-db
 man-pages
-mangohud
 mdadm
 meld
 mesa-utils
@@ -182,15 +171,9 @@ plasma-browser-integration
 plocate
 plymouth
 poppler-glib
-portproton
 power-profiles-daemon
 profile-sync-daemon
-proton-cachyos
-proton-cachyos-slr
 proton-vpn-gtk-app
-protonplus
-protontricks
-protonup-qt
 pv
 python
 python-defusedxml
@@ -209,7 +192,6 @@ smartmontools
 snapper
 sof-firmware
 spotify-launcher
-steam
 sudo
 sysfsutils
 telegram-desktop
@@ -224,7 +206,6 @@ ttf-opensans
 tty-clock
 ufw
 ufw-extras
-umu-launcher
 unrar
 unzip
 upscayl-bin
@@ -238,7 +219,6 @@ vlc-plugins-all
 vulkan-icd-loader
 vulkan-tools
 which
-wine-cachyos-opt
 wine-gecko
 wine-mono
 winetricks

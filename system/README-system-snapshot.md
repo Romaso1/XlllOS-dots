@@ -1,16 +1,15 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-03_01-35-29
+Updated: 2026-05-03_02-19-11
 
 Current setup:
 
-- Bottles completely removed
-- Flatpak Bottles removed
-- Native/AUR Bottles removed
-- Bottles data and launcher leftovers cleaned
-- CachyOS gaming meta/applications installed
-- Steam and gaming tools restored
-- DWProton/Bottles automation removed from repo
+- CachyOS gaming applications/meta removed
+- Steam removed and Steam leftovers cleaned
+- Steam/Protontricks/DWProton-for-Steam automation removed
+- Flatpak Bottles installed
+- DWProton installed automatically into Flatpak Bottles
+- Restore helper installs Flatpak Bottles and DWProton for Bottles
 
 Restore:
 
@@ -18,28 +17,20 @@ Restore:
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-Backup created before Bottles removal:
+Run Bottles:
 
 ```bash
-/home/xiii/XlllOS-bottles-removal-backup-2026-05-03_01-35-29
+flatpak run com.usebottles.bottles
 ```
 
-
-## Steam default dependencies for Bottles-like mods and NVIDIA
-
-Steam/Proton uses a separate prefix for every game, so libraries cannot be installed once globally.
-
-This repo uses a user systemd timer to make it behave like default automation:
-
-```text
-xlllos-steam-default-deps-bottles-nvidia.timer
-```
-
-The helper installs common Bottles-like libraries and NVIDIA/NVAPI tweaks into every existing/new Steam prefix:
+DWProton target for Bottles:
 
 ```bash
-bash scripts/install-steam-default-deps-bottles-nvidia.sh
+~/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
 ```
 
-ProtonPlus is used for managing Proton runners. Protontricks installs Windows dependencies inside game prefixes.
+Backup created before Steam/gaming cleanup:
 
+```bash
+/home/xiii/XlllOS-gaming-steam-removal-backup-2026-05-03_02-19-11
+```

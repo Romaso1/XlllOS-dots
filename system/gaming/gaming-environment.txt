@@ -1,26 +1,79 @@
 === date ===
-неділя, 3 травня 2026 02:05:49 +0300
+неділя, 3 травня 2026 02:20:04 +0300
 
-=== ProtonPlus ===
-/usr/bin/protonplus
-protonplus 0.5.20-1
+=== Removed gaming packages status ===
+cachyos-gaming-applications not installed
+cachyos-gaming-meta not installed
+steam not installed
+steam-native-runtime not installed
+steamcmd not installed
+steam-devices not installed
+lutris not installed
+heroic-games-launcher not installed
+gamescope not installed
+goverlay not installed
+mangohud not installed
+lib32-mangohud not installed
+gamemode not installed
+lib32-gamemode not installed
+protonup-qt not installed
+protontricks not installed
+protonplus not installed
+portproton not installed
+proton-cachyos not installed
+proton-cachyos-slr not installed
+umu-launcher not installed
+wine-cachyos-opt not installed
+dwproton-bin not installed
 
-=== Protontricks ===
-/usr/bin/protontricks
-protontricks 1.14.1-1
+=== Steam leftovers ===
+no Steam leftovers found
 
-=== Timer ===
-enabled
-active
+=== Flatpak Bottles ===
 
-=== Existing Steam Proton prefixes ===
-0
-0
-548430
-548430
+Bottles - Run Windows software
 
-=== Processed markers ===
+              ID: com.usebottles.bottles
+          Ссылка: app/com.usebottles.bottles/x86_64/stable
+     Архитектура: x86_64
+           Ветвь: stable
+          Версия: 63.2
+        Лицензия: GPL-3.0-only
+        Источник: flathub
+       Коллекция: org.flathub.Stable
+       Установка: system
+     Установлено: 502,7 МБ
+Среда выполнения: org.gnome.Platform/x86_64/49
+             Sdk: org.gnome.Sdk/x86_64/49
 
-=== Steam DWProton runners ===
-/home/xiii/.local/share/Steam/compatibilitytools.d/dwproton-10.0-26
-/home/xiii/.steam/root/compatibilitytools.d/dwproton-10.0-26
+          Коммит: c1e7e34e221bc5067ca1ff23139ebf31f26850661a5138b0dc5c78238fc34…
+        Родитель: c343343451b3fdae0f3524092037d59886b627dce3bb60221aeb7d1e6dc7f…
+       Заголовок: Merge pull request #530 from SteinGaming/master (d38947af4388)
+            Дата: 2026-04-05 07:36:53 +0000
+
+=== Flatpak Bottles permissions ===
+[Context]
+shared=network;
+filesystems=xdg-download;xdg-documents;xdg-desktop;/mnt;/run/media;/home/xiii/Games:create;
+
+[Session Bus Policy]
+org.freedesktop.portal.Desktop=talk
+
+=== Flatpak Bottles runners ===
+/home/xiii/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
+
+=== Tools in PATH ===
+steam              not found
+steam-native       not found
+lutris             not found
+heroic             not found
+gamescope          not found
+mangohud           not found
+goverlay           not found
+protontricks       not found
+protonplus         not found
+portproton         not found
+bottles            not found
+flatpak            /usr/bin/flatpak
+wine               /usr/bin/wine
+winetricks         /usr/bin/winetricks

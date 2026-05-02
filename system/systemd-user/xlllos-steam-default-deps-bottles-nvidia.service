@@ -1,6 +1,0 @@
-[Unit]
-Description=XlllOS install default Steam Protontricks deps for Bottles-like mods and NVIDIA
-
-[Service]
-Type=oneshot
-ExecStart=%h/XlllOS-dots/scripts/install-steam-default-deps-bottles-nvidia.sh

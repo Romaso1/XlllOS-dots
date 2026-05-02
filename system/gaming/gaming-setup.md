@@ -1,27 +1,12 @@
 # XlllOS gaming setup
 
-Current gaming stack is based on CachyOS gaming packages.
-
-Expected packages/tools include:
+Current gaming setup:
 
 ```text
-cachyos-gaming-meta
-cachyos-gaming-applications
-steam
-lutris
-heroic-games-launcher
-gamescope
-goverlay
-mangohud
-gamemode
-lib32-gamemode
-protonup-qt
-protontricks
-protonplus
-portproton
-umu-launcher
-proton-cachyos / proton-cachyos-slr when available
-wine-cachyos-opt when available
+Flatpak Bottles
+DWProton for Bottles
+No Steam
+No CachyOS gaming applications/meta
 ```
 
-Bottles is intentionally removed from this setup.
+Bottles is used instead of Steam for current modded games.

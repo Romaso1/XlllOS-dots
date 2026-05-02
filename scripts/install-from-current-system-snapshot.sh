@@ -19,7 +19,7 @@ echo
 echo "=== Installing Flatpak apps from snapshot ==="
 
 if ! command -v flatpak >/dev/null 2>&1 && command -v pacman >/dev/null 2>&1; then
-  sudo pacman -S --needed flatpak || true
+  sudo pacman -S --needed flatpak xdg-utils xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk || true
 fi
 
 if command -v flatpak >/dev/null 2>&1; then
@@ -30,6 +30,28 @@ if command -v flatpak >/dev/null 2>&1; then
       [ -n "$app" ] && flatpak install -y flathub "$app" || true
     done < "$REPO_DIR/system/packages/flatpak-apps.txt"
   fi
+
+  if flatpak info com.usebottles.bottles >/dev/null 2>&1; then
+    flatpak override --user --reset com.usebottles.bottles || true
+
+    flatpak override --user com.usebottles.bottles \
+      --share=network \
+      --talk-name=org.freedesktop.portal.Desktop \
+      --filesystem=xdg-download \
+      --filesystem=xdg-documents \
+      --filesystem=xdg-desktop \
+      --filesystem=/mnt \
+      --filesystem=/run/media \
+      --filesystem=$HOME/Games:create || true
+  fi
+fi
+
+echo
+echo "=== Installing DWProton for Flatpak Bottles ==="
+if [ -x "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" ]; then
+  bash "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" || echo "WARNING: DWProton Flatpak Bottles install failed; continuing."
+else
+  echo "WARNING: install-dwproton-flatpak-bottles.sh not found."
 fi
 
 echo
@@ -40,43 +62,3 @@ rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
 echo "Done. Reboot or relogin is recommended."
-
-
-
-echo
-echo "=== Installing DWProton into Steam ==="
-if [ -x "$REPO_DIR/scripts/install-steam-dwproton.sh" ]; then
-  bash "$REPO_DIR/scripts/install-steam-dwproton.sh" || echo "WARNING: Steam DWProton install failed; continuing."
-else
-  echo "WARNING: install-steam-dwproton.sh not found."
-fi
-
-
-# BEGIN XlllOS Steam default deps Bottles NVIDIA
-echo
-echo "=== Installing default Steam deps for Bottles-like mods and NVIDIA ==="
-
-if command -v pacman >/dev/null 2>&1; then
-  sudo pacman -S --needed protontricks winetricks protonplus || true
-fi
-
-mkdir -p "$HOME/.config/systemd/user"
-
-if [ -f "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.service" ]; then
-  cp -a "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.service" "$HOME/.config/systemd/user/"
-fi
-
-if [ -f "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.timer" ]; then
-  cp -a "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.timer" "$HOME/.config/systemd/user/"
-fi
-
-systemctl --user daemon-reload || true
-systemctl --user enable --now xlllos-steam-default-deps-bottles-nvidia.timer || true
-
-if [ -x "$REPO_DIR/scripts/install-steam-default-deps-bottles-nvidia.sh" ]; then
-  bash "$REPO_DIR/scripts/install-steam-default-deps-bottles-nvidia.sh" || echo "WARNING: default Steam dependency install failed; continuing."
-else
-  echo "WARNING: install-steam-default-deps-bottles-nvidia.sh not found."
-fi
-# END XlllOS Steam default deps Bottles NVIDIA
-
