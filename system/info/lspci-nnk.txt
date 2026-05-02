@@ -1,0 +1,71 @@
+00:00.0 Host bridge [0600]: Intel Corporation Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers [8086:591f] (rev 05)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: skl_uncore
+00:01.0 PCI bridge [0604]: Intel Corporation 6th-10th Gen Core Processor PCIe Controller (x16) [8086:1901] (rev 05)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:14.0 USB controller [0c03]: Intel Corporation 200 Series/Z370 Chipset Family USB 3.0 xHCI Controller [8086:a2af]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+00:16.0 Communication controller [0780]: Intel Corporation 200 Series PCH CSME HECI #1 [8086:a2ba]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+00:17.0 SATA controller [0106]: Intel Corporation 200 Series PCH SATA controller [AHCI mode] [8086:a282]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+00:1b.0 PCI bridge [0604]: Intel Corporation 200 Series PCH PCI Express Root Port #19 [8086:a2e9] (rev f0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:1c.0 PCI bridge [0604]: Intel Corporation 200 Series PCH PCI Express Root Port #3 [8086:a292] (rev f0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:1c.5 PCI bridge [0604]: Intel Corporation 200 Series PCH PCI Express Root Port #6 [8086:a295] (rev f0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:1c.7 PCI bridge [0604]: Intel Corporation 200 Series PCH PCI Express Root Port #8 [8086:a297] (rev f0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:1d.0 PCI bridge [0604]: Intel Corporation 200 Series PCH PCI Express Root Port #9 [8086:a298] (rev f0)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+00:1f.0 ISA bridge [0601]: Intel Corporation 200 Series PCH LPC Controller (H270) [8086:a2c4]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+00:1f.2 Memory controller [0580]: Intel Corporation 200 Series/Z370 Chipset Family Power Management Controller [8086:a2a1]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+00:1f.3 Audio device [0403]: Intel Corporation 200 Series PCH HD Audio [8086:a2f0]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:86d4]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_soc_avs, snd_hda_intel
+00:1f.4 SMBus [0c05]: Intel Corporation 200 Series/Z370 Chipset Family SMBus Controller [8086:a2a3]
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8694]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA104 [GeForce RTX 3070 Lite Hash Rate] [10de:2488] (rev a1)
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:3901]
+	Kernel driver in use: nvidia
+	Kernel modules: nouveau, nvidia_drm, nvidia
+01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
+	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:3901]
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+04:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. RTL8192EE PCIe Wireless Network Adapter [10ec:818b]
+	Subsystem: Realtek Semiconductor Co., Ltd. Device [10ec:8196]
+	Kernel driver in use: rtl8192ee
+	Kernel modules: rtl8192ee
+05:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 15)
+	Subsystem: ASUSTeK Computer Inc. Onboard RTL8111H Ethernet [1043:8677]
+	Kernel driver in use: r8169
+	Kernel modules: r8169
+06:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller 980 (DRAM-less) [144d:a809]
+	Subsystem: Samsung Electronics Co Ltd Device [144d:a801]
+	Kernel driver in use: nvme
+	Kernel modules: nvme

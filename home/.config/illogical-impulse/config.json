@@ -309,7 +309,7 @@
         "timeout": 1000
     },
     "osk": {
-        "layout": "Ukrainian",
+        "layout": "English",
         "pinnedOnStartup": false
     },
     "overlay": {

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=STEAM_PP
-Exec=env "/home/xiii/PortProton/data/scripts/start.sh" "/home/xiii/PortProton/data/prefixes/DEFAULT/drive_c/Program Files (x86)/Steam/steam.exe"
-Type=Application
-Categories=Game
-StartupNotify=true
-Path=/home/xiii/PortProton/data/scripts/
-Icon=/home/xiii/PortProton/data/img/STEAM_PP.png
