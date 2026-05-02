@@ -86,6 +86,7 @@ cabextract
 cachy-update
 cachyos-ananicy-rules
 cachyos-fish-config
+cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -176,6 +177,7 @@ egl-wayland2
 egl-x11
 eglexternalplatform
 electron39
+electron41
 elfutils
 ell
 enchant
@@ -255,6 +257,8 @@ glslang
 glu
 glycin
 gmp
+gnome-desktop
+gnome-desktop-common
 gnome-keyring
 gnulib-l10n
 gnupg
@@ -262,6 +266,7 @@ gnutls
 go-yq
 gobject-introspection
 gobject-introspection-runtime
+goverlay
 gperftools
 gpgme
 gpgmepp
@@ -302,6 +307,7 @@ gzip
 harfbuzz
 harfbuzz-icu
 hdparm
+heroic-games-launcher
 hicolor-icon-theme
 hidapi
 highway
@@ -971,6 +977,7 @@ lsscsi
 lua
 lua54
 luajit
+lutris
 lv2
 lvm2
 lz4
@@ -1162,6 +1169,7 @@ python-attrs
 python-autocommand
 python-bcc
 python-bcrypt
+python-beautifulsoup4
 python-cachetools
 python-cairo
 python-cbor2
@@ -1178,6 +1186,7 @@ python-dbus
 python-dbus-fast
 python-defusedxml
 python-distro
+python-evdev
 python-fido2
 python-fonttools
 python-frozenlist
@@ -1196,10 +1205,12 @@ python-jeepney
 python-jinja
 python-keyring
 python-kiwisolver
+python-lxml
 python-mako
 python-markdown
 python-markupsafe
 python-matplotlib
+python-moddb
 python-more-itertools
 python-multidict
 python-numpy
@@ -1235,6 +1246,7 @@ python-sentry_sdk
 python-setuptools
 python-shtab
 python-six
+python-soupsieve
 python-steam
 python-steamgriddb
 python-tqdm
@@ -1292,6 +1304,7 @@ qt6-webengine
 qt6-websockets
 qt6-webview
 qt6ct
+qt6pas
 raptor
 rasqal
 rate-mirrors
@@ -1370,6 +1383,8 @@ sqlite
 sratom
 srt
 starship
+steam
+steam-devices
 sudo
 svt-av1
 svt-hevc
@@ -1547,6 +1562,7 @@ wlogout
 woff2
 wofi
 wpa_supplicant
+wqy-zenhei
 wtype
 x264
 x265
