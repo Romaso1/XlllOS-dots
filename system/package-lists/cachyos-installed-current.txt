@@ -8,7 +8,6 @@ acl
 ada
 alacritty
 alsa-card-profiles
-alsa-firmware
 alsa-lib
 alsa-plugins
 alsa-utils
@@ -29,15 +28,11 @@ attr
 audit
 aurorae
 avahi
-awesome-terminal-fonts
 awww
 ayatana-ido
 baloo
 baloo-widgets
-base
-base-devel
 bash
-bash-completion
 bat
 bc
 bcc
@@ -58,7 +53,6 @@ breeze-icons
 brotli
 btop
 btrfs-assistant
-btrfs-progs
 bubblewrap
 bzip2
 cabextract
@@ -86,7 +80,6 @@ cachyos-zsh-config
 cachy-update
 cairo
 cairomm
-cantarell-fonts
 c-ares
 cava
 cblas
@@ -111,7 +104,6 @@ convertlit
 coreutils
 cppdap
 cpptrace
-cpupower
 cryptsetup
 curl
 cython
@@ -130,10 +122,8 @@ desktop-file-utils
 device-mapper
 diffutils
 ding-libs
-discord
 discount
 discover
-dmidecode
 dmraid
 dnsmasq
 dolphin
@@ -177,7 +167,6 @@ fftw
 file
 findutils
 firefox
-firefox-i18n-ru
 fish-autopair
 fish-pure-prompt
 flac
@@ -213,7 +202,6 @@ gettext
 ghostscript
 giflib
 git
-glances
 glew
 glfw
 glib2
@@ -247,10 +235,7 @@ gsm
 gspell
 gssdp
 gssproxy
-gst-libav
 gst-plugin-pipewire
-gst-plugins-bad
-gst-plugins-ugly
 gtest
 gtk3
 gtk4
@@ -272,7 +257,6 @@ hidapi
 highway
 htmlq
 hunspell
-hwdetect
 hwinfo
 hyphen
 hyprcursor
@@ -299,7 +283,6 @@ imlib2
 inetutils
 iniparser
 inotify-tools
-intel-ucode
 iproute2
 iptables
 iputils
@@ -427,18 +410,12 @@ ldb
 leancrypto
 leptonica
 less
-lib32-gamemode
 lib32-gcc-libs
 lib32-glibc
-lib32-libpulse
-lib32-mangohud
 lib32-mesa
 lib32-nvidia-utils
 lib32-opencl-icd-loader
 lib32-opencl-nvidia
-lib32-v4l-utils
-lib32-vkd3d
-lib32-vulkan-icd-loader
 lib32-zlib-ng
 lib32-zlib-ng-compat
 lib32-zstd
@@ -763,7 +740,6 @@ lmdb
 lm_sensors
 logrotate
 lpsolve
-lsb-release
 lsfg-vk
 l-smash
 lsof
@@ -771,7 +747,6 @@ lsscsi
 lua
 lua54
 luajit
-lutris
 lv2
 lvm2
 lz4
@@ -780,11 +755,8 @@ m4
 make
 man-db
 mangohud
-man-pages
 matugen
 md4c
-mdadm
-meld
 mesa
 mesa-utils
 micro
@@ -802,9 +774,7 @@ mtdev
 mtools
 muparser
 nano
-nano-syntax-highlighting
 ncurses
-netctl
 nettle
 networkmanager-openvpn
 networkmanager-qt
@@ -814,9 +784,6 @@ nfs-utils
 nilfs-utils
 ninja
 nodejs
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
 npth
 nspr
 nss
@@ -891,16 +858,13 @@ power-profiles-daemon
 ppp
 prison
 procps-ng
-profile-sync-daemon
 projectm
 protobuf
 protobuf-c
 proton-cachyos
 proton-cachyos-slr
 protonplus
-protontricks
 protonup-qt
-proton-vpn-gtk-app
 psmisc
 pugixml
 purpose
@@ -917,7 +881,6 @@ python-charset-normalizer
 python-contourpy
 python-cryptography
 python-dbus-fast
-python-defusedxml
 python-evdev
 python-fonttools
 python-frozenlist
@@ -929,7 +892,6 @@ python-markupsafe
 python-multidict
 python-numpy
 python-orjson
-python-packaging
 python-pathvalidate
 python-propcache
 python-proton-vpn-local-agent
@@ -947,7 +909,6 @@ python-yaml
 python-yara
 python-yarl
 python-zstandard
-qbittorrent
 qhull
 qqc2-breeze-style
 qqc2-desktop-style
@@ -990,9 +951,7 @@ rate-mirrors
 rav1e
 re2
 readline
-rebuild-detector
 redland
-reflector
 resvg
 rhash
 ripgrep
@@ -1040,7 +999,6 @@ s-nail
 snapper
 snappy
 sndio
-sof-firmware
 solid
 solid5
 songrec
@@ -1078,19 +1036,11 @@ thin-provisioning-tools
 tmux
 tomlplusplus
 tpm2-tss
-tree
 tslib
-ttf-bitstream-vera
-ttf-dejavu
-ttf-liberation
-ttf-meslo-nerd
-ttf-opensans
 tty-clock
 twolame
 tzdata
 udisks2
-ufw
-ufw-extras
 umu-launcher
 unrar
 unzip
@@ -1098,7 +1048,6 @@ upower
 usb_modeswitch
 usbutils
 uv
-uwsm
 v4l-utils
 vapoursynth
 vid.stab
@@ -1199,7 +1148,6 @@ which
 wildmidi
 wine
 wine-cachyos-opt
-wine-gecko
 wine-mono
 winetricks
 wireguard-tools
@@ -1225,7 +1173,6 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-kde
 xdg-user-dirs
-xdotool
 xf86-input-libinput
 xfsprogs
 xl2tpd
@@ -1247,7 +1194,6 @@ xz
 yad
 yara
 yay
-yazi
 ydotool
 yyjson
 zbar
