@@ -64,3 +64,11 @@ rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
 echo "Done. Reboot or relogin is recommended."
+
+echo
+echo "=== Installing DWProton for Flatpak Bottles ==="
+if [ -x "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" ]; then
+  bash "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" || echo "WARNING: DWProton Flatpak Bottles install failed; continuing."
+else
+  echo "WARNING: install-dwproton-flatpak-bottles.sh not found."
+fi
