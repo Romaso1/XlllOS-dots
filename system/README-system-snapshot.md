@@ -1,13 +1,14 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-02_23-09-11
+Updated: 2026-05-02_23-31-13
 
-This folder contains a safe snapshot of the current PC:
+This snapshot reflects a cleaned gaming setup:
 
-- `packages/` - pacman, AUR and Flatpak package lists
-- `services/` - enabled/disabled systemd services
-- `hardware/` - system and hardware info
-- `gaming/` - Steam/Proton/GameMode environment info
+- Steam removed
+- CachyOS gaming meta/applications removed
+- Lutris/Heroic/GOverlay/MangoHud/PortProton/ProtonPlus user leftovers cleaned
+- Bottles installed again
+- Steam compatibility tools are no longer managed by this repo
 
 Restore helper:
 
@@ -15,25 +16,8 @@ Restore helper:
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-## Steam compatibility tools
-
-The restore helper automatically installs into Steam:
+Backup created before removal:
 
 ```bash
-DWProton 10.0-26
-Soda 9.0-1 (Steam)
+/home/xiii/XlllOS-gaming-removal-backup-2026-05-02_23-31-13
 ```
-
-Manual install:
-
-```bash
-bash scripts/install-steam-dwproton-soda.sh
-```
-
-Steam target:
-
-```bash
-~/.steam/root/compatibilitytools.d/
-```
-
-Bottles is not required for this setup. The scripts download Soda directly from Bottles wine releases and DWProton directly from Dawn Winery releases.

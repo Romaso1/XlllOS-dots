@@ -20,8 +20,6 @@ btrfs-assistant
 btrfs-progs
 cachy-update
 cachyos-fish-config
-cachyos-gaming-applications
-cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
 cachyos-kernel-manager
@@ -69,8 +67,6 @@ firefox
 firefox-i18n-ru
 flatpak
 fsarchiver
-gamemode
-gamescope
 git
 glances
 glow
@@ -93,7 +89,6 @@ kdegraphics-thumbnailers
 konsole
 kvantum
 less
-lib32-gamemode
 lib32-libpulse
 lib32-mangohud
 lib32-nvidia-utils
@@ -125,7 +120,6 @@ lsscsi
 lvm2
 man-db
 man-pages
-mangohud
 mdadm
 meld
 mesa-utils
@@ -162,9 +156,6 @@ power-profiles-daemon
 profile-sync-daemon
 proton-cachyos
 proton-vpn-gtk-app
-protonplus
-protontricks
-protonup-qt
 pv
 python
 python-defusedxml
@@ -197,7 +188,6 @@ ttf-opensans
 tty-clock
 ufw
 ufw-extras
-umu-launcher
 unrar
 unzip
 usb_modeswitch

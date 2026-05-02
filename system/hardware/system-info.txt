@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 23:15:28 +0300
+субота, 2 травня 2026 23:32:17 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -133,7 +133,7 @@ sr0
 zram0       swap   1     zram0 89187dfe-a1e4-4700-a974-770b39eaa141                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  848,1G    11% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  846,1G    11% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
