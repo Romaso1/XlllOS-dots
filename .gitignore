@@ -66,3 +66,4 @@ home/.local/share/keyrings/
 home/.gnupg/
 home/.ssh/
 
+home/.config/hypr/hyprland.conf.backup-*
