@@ -13,6 +13,16 @@ if command -v paru >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/aur-foreig
   paru -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
 elif command -v yay >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/aur-foreign-explicit.txt" ]; then
   yay -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
+else
+  echo "paru/yay not found. AUR packages skipped."
+fi
+
+echo
+echo "=== Installing DWProton for AUR/native Bottles ==="
+if [ -x "$REPO_DIR/scripts/install-dwproton-aur-bottles.sh" ]; then
+  bash "$REPO_DIR/scripts/install-dwproton-aur-bottles.sh" || echo "WARNING: DWProton AUR Bottles install failed; continuing."
+else
+  echo "WARNING: install-dwproton-aur-bottles.sh not found."
 fi
 
 echo

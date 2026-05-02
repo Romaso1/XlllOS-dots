@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 02:49:50 +0300
+неділя, 3 травня 2026 02:52:00 +0300
 
 === AUR/native Bottles ===
 /usr/bin/bottles
@@ -8,7 +8,8 @@ bottles 2:63.2-1
 === Flatpak Bottles ===
 Flatpak Bottles not installed
 
-=== Bottles runners path ===
+=== Bottles runners ===
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26
 
 === CachyOS gaming meta ===
 cachyos-gaming-meta 1:1.0.0-7

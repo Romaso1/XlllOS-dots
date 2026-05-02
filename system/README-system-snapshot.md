@@ -1,15 +1,21 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-03_02-49-47
+Updated: 2026-05-03_02-51-48
 
 Current setup:
 
 - AUR/native Bottles installed
 - Flatpak Bottles removed
-- CachyOS gaming meta installed
-- System/package snapshots updated
+- cachyos-gaming-meta installed
+- DWProton auto-installs into AUR/native Bottles from repo restore
 
-Bottles command:
+Restore:
+
+```bash
+bash scripts/install-from-current-system-snapshot.sh
+```
+
+Run Bottles:
 
 ```bash
 bottles
@@ -21,4 +27,8 @@ AUR/native Bottles data path:
 ~/.local/share/bottles
 ```
 
-Flatpak Bottles is intentionally not used in this setup.
+DWProton target:
+
+```bash
+~/.local/share/bottles/runners/dwproton-10.0-26
+```
