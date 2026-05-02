@@ -36,6 +36,14 @@ rsync -a "$REPO_DIR/dotfiles/.config/" "$HOME/.config/" 2>/dev/null || true
 rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
+echo "=== Installing Steam compatibility tools ==="
+if [ -x "$REPO_DIR/scripts/install-steam-dwproton-soda.sh" ]; then
+  bash "$REPO_DIR/scripts/install-steam-dwproton-soda.sh" || echo "WARNING: Steam compatibility tools install failed; continuing."
+else
+  echo "WARNING: install-steam-dwproton-soda.sh not found."
+fi
+
+echo
 echo "=== Gaming service preference ==="
 sudo systemctl disable --now ananicy-cpp 2>/dev/null || true
 sudo systemctl disable --now ananicy 2>/dev/null || true

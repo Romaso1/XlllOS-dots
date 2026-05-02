@@ -1,6 +1,6 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-02_23-05-49
+Updated: 2026-05-02_23-09-11
 
 This folder contains a safe snapshot of the current PC:
 
@@ -15,22 +15,25 @@ Restore helper:
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-## Bottles removed
+## Steam compatibility tools
 
-Bottles and its local data are intentionally removed from this setup.
-
-## Soda in Steam
-
-Soda is preserved as a Steam compatibility tool on the current machine:
+The restore helper automatically installs into Steam:
 
 ```bash
-/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
+DWProton 10.0-26
+Soda 9.0-1 (Steam)
 ```
 
-Local backup:
+Manual install:
 
 ```bash
-/home/xiii/XlllOS-steam-soda-backup-2026-05-02_23-05-49/Soda-9.0-1-Bottles
+bash scripts/install-steam-dwproton-soda.sh
 ```
 
-The Soda runner binaries are not stored in this Git repo.
+Steam target:
+
+```bash
+~/.steam/root/compatibilitytools.d/
+```
+
+Bottles is not required for this setup. The scripts download Soda directly from Bottles wine releases and DWProton directly from Dawn Winery releases.
