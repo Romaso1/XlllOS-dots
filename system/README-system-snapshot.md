@@ -1,13 +1,13 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-02_22-59-37
+Updated: 2026-05-02_23-05-49
 
 This folder contains a safe snapshot of the current PC:
 
 - `packages/` - pacman, AUR and Flatpak package lists
 - `services/` - enabled/disabled systemd services
 - `hardware/` - system and hardware info
-- `gaming/` - Steam/Proton/Bottles/PortProton/GameMode environment info
+- `gaming/` - Steam/Proton/GameMode environment info
 
 Restore helper:
 
@@ -15,38 +15,22 @@ Restore helper:
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-## Bottles DWProton
+## Bottles removed
 
-The restore helper automatically downloads and installs:
+Bottles and its local data are intentionally removed from this setup.
 
-```bash
-dwproton-10.0-26
-```
+## Soda in Steam
 
-into:
+Soda is preserved as a Steam compatibility tool on the current machine:
 
 ```bash
-~/.local/share/bottles/runners/
+/home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
 ```
 
-## Soda runner for Steam
-
-The restore helper automatically tries to copy:
+Local backup:
 
 ```bash
-~/.local/share/bottles/runners/soda-9.0-1
+/home/xiii/XlllOS-steam-soda-backup-2026-05-02_23-05-49/Soda-9.0-1-Bottles
 ```
 
-to Steam compatibility tools:
-
-```bash
-~/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
-```
-
-Manual helper:
-
-```bash
-bash scripts/install-soda-bottles-runner-to-steam.sh
-```
-
-Important: this repo intentionally does not copy browser profiles, passwords, SSH keys, keyrings, Steam game prefixes, Wine prefixes, full home directory, DWProton binaries, or Soda binaries.
+The Soda runner binaries are not stored in this Git repo.

@@ -1,29 +1,17 @@
 # Soda runner in Steam
 
-Updated: 2026-05-02_22-59-37
+Updated: 2026-05-02_23-05-49
 
-Current preferred Soda version:
-
-```bash
-9.0-1
-```
-
-Expected Bottles source:
-
-```bash
-~/.local/share/bottles/runners/soda-9.0-1
-```
-
-Steam target:
+Soda is preserved in Steam compatibility tools:
 
 ```bash
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
 ```
 
-Manual install:
+Bottles has been removed. The Soda runner binaries are not stored in this Git repo.
+
+Local backup:
 
 ```bash
-bash scripts/install-soda-bottles-runner-to-steam.sh
+/home/xiii/XlllOS-steam-soda-backup-2026-05-02_23-05-49/Soda-9.0-1-Bottles
 ```
-
-This repo stores only scripts and snapshots, not the Soda runner binaries.

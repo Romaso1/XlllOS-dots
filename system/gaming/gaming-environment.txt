@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 22:59:54 +0300
+субота, 2 травня 2026 23:06:14 +0300
 
 === Steam compatibilitytools.d ===
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
@@ -15,58 +15,21 @@
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/man
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/share/wine
 
-=== Bottles runners ===
-/home/xiii/.local/share/bottles/runners/caffe-9.7
-/home/xiii/.local/share/bottles/runners/caffe-9.7/bin
-/home/xiii/.local/share/bottles/runners/caffe-9.7/include
-/home/xiii/.local/share/bottles/runners/caffe-9.7/lib
-/home/xiii/.local/share/bottles/runners/caffe-9.7/lib32
-/home/xiii/.local/share/bottles/runners/caffe-9.7/share
-/home/xiii/.local/share/bottles/runners/dwproton-10.0-26
-/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/files
-/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/protonfixes
-/home/xiii/.local/share/bottles/runners/ge-proton10-34
-/home/xiii/.local/share/bottles/runners/ge-proton10-34/files
-/home/xiii/.local/share/bottles/runners/ge-proton10-34/protonfixes
-/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64
-/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/bin
-/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/include
-/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/lib
-/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/share
-/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12
-/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/bin
-/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/lib
-/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/lib64
-/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/share
-/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34
-/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34/files
-/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34/protonfixes
-/home/xiii/.local/share/bottles/runners/soda-9.0-1
-/home/xiii/.local/share/bottles/runners/soda-9.0-1/bin
-/home/xiii/.local/share/bottles/runners/soda-9.0-1/include
-/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib
-/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib32
-/home/xiii/.local/share/bottles/runners/soda-9.0-1/share
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/bin
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/lib
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/lib64
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/share
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/bin
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/lib
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/lib64
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/share
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/bin
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/lib
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/lib64
-/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/share
+=== Bottles removed ===
+bottles not found
+pacman bottles not installed
 
-=== PortProton files ===
-/home/xiii/PortProton/data/dxvk.conf
-/home/xiii/PortProton/data/user.conf
-/home/xiii/PortProton/data/vkBasalt.conf
+=== Soda preserved ===
+итого 8,0K
+drwxr-xr-x 1 xiii xiii 100 тра  2 22:59 .
+drwxr-xr-x 1 xiii xiii  36 тра  2 22:53 ..
+drwxr-xr-x 1 xiii xiii 504 кві 29  2024 bin
+-rw-r--r-- 1 xiii xiii 216 тра  2 23:04 compatibilitytool.vdf
+drwxr-xr-x 1 xiii xiii   8 кві 29  2024 include
+drwxr-xr-x 1 xiii xiii   8 кві 29  2024 lib
+drwxr-xr-x 1 xiii xiii   8 кві 29  2024 lib32
+-rwxr-xr-x 1 xiii xiii 690 тра  2 22:59 proton
+drwxr-xr-x 1 xiii xiii  38 кві 29  2024 share
 
 === Wine/Proton tools in PATH ===
 steam              /usr/bin/steam
@@ -78,7 +41,6 @@ goverlay           /usr/bin/goverlay
 gamescope          /usr/bin/gamescope
 lutris             /usr/bin/lutris
 heroic             /usr/bin/heroic
-bottles            /usr/bin/bottles
 wine               /usr/bin/wine
 winetricks         /usr/bin/winetricks
 protontricks       /usr/bin/protontricks
