@@ -1,3 +1,4 @@
+7zip
 a52dec
 aalib
 abseil-cpp
@@ -64,6 +65,7 @@ bluez-obex
 bluez-qt
 bluez-utils
 boost-libs
+bottles
 bpf
 breeze
 breeze-cursors
@@ -171,6 +173,7 @@ eglexternalplatform
 electron39
 elfutils
 ell
+enchant
 ethtool
 exfatprogs
 exiv2
@@ -216,8 +219,10 @@ fuse-common
 fuse-overlayfs
 fuse3
 fuzzel
+fvs2
 fzf
 game-devices-udev
+gamemode
 gawk
 gc
 gcc
@@ -281,6 +286,7 @@ gtk3
 gtk4
 gtkmm3
 gtksourceview4
+gtksourceview5
 gtksourceviewmm
 guile
 gupnp
@@ -314,6 +320,7 @@ hyprwayland-scanner
 hyprwire
 i2c-tools
 iana-etc
+icoextract
 icoutils
 icu
 iio-sensor-proxy
@@ -726,6 +733,7 @@ libltc
 libmad
 libmakepkg-dropins
 libmalcontent
+libmanette
 libmatroska
 libmaxminddb
 libmbim
@@ -895,6 +903,7 @@ libxt
 libxtst
 libxv
 libxxf86vm
+libyaml
 libyuv
 libzip
 libzmf
@@ -1030,6 +1039,7 @@ parallel
 parted
 paru
 patch
+patool
 pavucontrol-qt
 pciutils
 pcre
@@ -1125,7 +1135,9 @@ python-cairo
 python-cbor2
 python-certifi
 python-cffi
+python-chardet
 python-charset-normalizer
+python-click
 python-cryptography
 python-dbus
 python-dbus-fast
@@ -1133,6 +1145,7 @@ python-defusedxml
 python-distro
 python-fido2
 python-frozenlist
+python-fvs
 python-gnupg
 python-gobject
 python-idna
@@ -1152,6 +1165,8 @@ python-more-itertools
 python-multidict
 python-orjson
 python-packaging
+python-pathvalidate
+python-pefile
 python-pillow
 python-pkg_resources
 python-platformdirs
@@ -1162,6 +1177,7 @@ python-proton-vpn-api-core
 python-proton-vpn-local-agent
 python-psutil
 python-pycparser
+python-pycurl
 python-pydantic
 python-pydantic-core
 python-pynacl
@@ -1176,6 +1192,7 @@ python-sentry_sdk
 python-setuptools
 python-shtab
 python-six
+python-steamgriddb
 python-tqdm
 python-typing-inspection
 python-typing_extensions
@@ -1184,6 +1201,8 @@ python-vdf
 python-wheel
 python-xlib
 python-xxhash
+python-yaml
+python-yara
 python-yarl
 python-zipp
 qbittorrent
@@ -1370,6 +1389,7 @@ vapoursynth
 vid.stab
 vim
 vim-runtime
+vkbasalt-cli
 vkd3d
 vlc
 vlc-cli
@@ -1458,6 +1478,7 @@ vulkan-icd-loader
 vulkan-tools
 wayland
 wayland-protocols
+webkit2gtk-4.1
 webrtc-audio-processing-1
 wf-recorder
 wget
@@ -1473,6 +1494,7 @@ wireless-regdb
 wireplumber
 wl-clipboard
 wlogout
+woff2
 wofi
 wpa_supplicant
 wtype
@@ -1504,6 +1526,7 @@ xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth
+xorg-xdpyinfo
 xorg-xkbcomp
 xorg-xmessage
 xorg-xprop
@@ -1515,6 +1538,7 @@ xorgproto
 xvidcore
 xxhash
 xz
+yara
 yay
 yazi
 ydotool

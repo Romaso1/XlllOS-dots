@@ -1,4 +1,5 @@
 asciiquarium-transparent-git
+bottles
 cbonsai
 game-devices-udev
 illogical-impulse-audio

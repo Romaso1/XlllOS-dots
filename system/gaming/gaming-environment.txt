@@ -1,59 +1,14 @@
 === date ===
-неділя, 3 травня 2026 02:26:23 +0300
+неділя, 3 травня 2026 02:48:02 +0300
+
+=== AUR/native Bottles ===
+/usr/bin/bottles
+bottles 2:63.2-1
+
+=== Flatpak Bottles ===
+Flatpak Bottles not installed
+
+=== Bottles runners path ===
 
 === CachyOS gaming meta ===
 cachyos-gaming-meta 1:1.0.0-7
-
-=== Flatpak Bottles ===
-
-Bottles - Run Windows software
-
-              ID: com.usebottles.bottles
-          Ссылка: app/com.usebottles.bottles/x86_64/stable
-     Архитектура: x86_64
-           Ветвь: stable
-          Версия: 63.2
-        Лицензия: GPL-3.0-only
-        Источник: flathub
-       Коллекция: org.flathub.Stable
-       Установка: system
-     Установлено: 502,7 МБ
-Среда выполнения: org.gnome.Platform/x86_64/49
-             Sdk: org.gnome.Sdk/x86_64/49
-
-          Коммит: c1e7e34e221bc5067ca1ff23139ebf31f26850661a5138b0dc5c78238fc34…
-        Родитель: c343343451b3fdae0f3524092037d59886b627dce3bb60221aeb7d1e6dc7f…
-       Заголовок: Merge pull request #530 from SteinGaming/master (d38947af4388)
-            Дата: 2026-04-05 07:36:53 +0000
-
-=== Flatpak Bottles permissions ===
-[Context]
-shared=network;ipc;
-sockets=x11;wayland;pulseaudio;
-devices=all;
-features=devel;multiarch;per-app-dev-shm;
-filesystems=xdg-download;xdg-documents;xdg-desktop;/mnt;/run/media;/home/xiii/Games:create;
-
-[Session Bus Policy]
-org.freedesktop.portal.Desktop=talk
-
-[System Bus Policy]
-org.freedesktop.UDisks2=talk
-
-[Environment]
-LD_LIBRARY_PATH=/app/lib:/app/lib/i386-linux-gnu
-GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0
-PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin/:/usr/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin/:/usr/lib/extensions/vulkan/gamescope/bin/
-
-=== Flatpak Bottles runners ===
-/home/xiii/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
-
-=== Gaming tools ===
-steam              not found
-gamescope          not found
-mangohud           not found
-gamemoderun        not found
-protontricks       /usr/bin/protontricks
-protonplus         not found
-bottles            not found
-flatpak            /usr/bin/flatpak

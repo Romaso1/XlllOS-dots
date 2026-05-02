@@ -16,6 +16,7 @@ bluez-hid2hci
 bluez-libs
 bluez-obex
 bluez-utils
+bottles
 btop
 btrfs-assistant
 btrfs-progs
