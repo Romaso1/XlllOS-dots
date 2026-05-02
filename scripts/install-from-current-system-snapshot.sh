@@ -40,3 +40,13 @@ rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
 echo "Done. Reboot or relogin is recommended."
+
+
+
+echo
+echo "=== Installing DWProton into Steam ==="
+if [ -x "$REPO_DIR/scripts/install-steam-dwproton.sh" ]; then
+  bash "$REPO_DIR/scripts/install-steam-dwproton.sh" || echo "WARNING: Steam DWProton install failed; continuing."
+else
+  echo "WARNING: install-steam-dwproton.sh not found."
+fi
