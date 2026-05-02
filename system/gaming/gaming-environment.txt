@@ -1,12 +1,3 @@
-=== date ===
-субота, 2 травня 2026 22:53:53 +0300
-
-=== CachyOS gaming meta packages ===
-local/cachyos-gaming-applications 1.0.0-2
-    Common Applications used for Gaming
-local/cachyos-gaming-meta 1:1.0.0-7
-    Meta package for Gaming dependencies
-
 === Steam compatibilitytools.d ===
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles
 /home/xiii/.steam/root/compatibilitytools.d/Soda-9.0-1-Bottles/bin
@@ -63,20 +54,21 @@ local/cachyos-gaming-meta 1:1.0.0-7
 /home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/lib64
 /home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/share
 
+=== PortProton files ===
+/home/xiii/PortProton/data/dxvk.conf
+/home/xiii/PortProton/data/user.conf
+/home/xiii/PortProton/data/vkBasalt.conf
+
 === Wine/Proton tools in PATH ===
-steam              /usr/bin/steam
-steam-native       not found
-game-performance   /usr/bin/game-performance
-gamemoderun        /usr/bin/gamemoderun
-mangohud           /usr/bin/mangohud
-goverlay           /usr/bin/goverlay
-gamescope          /usr/bin/gamescope
-lutris             /usr/bin/lutris
-heroic             /usr/bin/heroic
-bottles            /usr/bin/bottles
-wine               /usr/bin/wine
-winetricks         /usr/bin/winetricks
-protontricks       /usr/bin/protontricks
-protonup-qt        /usr/bin/protonup-qt
-protonplus         /usr/bin/protonplus
-portproton         /usr/bin/portproton
+wine             /usr/bin/wine
+winetricks       /usr/bin/winetricks
+protontricks     /usr/bin/protontricks
+protonup-qt      /usr/bin/protonup-qt
+protonplus       /usr/bin/protonplus
+portproton       /usr/bin/portproton
+gamemoderun      /usr/bin/gamemoderun
+mangohud         /usr/bin/mangohud
+goverlay         /usr/bin/goverlay
+bottles          /usr/bin/bottles
+steam            /usr/bin/steam
+steam-native     not found

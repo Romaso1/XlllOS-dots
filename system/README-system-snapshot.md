@@ -1,6 +1,6 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-02_21-41-59
+Updated: 2026-05-02_22-55-20
 
 This folder contains a safe snapshot of the current PC:
 
@@ -16,17 +16,3 @@ bash scripts/install-from-current-system-snapshot.sh
 ```
 
 Important: this repo intentionally does not copy browser profiles, passwords, SSH keys, keyrings, Steam game prefixes, Wine prefixes or full home directory.
-
-## Bottles DWProton
-
-The restore helper automatically downloads and installs `dwproton-10.0-26` into:
-
-```bash
-~/.local/share/bottles/runners/
-```
-
-Override version if needed:
-
-```bash
-DWPROTON_VERSION="10.0-26" bash scripts/install-from-current-system-snapshot.sh
-```

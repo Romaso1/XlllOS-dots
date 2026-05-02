@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 22:32:12 +0300
+субота, 2 травня 2026 22:55:25 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -98,7 +98,7 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 2 (2)
+	active workspace: 3 (3)
 	special workspace: 0 ()
 	reserved: 0 40 0 0
 	scale: 1.00
@@ -133,7 +133,7 @@ sr0
 zram0       swap   1     zram0 7e1ea66a-635a-4bf8-b1d4-e41cb7dec39d                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  852,6G    10% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  848,3G    11% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
