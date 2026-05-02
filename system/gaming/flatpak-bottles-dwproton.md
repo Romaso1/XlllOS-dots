@@ -1,6 +1,6 @@
 # Flatpak Bottles + DWProton
 
-Current setup uses Flatpak Bottles:
+Flatpak app:
 
 ```bash
 com.usebottles.bottles
@@ -12,7 +12,7 @@ Run Bottles:
 flatpak run com.usebottles.bottles
 ```
 
-DWProton runner installed into:
+DWProton runner target:
 
 ```bash
 ~/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
@@ -24,8 +24,6 @@ Manual install:
 bash scripts/install-dwproton-flatpak-bottles.sh
 ```
 
-Restore helper automatically runs the same installer.
-
 Recommended Bottle dependencies for login/mod-heavy games:
 
 ```text
@@ -34,5 +32,3 @@ vcredist2022
 corefonts
 d3dcompiler_47
 ```
-
-Steam/CachyOS gaming stack is intentionally removed in this setup.

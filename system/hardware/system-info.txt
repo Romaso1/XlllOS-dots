@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 02:20:04 +0300
+неділя, 3 травня 2026 02:26:22 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -18,71 +18,6 @@ BUG_REPORT_URL="https://github.com/cachyos"
 PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
 LOGO=cachyos
 
-=== hostnamectl ===
- Static hostname: neko
-       Icon name: computer-desktop
-         Chassis: desktop 🖥️
-      Machine ID: da6bdcff9639441180f7d3280ab30b7c
-         Boot ID: 97887ab0ff594af7bbb5e181d07b6733
-Operating System: CachyOS
-          Kernel: Linux 7.0.3-1-cachyos
-    Architecture: x86-64
- Hardware Vendor: ASUSTeK COMPUTER INC.
-  Hardware Model: PRIME H270-PLUS
-    Hardware SKU: SKU
-Hardware Version: System Version
-Firmware Version: 2001
-   Firmware Date: Tue 2021-07-13
-    Firmware Age: 4y 9month 2w 6d
-
-=== lscpu ===
-Архитектура:                             x86_64
-CPU op-mode(s):                          32-bit, 64-bit
-Address sizes:                           39 bits physical, 48 bits virtual
-Порядок байт:                            Little Endian
-CPU(s):                                  8
-On-line CPU(s) list:                     0-7
-ID прроизводителя:                       GenuineIntel
-Имя модели:                              Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
-Семейство ЦПУ:                           6
-Модель:                                  158
-Thread(s) per core:                      2
-Ядер на сокет:                           4
-Сокетов:                                 1
-Степпинг:                                9
-Microcode version:                       0xf8
-CPU(s) scaling MHz:                      96%
-CPU max MHz:                             4200,0000
-CPU min MHz:                             800,0000
-BogoMIPS:                                7200,00
-Флаги:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
-Виртуализация:                           VT-x
-L1d cache:                               128 KiB (4 instances)
-L1i cache:                               128 KiB (4 instances)
-L2 cache:                                1 MiB (4 instances)
-L3 cache:                                8 MiB (1 instance)
-NUMA node(s):                            1
-NUMA node0 CPU(s):                       0-7
-Vulnerability Gather data sampling:      Mitigation; Microcode
-Vulnerability Ghostwrite:                Not affected
-Vulnerability Indirect target selection: Not affected
-Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
-Vulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
-Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable
-Vulnerability Meltdown:                  Mitigation; PTI
-Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
-Vulnerability Old microcode:             Not affected
-Vulnerability Reg file data sampling:    Not affected
-Vulnerability Retbleed:                  Mitigation; IBRS
-Vulnerability Spec rstack overflow:      Not affected
-Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
-Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
-Vulnerability Spectre v2:                Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
-Vulnerability Srbds:                     Mitigation; Microcode
-Vulnerability Tsa:                       Not affected
-Vulnerability Tsx async abort:           Mitigation; TSX disabled
-Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
-
 === GPU ===
 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA104 [GeForce RTX 3070 Lite Hash Rate] [10de:2488] (rev a1)
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:3901]
@@ -91,7 +26,7 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
 === NVIDIA ===
-Sun May  3 02:20:04 2026       
+Sun May  3 02:26:22 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -100,7 +35,7 @@ Sun May  3 02:20:04 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   47C    P8             20W /  280W |    1035MiB /   8192MiB |     21%      Default |
+|  0%   52C    P8             23W /  280W |    1068MiB /   8192MiB |     40%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -111,8 +46,8 @@ Sun May  3 02:20:04 2026
 |=========================================================================================|
 |    0   N/A  N/A            1450      G   /usr/lib/Xorg                            26MiB |
 |    0   N/A  N/A            1543      G   Hyprland                                127MiB |
-|    0   N/A  N/A            1576      G   qs                                      130MiB |
-|    0   N/A  N/A            1611      G   Xwayland                                  4MiB |
+|    0   N/A  N/A            1576      G   qs                                      105MiB |
+|    0   N/A  N/A            1611      G   Xwayland                                  5MiB |
 |    0   N/A  N/A            1678      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
 |    0   N/A  N/A            2002      G   kitty                                    55MiB |
 |    0   N/A  N/A            2055      G   kitty                                    43MiB |
@@ -121,9 +56,15 @@ Sun May  3 02:20:04 2026
 |    0   N/A  N/A            6725      G   /usr/bin/dolphin                          3MiB |
 |    0   N/A  N/A           13278      G   /usr/lib/kactivitymanagerd                3MiB |
 |    0   N/A  N/A           41372      G   /usr/bin/kded6                            3MiB |
-|    0   N/A  N/A           59855      G   /usr/lib/firefox/firefox                174MiB |
-|    0   N/A  N/A           91319      G   kitty                                    47MiB |
+|    0   N/A  N/A           59855      G   /usr/lib/firefox/firefox                235MiB |
+|    0   N/A  N/A           95098      G   kitty                                    45MiB |
 +-----------------------------------------------------------------------------------------+
+
+=== Vulkan packages ===
+vulkan-icd-loader 1.4.341.0-1.1
+lib32-vulkan-icd-loader 1.4.341.0-1
+nvidia-utils 595.71.05-1
+lib32-nvidia-utils 595.71.05-1
 
 === Hyprland monitors ===
 Monitor DP-1 (ID 0):
@@ -168,7 +109,7 @@ sr0
 zram0       swap   1     zram0 f7b2ed99-1b10-42b0-988f-e36e4489488e                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  775,2G    18% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  773,3G    18% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
@@ -178,5 +119,5 @@ nvme0n1
 
 === memory ===
                total        used        free      shared  buff/cache   available
-Mem:            31Gi       5,9Gi        15Gi        96Mi        10Gi        25Gi
+Mem:            31Gi       5,8Gi        12Gi        96Mi        13Gi        25Gi
 Swap:           31Gi       388Mi        30Gi
