@@ -1,7 +1,7 @@
-analyzing CPU 3:
+analyzing CPU 1:
   driver: intel_pstate
-  CPUs which run at the same hardware frequency: 3
-  CPUs which need to have their frequency coordinated by software: 3
+  CPUs which run at the same hardware frequency: 1
+  CPUs which need to have their frequency coordinated by software: 1
   energy performance preference: performance
   hardware limits: 800 MHz - 4.20 GHz
   available cpufreq governors: performance powersave
@@ -9,7 +9,7 @@ analyzing CPU 3:
                   The governor "performance" may decide which speed to use
                   within this range.
   current CPU frequency: Unable to call hardware
-  current CPU frequency: 4.03 GHz (asserted by call to kernel)
+  current CPU frequency: 4.09 GHz (asserted by call to kernel)
   boost state support:
     Supported: yes
     Active: yes

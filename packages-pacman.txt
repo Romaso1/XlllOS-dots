@@ -65,7 +65,6 @@ cabextract
 ca-certificates-mozilla
 cachyos-ananicy-rules
 cachyos-fish-config
-cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -152,7 +151,6 @@ egl-wayland
 egl-wayland2
 egl-x11
 electron39
-electron41
 ell
 enchant
 ethtool
@@ -226,13 +224,10 @@ glslang
 glu
 glycin
 gmp
-gnome-desktop
-gnome-desktop-common
 gnome-keyring
 gnupg
 gobject-introspection
 gobject-introspection-runtime
-goverlay
 go-yq
 gperftools
 gpgme
@@ -266,7 +261,6 @@ gupnp-igd
 harfbuzz
 harfbuzz-icu
 hdparm
-heroic-games-launcher
 hidapi
 highway
 htmlq
@@ -770,7 +764,6 @@ lsscsi
 lua
 lua54
 luajit
-lutris
 lv2
 lvm2
 lz4
@@ -917,13 +910,11 @@ python-contourpy
 python-cryptography
 python-dbus-fast
 python-defusedxml
-python-evdev
 python-fonttools
 python-frozenlist
 python-fvs
 python-inputs
 python-kiwisolver
-python-lxml
 python-markupsafe
 python-multidict
 python-numpy
@@ -970,7 +961,6 @@ qt6-imageformats
 qt6-location
 qt6-multimedia
 qt6-multimedia-ffmpeg
-qt6pas
 qt6-positioning
 qt6-quicktimeline
 qt6-sensors
@@ -1055,7 +1045,6 @@ spotify-launcher
 sqlite
 sratom
 srt
-steam
 sudo
 svt-av1
 svt-hevc

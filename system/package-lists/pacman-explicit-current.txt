@@ -22,7 +22,6 @@ btrfs-assistant
 btrfs-progs
 cachy-update
 cachyos-fish-config
-cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -79,7 +78,6 @@ gamescope
 git
 glances
 glow
-goverlay
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
@@ -142,7 +140,6 @@ logrotate
 lsb-release
 lsfg-vk
 lsscsi
-lutris
 lvm2
 man-db
 man-pages
@@ -208,7 +205,6 @@ smartmontools
 snapper
 sof-firmware
 spotify-launcher
-steam
 sudo
 sysfsutils
 telegram-desktop

@@ -86,7 +86,6 @@ cabextract 1.11-2.1
 cachy-update 3.19.3-1
 cachyos-ananicy-rules 1:1.1.35-1
 cachyos-fish-config 15-1
-cachyos-gaming-applications 1.0.0-2
 cachyos-gaming-meta 1:1.0.0-7
 cachyos-hello 0.24.0-1
 cachyos-hooks 2026.02.05-1
@@ -177,7 +176,6 @@ egl-wayland2 1.0.1-1.1
 egl-x11 1.0.5-1.1
 eglexternalplatform 1.2.1-1
 electron39 39.8.9-1.1
-electron41 41.4.0-1.1
 elfutils 0.194-2
 ell 0.83-1.1
 enchant 2.8.15-2.1
@@ -257,8 +255,6 @@ glslang 1:1.4.341.0-2.1
 glu 9.0.3-3.1
 glycin 2.1.1-1.1
 gmp 6.3.0-3.1
-gnome-desktop 1:44.5-1.1
-gnome-desktop-common 1:44.5-1.1
 gnome-keyring 1:50.0-1.1
 gnulib-l10n 20241231-1
 gnupg 2.4.9-1.1
@@ -266,7 +262,6 @@ gnutls 3.8.13-1
 go-yq 4.53.2-1.1
 gobject-introspection 1.86.0-2.1
 gobject-introspection-runtime 1.86.0-2.1
-goverlay 1.7.5-1.1
 gperftools 2.18.1-1.1
 gpgme 2.0.1-3.1
 gpgmepp 2.0.0-2.1
@@ -307,7 +302,6 @@ gzip 1.14-2
 harfbuzz 14.2.0-1.1
 harfbuzz-icu 14.2.0-1.1
 hdparm 9.65-3.1
-heroic-games-launcher 2.21.0-2
 hicolor-icon-theme 0.18-1
 hidapi 0.15.0-1.1
 highway 1.4.0-1.1
@@ -977,7 +971,6 @@ lsscsi 0.32-2.2
 lua 5.5.0-2.2
 lua54 5.4.8-6.1
 luajit 2.1.1774896198+18b087c-1.1
-lutris 0.5.22-1
 lv2 1.18.10-2.1
 lvm2 2.03.40-1.1
 lz4 1:1.10.0-3
@@ -1169,7 +1162,6 @@ python-attrs 26.1.0-1
 python-autocommand 2.2.2-9
 python-bcc 0.36.1-3.1
 python-bcrypt 5.0.0-2.1
-python-beautifulsoup4 4.14.3-2
 python-cachetools 7.0.6-1
 python-cairo 1.29.0-2.1
 python-cbor2 5.9.0-1.1
@@ -1186,7 +1178,6 @@ python-dbus 1.4.0-2
 python-dbus-fast 4.0.1-1.1
 python-defusedxml 0.7.1-8
 python-distro 1.9.0-4
-python-evdev 1.9.3-1.1
 python-fido2 2.2.0-1
 python-fonttools 4.62.1-1.1
 python-frozenlist 1.8.0-2.1
@@ -1205,12 +1196,10 @@ python-jeepney 0.9.0-3
 python-jinja 1:3.1.6-3
 python-keyring 25.7.0-3
 python-kiwisolver 1.5.0-1.1
-python-lxml 6.1.0-1.1
 python-mako 1.3.11-1
 python-markdown 3.10.2-1
 python-markupsafe 3.0.3-1.1
 python-matplotlib 3.10.9-1
-python-moddb 0.14.0-2
 python-more-itertools 11.0.2-1
 python-multidict 6.7.1-1.1
 python-numpy 2.4.4-1.1
@@ -1246,7 +1235,6 @@ python-sentry_sdk 2.58.0-1
 python-setuptools 1:82.0.1-1
 python-shtab 1.8.0-2
 python-six 1.17.0-3
-python-soupsieve 2.8.3-1
 python-steam 1.6.1-3
 python-steamgriddb 1.0.5-5
 python-tqdm 4.67.3-1
@@ -1304,7 +1292,6 @@ qt6-webengine 6.11.0-5
 qt6-websockets 6.11.0-1.1
 qt6-webview 6.11.0-1.1
 qt6ct 0.11-5.1
-qt6pas 6.2.10-3.1
 raptor 2.0.16-9.1
 rasqal 1:0.9.33-8.1
 rate-mirrors 0.28.2-2
@@ -1383,8 +1370,6 @@ sqlite 3.53.0-2
 sratom 0.6.22-1.1
 srt 1.5.5-1.1
 starship 1.25.1-1
-steam 1.0.0.85-6
-steam-devices 1.0.0.85-6
 sudo 1.9.17.p2-2.1
 svt-av1 4.1.0-2
 svt-hevc 1.5.1-4.1
@@ -1562,7 +1547,6 @@ wlogout 1.2.2-0
 woff2 1.0.2-6.1
 wofi 1.5.3-1.1
 wpa_supplicant 2:2.11-5.1
-wqy-zenhei 0.9.45-10
 wtype 0.4-2.2
 x264 3:0.165.r3222.b35605a-2.1
 x265 4.1-1.1
