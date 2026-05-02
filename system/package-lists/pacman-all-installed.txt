@@ -58,7 +58,6 @@ binutils
 bison
 blas
 bluedevil
-blueprint-compiler
 bluez
 bluez-hid2hci
 bluez-libs
@@ -264,7 +263,6 @@ gnome-keyring
 gnulib-l10n
 gnupg
 gnutls
-go
 go-yq
 gobject-introspection
 gobject-introspection-runtime

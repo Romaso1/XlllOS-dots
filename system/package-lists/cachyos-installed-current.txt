@@ -218,7 +218,6 @@ gnome-desktop
 gnome-desktop-common
 gnome-keyring
 gnupg
-go
 gobject-introspection
 gobject-introspection-runtime
 goverlay

@@ -1,4 +1,4 @@
-Sat May  2 19:18:29 2026       
+Sat May  2 19:41:41 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -7,7 +7,7 @@ Sat May  2 19:18:29 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   55C    P5             28W /  280W |     984MiB /   8192MiB |     24%      Default |
+|  0%   48C    P5             24W /  280W |    1023MiB /   8192MiB |      5%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -16,15 +16,15 @@ Sat May  2 19:18:29 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            1454      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1548      G   Hyprland                                127MiB |
-|    0   N/A  N/A            1581      G   qs                                      104MiB |
-|    0   N/A  N/A            1617      G   Xwayland                                  3MiB |
-|    0   N/A  N/A            1683      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
-|    0   N/A  N/A            2039      G   kitty                                    55MiB |
-|    0   N/A  N/A            2098      G   kitty                                    43MiB |
-|    0   N/A  N/A            2147      G   kitty                                    75MiB |
-|    0   N/A  N/A            2209      G   kitty                                    37MiB |
-|    0   N/A  N/A           19199      G   /usr/lib/firefox/firefox                179MiB |
-|    0   N/A  N/A           35175      G   kitty                                    45MiB |
+|    0   N/A  N/A            1456      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1524      G   Hyprland                                127MiB |
+|    0   N/A  N/A            1558      G   qs                                      128MiB |
+|    0   N/A  N/A            1593      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1659      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2022      G   kitty                                    51MiB |
+|    0   N/A  N/A            2081      G   kitty                                    37MiB |
+|    0   N/A  N/A            2136      G   kitty                                   103MiB |
+|    0   N/A  N/A            2191      G   kitty                                    49MiB |
+|    0   N/A  N/A            2500      G   /usr/lib/firefox/firefox                165MiB |
+|    0   N/A  N/A            3012      G   kitty                                    45MiB |
 +-----------------------------------------------------------------------------------------+

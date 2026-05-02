@@ -230,7 +230,6 @@ gnome-desktop
 gnome-desktop-common
 gnome-keyring
 gnupg
-go
 gobject-introspection
 gobject-introspection-runtime
 goverlay
@@ -1056,6 +1055,7 @@ spotify-launcher
 sqlite
 sratom
 srt
+steam
 sudo
 svt-av1
 svt-hevc
