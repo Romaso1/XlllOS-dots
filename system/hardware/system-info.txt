@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 01:25:22 +0300
+неділя, 3 травня 2026 01:36:32 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -33,7 +33,7 @@ Operating System: CachyOS
 Hardware Version: System Version
 Firmware Version: 2001
    Firmware Date: Tue 2021-07-13
-    Firmware Age: 4y 9month 2w 5d
+    Firmware Age: 4y 9month 2w 6d
 
 === lscpu ===
 Архитектура:                             x86_64
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      97%
+CPU(s) scaling MHz:                      96%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00
@@ -91,7 +91,7 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
 === NVIDIA ===
-Sun May  3 01:25:22 2026       
+Sun May  3 01:36:32 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -100,7 +100,7 @@ Sun May  3 01:25:22 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   50C    P5             23W /  280W |    1107MiB /   8192MiB |     25%      Default |
+|  0%   50C    P3             38W /  280W |    1083MiB /   8192MiB |     15%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -111,7 +111,7 @@ Sun May  3 01:25:22 2026
 |=========================================================================================|
 |    0   N/A  N/A            1450      G   /usr/lib/Xorg                            26MiB |
 |    0   N/A  N/A            1543      G   Hyprland                                127MiB |
-|    0   N/A  N/A            1576      G   qs                                      129MiB |
+|    0   N/A  N/A            1576      G   qs                                      130MiB |
 |    0   N/A  N/A            1611      G   Xwayland                                  3MiB |
 |    0   N/A  N/A            1678      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
 |    0   N/A  N/A            2002      G   kitty                                    55MiB |
@@ -120,9 +120,9 @@ Sun May  3 01:25:22 2026
 |    0   N/A  N/A            2162      G   kitty                                    35MiB |
 |    0   N/A  N/A            6725      G   /usr/bin/dolphin                          3MiB |
 |    0   N/A  N/A           13278      G   /usr/lib/kactivitymanagerd                3MiB |
-|    0   N/A  N/A           37926      G   /usr/lib/firefox/firefox                242MiB |
 |    0   N/A  N/A           41372      G   /usr/bin/kded6                            3MiB |
-|    0   N/A  N/A           55683      G   kitty                                    45MiB |
+|    0   N/A  N/A           59855      G   /usr/lib/firefox/firefox                223MiB |
+|    0   N/A  N/A           61379      G   kitty                                    47MiB |
 +-----------------------------------------------------------------------------------------+
 
 === Hyprland monitors ===
@@ -133,7 +133,7 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 2 (2)
+	active workspace: 4 (4)
 	special workspace: 0 ()
 	reserved: 0 40 0 0
 	scale: 1.00
@@ -144,7 +144,7 @@ Monitor DP-1 (ID 0):
 	solitary: 0
 	solitaryBlockedBy: windowed mode,missing candidate
 	activelyTearing: false
-	tearingBlockedBy: next frame is not torn,user settings,missing candidate
+	tearingBlockedBy: next frame is not torn,user settings,missing candidate,hw cursor
 	directScanoutTo: 0
 	directScanoutBlockedBy: user settings,missing candidate
 	disabled: false
@@ -168,7 +168,7 @@ sr0
 zram0       swap   1     zram0 f7b2ed99-1b10-42b0-988f-e36e4489488e                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  782,9G    17% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  781,1G    18% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
@@ -178,5 +178,5 @@ nvme0n1
 
 === memory ===
                total        used        free      shared  buff/cache   available
-Mem:            31Gi       5,4Gi       8,7Gi       211Mi        17Gi        25Gi
-Swap:           31Gi        40Mi        31Gi
+Mem:            31Gi       8,2Gi        11Gi       212Mi        11Gi        23Gi
+Swap:           31Gi        57Mi        31Gi

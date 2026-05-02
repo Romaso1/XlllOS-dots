@@ -23,6 +23,7 @@ nvflash
 otf-space-grotesk
 peaclock
 pipes.sh
+portproton
 qt6-avif-image-plugin
 ttf-material-symbols-variable-git
 ttf-readex-pro

@@ -19,4 +19,5 @@ illogical-impulse-widgets
 nvflash
 peaclock
 pipes.sh
+portproton
 upscayl-bin

@@ -30,27 +30,6 @@ if command -v flatpak >/dev/null 2>&1; then
       [ -n "$app" ] && flatpak install -y flathub "$app" || true
     done < "$REPO_DIR/system/packages/flatpak-apps.txt"
   fi
-
-  if flatpak info com.usebottles.bottles >/dev/null 2>&1; then
-    flatpak override --user --reset com.usebottles.bottles || true
-    flatpak override --user com.usebottles.bottles \
-      --share=network \
-      --talk-name=org.freedesktop.portal.Desktop \
-      --filesystem=xdg-download \
-      --filesystem=xdg-documents \
-      --filesystem=xdg-desktop \
-      --filesystem=/mnt \
-      --filesystem=/run/media \
-      --filesystem=$HOME/Games:create || true
-  fi
-fi
-
-echo
-echo "=== Installing DWProton for Flatpak Bottles ==="
-if [ -x "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" ]; then
-  bash "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" || echo "WARNING: DWProton Flatpak Bottles install failed; continuing."
-else
-  echo "WARNING: install-dwproton-flatpak-bottles.sh not found."
 fi
 
 echo
