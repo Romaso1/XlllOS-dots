@@ -1,7 +1,29 @@
 === date ===
-субота, 2 травня 2026 23:57:49 +0300
+неділя, 3 травня 2026 01:25:22 +0300
 
-=== Flatpak Bottles ===
+=== removed gaming packages ===
+cachyos-gaming-applications not installed
+cachyos-gaming-meta not installed
+steam not installed
+steam-native-runtime not installed
+steamcmd not installed
+lutris not installed
+heroic-games-launcher not installed
+gamescope not installed
+goverlay not installed
+mangohud not installed
+protonup-qt not installed
+protontricks not installed
+protonplus not installed
+portproton not installed
+proton-cachyos-slr not installed
+umu-launcher not installed
+
+=== native bottles ===
+native bottles command not found
+pacman bottles not installed
+
+=== flatpak bottles ===
 
 Bottles - Run Windows software
 
@@ -23,33 +45,28 @@ Bottles - Run Windows software
        Заголовок: Merge pull request #530 from SteinGaming/master (d38947af4388)
             Дата: 2026-04-05 07:36:53 +0000
 
-=== Flatpak Bottles runners ===
+=== flatpak bottles permissions ===
+[Context]
+shared=network;
+filesystems=xdg-download;xdg-documents;xdg-desktop;/mnt;/run/media;/home/xiii/Games:create;
+
+[Session Bus Policy]
+org.freedesktop.portal.Desktop=talk
+
+=== flatpak bottles runners ===
 /home/xiii/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
 
-=== DWProton target ===
-итого 272K
-drwxr-xr-x 1 xiii xiii  330 кві 27 03:02 .
-drwxr-xr-x 1 xiii xiii   66 тра  2 23:54 ..
--rw-r--r-- 1 xiii xiii  714 кві 27 02:14 compatibilitytool.vdf
--rw-r--r-- 1 xiii xiii  13K кві 27 02:08 filelock.py
-drwxr-xr-x 1 xiii xiii   40 кві 27 02:51 files
--rw-r--r-- 1 xiii xiii  20K кві 27 02:08 LICENSE
--rw-r--r-- 1 xiii xiii 4,4K кві 27 02:11 LICENSE.OFL
--rw-r--r-- 1 xiii xiii 5,6K кві 27 02:10 PATENTS.AV1
--rwxr-xr-x 1 xiii xiii 108K кві 27 02:08 proton
--rw-r--r-- 1 xiii xiii  89K кві 27 02:08 proton_3.7_tracked_files
-drwxr-xr-x 1 xiii xiii  716 кві 27 02:21 protonfixes
--rw-r--r-- 1 xiii xiii  156 кві 27 02:08 toolmanifest.vdf
--rwxr-xr-x 1 xiii xiii 1,6K кві 27 02:08 user_settings.sample.py
--rw-r--r-- 1 xiii xiii  649 кві 27 02:08 utilities.py
--rw-r--r-- 1 xiii xiii   28 кві 27 03:02 version
-
-=== Native Bottles status ===
-native bottles command not found
-pacman bottles not installed
-
-=== Tools in PATH ===
-flatpak            /usr/bin/flatpak
+=== tools in PATH ===
+steam              not found
 bottles            not found
+flatpak            /usr/bin/flatpak
 wine               /usr/bin/wine
 winetricks         /usr/bin/winetricks
+gamescope          not found
+lutris             not found
+heroic             not found
+mangohud           not found
+goverlay           not found
+protonup-qt        not found
+protonplus         not found
+portproton         not found

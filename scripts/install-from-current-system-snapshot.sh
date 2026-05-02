@@ -5,31 +5,21 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 echo "=== Installing native packages from snapshot ==="
 
-if command -v pacman >/dev/null 2>&1; then
-  if [ -f "$REPO_DIR/system/packages/pacman-native-explicit.txt" ]; then
-    sudo pacman -S --needed - < "$REPO_DIR/system/packages/pacman-native-explicit.txt" || true
-  fi
+if command -v pacman >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/pacman-native-explicit.txt" ]; then
+  sudo pacman -S --needed - < "$REPO_DIR/system/packages/pacman-native-explicit.txt" || true
 fi
 
-if command -v paru >/dev/null 2>&1; then
-  if [ -f "$REPO_DIR/system/packages/aur-foreign-explicit.txt" ]; then
-    paru -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
-  fi
-elif command -v yay >/dev/null 2>&1; then
-  if [ -f "$REPO_DIR/system/packages/aur-foreign-explicit.txt" ]; then
-    yay -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
-  fi
-else
-  echo "paru/yay not found. AUR packages skipped."
+if command -v paru >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/aur-foreign-explicit.txt" ]; then
+  paru -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
+elif command -v yay >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/aur-foreign-explicit.txt" ]; then
+  yay -S --needed - < "$REPO_DIR/system/packages/aur-foreign-explicit.txt" || true
 fi
 
 echo
 echo "=== Installing Flatpak apps from snapshot ==="
 
-if ! command -v flatpak >/dev/null 2>&1; then
-  if command -v pacman >/dev/null 2>&1; then
-    sudo pacman -S --needed flatpak || true
-  fi
+if ! command -v flatpak >/dev/null 2>&1 && command -v pacman >/dev/null 2>&1; then
+  sudo pacman -S --needed flatpak || true
 fi
 
 if command -v flatpak >/dev/null 2>&1; then
@@ -43,7 +33,6 @@ if command -v flatpak >/dev/null 2>&1; then
 
   if flatpak info com.usebottles.bottles >/dev/null 2>&1; then
     flatpak override --user --reset com.usebottles.bottles || true
-
     flatpak override --user com.usebottles.bottles \
       --share=network \
       --talk-name=org.freedesktop.portal.Desktop \
@@ -54,8 +43,14 @@ if command -v flatpak >/dev/null 2>&1; then
       --filesystem=/run/media \
       --filesystem=$HOME/Games:create || true
   fi
+fi
+
+echo
+echo "=== Installing DWProton for Flatpak Bottles ==="
+if [ -x "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" ]; then
+  bash "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" || echo "WARNING: DWProton Flatpak Bottles install failed; continuing."
 else
-  echo "Flatpak still not available. Flatpak apps skipped."
+  echo "WARNING: install-dwproton-flatpak-bottles.sh not found."
 fi
 
 echo
@@ -66,11 +61,3 @@ rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
 echo "Done. Reboot or relogin is recommended."
-
-echo
-echo "=== Installing DWProton for Flatpak Bottles ==="
-if [ -x "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" ]; then
-  bash "$REPO_DIR/scripts/install-dwproton-flatpak-bottles.sh" || echo "WARNING: DWProton Flatpak Bottles install failed; continuing."
-else
-  echo "WARNING: install-dwproton-flatpak-bottles.sh not found."
-fi

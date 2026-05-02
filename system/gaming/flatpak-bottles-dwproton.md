@@ -6,7 +6,7 @@ Bottles is installed as Flatpak:
 com.usebottles.bottles
 ```
 
-DWProton is installed into the Flatpak Bottles runners directory:
+DWProton is installed into:
 
 ```bash
 ~/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
@@ -18,10 +18,19 @@ Manual install:
 bash scripts/install-dwproton-flatpak-bottles.sh
 ```
 
-Restore helper automatically runs the same script:
+Restore helper automatically runs it:
 
 ```bash
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-The DWProton runner binaries are not stored in this Git repo. The repo stores the installer script only.
+Useful Bottle dependencies for OAuth/login issues:
+
+```text
+webview2
+vcredist2022
+corefonts
+d3dcompiler_47
+```
+
+DWProton binaries are not stored in this repo. Only the installer script is stored.

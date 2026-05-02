@@ -1,45 +1,39 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-02_23-46-22
+Updated: 2026-05-03_01-25-17
 
-This snapshot reflects the current setup:
+Current setup:
 
 - Steam removed
 - CachyOS gaming meta/applications removed
 - Native/AUR Bottles removed
 - Bottles installed via Flatpak
-- Flatpak app list is included in `system/packages/flatpak-apps.txt`
+- DWProton automatically installed for Flatpak Bottles
+- Flatpak Bottles permissions are kept safer: no full home access
 
-Restore helper:
+Restore:
 
 ```bash
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-Bottles Flatpak:
+Run Bottles:
 
 ```bash
-flatpak install -y flathub com.usebottles.bottles
+flatpak run com.usebottles.bottles
 ```
 
-Backup created before native Bottles deletion:
-
-```bash
-/home/xiii/XlllOS-bottles-aur-to-flatpak-backup-2026-05-02_23-46-22
-```
-
-
-## Flatpak Bottles DWProton
-
-The restore helper automatically installs DWProton for Flatpak Bottles:
-
-```bash
-bash scripts/install-dwproton-flatpak-bottles.sh
-```
-
-Target:
+DWProton target:
 
 ```bash
 ~/.var/app/com.usebottles.bottles/data/bottles/runners/dwproton-10.0-26
 ```
 
+Recommended Bottles dependencies for Google/Facebook login in games:
+
+```text
+webview2
+vcredist2022
+corefonts
+d3dcompiler_47
+```

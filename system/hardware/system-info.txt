@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 23:47:14 +0300
+неділя, 3 травня 2026 01:25:22 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      96%
+CPU(s) scaling MHz:                      97%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00
@@ -90,7 +90,42 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 	Kernel modules: nouveau, nvidia_drm, nvidia
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
-=== monitors / hyprctl monitors ===
+=== NVIDIA ===
+Sun May  3 01:25:22 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
+|  0%   50C    P5             23W /  280W |    1107MiB /   8192MiB |     25%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            1450      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1543      G   Hyprland                                127MiB |
+|    0   N/A  N/A            1576      G   qs                                      129MiB |
+|    0   N/A  N/A            1611      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1678      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2002      G   kitty                                    55MiB |
+|    0   N/A  N/A            2055      G   kitty                                    43MiB |
+|    0   N/A  N/A            2104      G   kitty                                    75MiB |
+|    0   N/A  N/A            2162      G   kitty                                    35MiB |
+|    0   N/A  N/A            6725      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A           13278      G   /usr/lib/kactivitymanagerd                3MiB |
+|    0   N/A  N/A           37926      G   /usr/lib/firefox/firefox                242MiB |
+|    0   N/A  N/A           41372      G   /usr/bin/kded6                            3MiB |
+|    0   N/A  N/A           55683      G   kitty                                    45MiB |
++-----------------------------------------------------------------------------------------+
+
+=== Hyprland monitors ===
 Monitor DP-1 (ID 0):
 	3440x1440@180.00000 at 0x0
 	description: Microstep MSI MAG345CQR DD1H215200680
@@ -98,7 +133,7 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 3 (3)
+	active workspace: 2 (2)
 	special workspace: 0 ()
 	reserved: 0 40 0 0
 	scale: 1.00
@@ -133,10 +168,15 @@ sr0
 zram0       swap   1     zram0 f7b2ed99-1b10-42b0-988f-e36e4489488e                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff    844G    11% /var/tmp
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  782,9G    17% /var/tmp
                                                                                    /var/log
                                                                                    /var/cache
                                                                                    /home
                                                                                    /root
                                                                                    /srv
                                                                                    /
+
+=== memory ===
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       5,4Gi       8,7Gi       211Mi        17Gi        25Gi
+Swap:           31Gi        40Mi        31Gi
