@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 22:59:24 +0300
+субота, 2 травня 2026 22:59:54 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      97%
+CPU(s) scaling MHz:                      96%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00

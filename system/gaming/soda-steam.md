@@ -1,6 +1,6 @@
 # Soda runner in Steam
 
-Updated: 2026-05-02_22-59-19
+Updated: 2026-05-02_22-59-37
 
 Current preferred Soda version:
 
