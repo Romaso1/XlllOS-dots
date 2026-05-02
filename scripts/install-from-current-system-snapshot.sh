@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-echo "=== Installing packages from snapshot ==="
+echo "=== Installing native packages from snapshot ==="
 
 if command -v pacman >/dev/null 2>&1; then
   if [ -f "$REPO_DIR/system/packages/pacman-native-explicit.txt" ]; then
@@ -23,10 +23,37 @@ else
   echo "paru/yay not found. AUR packages skipped."
 fi
 
-if command -v flatpak >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/flatpak-apps.txt" ]; then
-  while read -r app; do
-    [ -n "$app" ] && flatpak install -y flathub "$app" || true
-  done < "$REPO_DIR/system/packages/flatpak-apps.txt"
+echo
+echo "=== Installing Flatpak apps from snapshot ==="
+
+if ! command -v flatpak >/dev/null 2>&1; then
+  if command -v pacman >/dev/null 2>&1; then
+    sudo pacman -S --needed flatpak || true
+  fi
+fi
+
+if command -v flatpak >/dev/null 2>&1; then
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo || true
+
+  if [ -f "$REPO_DIR/system/packages/flatpak-apps.txt" ]; then
+    while read -r app; do
+      [ -n "$app" ] && flatpak install -y flathub "$app" || true
+    done < "$REPO_DIR/system/packages/flatpak-apps.txt"
+  fi
+
+  if flatpak info com.usebottles.bottles >/dev/null 2>&1; then
+    flatpak override --user com.usebottles.bottles \
+      --filesystem=xdg-download \
+      --filesystem=xdg-documents \
+      --filesystem=xdg-desktop \
+      --filesystem=xdg-data/applications:create \
+      --filesystem=/mnt \
+      --filesystem=/run/media \
+      --filesystem=$HOME/Games:create \
+      --filesystem=$HOME/Downloads:create || true
+  fi
+else
+  echo "Flatpak still not available. Flatpak apps skipped."
 fi
 
 echo

@@ -1,6 +1,5 @@
 UNIT FILE                   STATE   PRESET
 arch-update-tray.service    enabled enabled
-gamemoded.service           enabled enabled
 psd.service                 enabled enabled
 wireplumber.service         enabled enabled
 xdg-user-dirs.service       enabled enabled
@@ -11,4 +10,4 @@ pipewire-pulse.socket       enabled enabled
 pipewire.socket             enabled enabled
 arch-update.timer           enabled enabled
 
-11 unit files listed.
+10 unit files listed.

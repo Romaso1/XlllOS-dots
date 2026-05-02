@@ -1,11 +1,9 @@
 adw-gtk-theme-git
 asciiquarium-transparent-git
-bottles
 breeze-plus
 cbonsai
 darkly-bin
 dwproton-bin
-fvs2
 game-devices-udev
 illogical-impulse-audio
 illogical-impulse-backlight

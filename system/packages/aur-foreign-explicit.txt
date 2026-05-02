@@ -1,5 +1,4 @@
 asciiquarium-transparent-git
-bottles
 cbonsai
 dwproton-bin
 game-devices-udev

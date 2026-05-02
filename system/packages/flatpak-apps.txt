@@ -1,2 +1,3 @@
 com.hypixel.HytaleLauncher
+com.usebottles.bottles
 org.vinegarhq.Sober

@@ -1,5 +1,5 @@
 === date ===
-субота, 2 травня 2026 23:32:17 +0300
+субота, 2 травня 2026 23:47:14 +0300
 
 === Removed gaming stack status ===
 cachyos-gaming-applications not installed
@@ -18,12 +18,35 @@ protonplus not installed
 portproton not installed
 proton-cachyos-slr not installed
 umu-launcher not installed
-gamemode 1.8.2-2.1
-lib32-gamemode not installed
 
-=== Bottles status ===
-/usr/bin/bottles
-bottles 2:63.2-1
+=== Native Bottles status ===
+native bottles command not found
+pacman bottles not installed
+
+=== Flatpak Bottles status ===
+
+Bottles - Run Windows software
+
+              ID: com.usebottles.bottles
+          Ссылка: app/com.usebottles.bottles/x86_64/stable
+     Архитектура: x86_64
+           Ветвь: stable
+          Версия: 63.2
+        Лицензия: GPL-3.0-only
+        Источник: flathub
+       Коллекция: org.flathub.Stable
+       Установка: system
+     Установлено: 502,7 МБ
+Среда выполнения: org.gnome.Platform/x86_64/49
+             Sdk: org.gnome.Sdk/x86_64/49
+
+          Коммит: c1e7e34e221bc5067ca1ff23139ebf31f26850661a5138b0dc5c78238fc34…
+        Родитель: c343343451b3fdae0f3524092037d59886b627dce3bb60221aeb7d1e6dc7f…
+       Заголовок: Merge pull request #530 from SteinGaming/master (d38947af4388)
+            Дата: 2026-04-05 07:36:53 +0000
+
+=== Bottles command paths ===
+Bottles	com.usebottles.bottles	63.2	stable	flathub	system
 
 === Steam leftovers ===
 no Steam home leftovers found
@@ -31,7 +54,8 @@ no Steam home leftovers found
 === Tools in PATH ===
 steam              not found
 steam-native       not found
-bottles            /usr/bin/bottles
+bottles            not found
+flatpak            /usr/bin/flatpak
 wine               /usr/bin/wine
 winetricks         /usr/bin/winetricks
 gamescope          not found
