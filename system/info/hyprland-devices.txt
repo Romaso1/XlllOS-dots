@@ -1,32 +1,32 @@
 mice:
-	Mouse at 5587318c5e10:
+	Mouse at 5639b1ef97b0:
 		zxzk-ysx-68----usb-keyboard-consumer-control-1
 			default speed: 0.00000
 			scroll factor: -1.00
-	Mouse at 5587319a1bf0:
+	Mouse at 5639b1fb85d0:
 		hid-1bcf:08a0-keyboard-1
 			default speed: 0.00000
 			scroll factor: -1.00
-	Mouse at 5587319e9d70:
+	Mouse at 5639b2017c80:
 		hid-1bcf:08a0-mouse
 			default speed: 0.00000
 			scroll factor: -1.00
-	Mouse at 5587319ea1a0:
+	Mouse at 5639b2041620:
 		logitech-m705
 			default speed: 0.00000
 			scroll factor: -1.00
-	Mouse at 558731a2c850:
+	Mouse at 5639b2064dc0:
 		logitech-k350-1
 			default speed: 0.00000
 			scroll factor: -1.00
-	Mouse at 558731b943b0:
+	Mouse at 5639b21c7a40:
 		ydotoold-virtual-device-1
 			default speed: 0.00000
 			scroll factor: -1.00
 
 
 Keyboards:
-	Keyboard at 5587314aa1d0:
+	Keyboard at 5639b1ce70e0:
 		razer-razer-kraken-kitty-v2-consumer-control
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -34,7 +34,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731833710:
+	Keyboard at 5639b1e60b00:
 		razer-razer-kraken-kitty-v2
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -42,7 +42,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731836380:
+	Keyboard at 5639b1e28c80:
 		zxzk-ysx-68----usb-keyboard
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -50,7 +50,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: yes
-	Keyboard at 558731866240:
+	Keyboard at 5639b1eb1900:
 		zxzk-ysx-68----usb-keyboard-consumer-control
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -58,7 +58,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 5587318c6240:
+	Keyboard at 5639b1f22aa0:
 		zxzk-ysx-68----usb-keyboard-system-control
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -66,7 +66,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 5587318f6fc0:
+	Keyboard at 5639b1f46110:
 		zxzk-ysx-68----usb-keyboard-1
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -74,7 +74,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 55873195a3c0:
+	Keyboard at 5639b1f8d8a0:
 		hid-1bcf:08a0-keyboard
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -82,7 +82,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731980ad0:
+	Keyboard at 5639b1fd50b0:
 		hid-1bcf:08a0
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -90,7 +90,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731a0de10:
+	Keyboard at 5639b2041a50:
 		logitech-k350
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -98,7 +98,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731a57b70:
+	Keyboard at 5639b20651f0:
 		power-button
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -106,7 +106,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731a5acf0:
+	Keyboard at 5639b208e6f0:
 		power-button-1
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -114,7 +114,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731aa4da0:
+	Keyboard at 5639b20d87f0:
 		sleep-button
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -122,7 +122,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731b15610:
+	Keyboard at 5639b211ee50:
 		eee-pc-wmi-hotkeys
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0
@@ -130,7 +130,7 @@ Keyboards:
 			capsLock: no
 			numLock: yes
 			main: no
-	Keyboard at 558731b31000:
+	Keyboard at 5639b2164660:
 		ydotoold-virtual-device
 			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
 			active layout index: 0

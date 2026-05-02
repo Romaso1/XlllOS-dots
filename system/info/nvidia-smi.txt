@@ -1,4 +1,4 @@
-Sat May  2 19:57:21 2026       
+Sat May  2 20:59:43 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -7,7 +7,7 @@ Sat May  2 19:57:21 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   57C    P0             57W /  280W |    1031MiB /   8192MiB |      3%      Default |
+|  0%   54C    P3             35W /  280W |    1760MiB /   8192MiB |     11%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -16,17 +16,20 @@ Sat May  2 19:57:21 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            1456      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1524      G   Hyprland                                127MiB |
-|    0   N/A  N/A            1558      G   qs                                      105MiB |
-|    0   N/A  N/A            1593      G   Xwayland                                  3MiB |
-|    0   N/A  N/A            1659      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
-|    0   N/A  N/A            2022      G   kitty                                    51MiB |
-|    0   N/A  N/A            2081      G   kitty                                    37MiB |
-|    0   N/A  N/A            2136      G   kitty                                   103MiB |
-|    0   N/A  N/A            2191      G   kitty                                    49MiB |
-|    0   N/A  N/A            2500      G   /usr/lib/firefox/firefox                179MiB |
-|    0   N/A  N/A            7984      G   kitty                                    47MiB |
-|    0   N/A  N/A            8309      G   /usr/bin/dolphin                          3MiB |
-|    0   N/A  N/A            8371      G   /usr/lib/kactivitymanagerd                3MiB |
+|    0   N/A  N/A            1458      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1527      G   Hyprland                                271MiB |
+|    0   N/A  N/A            1560      G   qs                                      107MiB |
+|    0   N/A  N/A            1596      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1662      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2012      G   kitty                                    43MiB |
+|    0   N/A  N/A            2069      G   kitty                                    25MiB |
+|    0   N/A  N/A            2117      G   kitty                                    45MiB |
+|    0   N/A  N/A            2178      G   kitty                                    27MiB |
+|    0   N/A  N/A            6118      G   ...\cef.win64\steamwebhelper.exe          3MiB |
+|    0   N/A  N/A           14882      G   /usr/bin/kded6                            3MiB |
+|    0   N/A  N/A           22097      G   /usr/lib/firefox/firefox                191MiB |
+|    0   N/A  N/A           33289      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A           33572      G   /usr/lib/kactivitymanagerd                3MiB |
+|    0   N/A  N/A           36044    C+G   /usr/bin/python3                         63MiB |
+|    0   N/A  N/A           43995      G   kitty                                    55MiB |
 +-----------------------------------------------------------------------------------------+

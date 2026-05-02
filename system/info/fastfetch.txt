@@ -23,7 +23,7 @@
 [58C---------
 [58COS: CachyOS x86_64
 [58CKernel: Linux 7.0.3-1-cachyos
-[58CUptime: 18 mins
+[58CUptime: 1 hour, 2 mins
 [58CPackages: 10 (flatpak), 1615 (pacman)
 [58CShell: bash 5.3.9
 [58CDisplay (MSI3DD1): 3440x1440 in 34", 180 Hz [External]
@@ -33,9 +33,9 @@
 [58CTerminal Font: JetBrainsMonoNF-Regular (11pt)
 [58CCPU: Intel(R) Core(TM) i7-7700 (8) @ 4.20 GHz
 [58CGPU: NVIDIA GeForce RTX 3070 Lite Hash Rate [Discrete]
-[58CMemory: 4.49 GiB / 31.28 GiB (14%)
+[58CMemory: 8.86 GiB / 31.28 GiB (28%)
 [58CSwap: 0 B / 31.28 GiB (0%)
-[58CDisk (/): 85.66 GiB / 949.87 GiB (9%) - btrfs
+[58CDisk (/): 90.44 GiB / 949.87 GiB (10%) - btrfs
 [58CLocal IP (enp5s0): 192.168.0.211/24
 [58CLocale: ru_RU.UTF-8
 [58C

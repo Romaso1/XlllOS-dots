@@ -5,16 +5,16 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 2 (2)
+	active workspace: 5 (5)
 	special workspace: 0 ()
-	reserved: 0 40 0 0
+	reserved: 0 175 0 0
 	scale: 1.00
 	transform: 0
 	focused: yes
 	dpmsStatus: 1
 	vrr: false
 	solitary: 0
-	solitaryBlockedBy: windowed mode,missing candidate
+	solitaryBlockedBy: windowed mode,missing candidate,config error
 	activelyTearing: false
 	tearingBlockedBy: next frame is not torn,user settings,missing candidate
 	directScanoutTo: 0

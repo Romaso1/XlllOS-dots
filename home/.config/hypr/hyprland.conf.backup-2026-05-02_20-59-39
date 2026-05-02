@@ -51,14 +51,3 @@ source=hyprland/shellOverrides/main.conf
 source = ~/.config/hypr/desktop-widgets.conf
 
 source = ~/.config/hypr/custom/lsfg-vk-wayland.conf
-
-# BEGIN XlllOS Bottles Wine floating rules
-# Bottles / Wine windows
-windowrulev2 = float, class:^(Bottles)$
-windowrulev2 = float, class:^(bottles)$
-windowrulev2 = float, class:^(wine)$
-windowrulev2 = float, class:^(explorer.exe)$
-windowrulev2 = float, class:^(.*\.exe)$
-windowrulev2 = center, class:^(Bottles|bottles|wine|explorer.exe|.*\.exe)$
-windowrulev2 = size 1280 720, class:^(Bottles|bottles|wine|explorer.exe|.*\.exe)$
-# END XlllOS Bottles Wine floating rules
