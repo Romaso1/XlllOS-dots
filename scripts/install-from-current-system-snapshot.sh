@@ -50,3 +50,33 @@ if [ -x "$REPO_DIR/scripts/install-steam-dwproton.sh" ]; then
 else
   echo "WARNING: install-steam-dwproton.sh not found."
 fi
+
+
+# BEGIN XlllOS Steam default deps Bottles NVIDIA
+echo
+echo "=== Installing default Steam deps for Bottles-like mods and NVIDIA ==="
+
+if command -v pacman >/dev/null 2>&1; then
+  sudo pacman -S --needed protontricks winetricks protonplus || true
+fi
+
+mkdir -p "$HOME/.config/systemd/user"
+
+if [ -f "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.service" ]; then
+  cp -a "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.service" "$HOME/.config/systemd/user/"
+fi
+
+if [ -f "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.timer" ]; then
+  cp -a "$REPO_DIR/system/systemd-user/xlllos-steam-default-deps-bottles-nvidia.timer" "$HOME/.config/systemd/user/"
+fi
+
+systemctl --user daemon-reload || true
+systemctl --user enable --now xlllos-steam-default-deps-bottles-nvidia.timer || true
+
+if [ -x "$REPO_DIR/scripts/install-steam-default-deps-bottles-nvidia.sh" ]; then
+  bash "$REPO_DIR/scripts/install-steam-default-deps-bottles-nvidia.sh" || echo "WARNING: default Steam dependency install failed; continuing."
+else
+  echo "WARNING: install-steam-default-deps-bottles-nvidia.sh not found."
+fi
+# END XlllOS Steam default deps Bottles NVIDIA
+

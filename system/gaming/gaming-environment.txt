@@ -1,48 +1,26 @@
 === date ===
-неділя, 3 травня 2026 01:36:32 +0300
+неділя, 3 травня 2026 02:05:49 +0300
 
-=== CachyOS gaming packages ===
-cachyos-gaming-meta 1:1.0.0-7
-cachyos-gaming-applications 1.0.0-2
-steam 1.0.0.85-6
-lutris 0.5.22-1
-heroic-games-launcher 2.21.0-2
-gamescope 3.16.23-2
-goverlay 1.7.5-1.1
-mangohud 0.8.2-3.1
-gamemode 1.8.2-2.1
-lib32-gamemode 1.8.2-1
-protonup-qt 2.15.0-1
-protontricks 1.14.1-1
+=== ProtonPlus ===
+/usr/bin/protonplus
 protonplus 0.5.20-1
-portproton 1.7.5-1
-proton-cachyos 1:11.0.20260428-1
-proton-cachyos-slr 1:11.0.20260428-1
-umu-launcher 1.4.0-2
-wine-cachyos-opt 2:10.0.20260312-2
 
-=== Bottles status ===
-native bottles command not found
-pacman bottles not installed
-Flatpak Bottles not installed
+=== Protontricks ===
+/usr/bin/protontricks
+protontricks 1.14.1-1
 
-=== Bottles leftovers ===
-no Bottles leftovers found
+=== Timer ===
+enabled
+active
 
-=== Tools in PATH ===
-steam              /usr/bin/steam
-steam-native       not found
-lutris             /usr/bin/lutris
-heroic             /usr/bin/heroic
-gamescope          /usr/bin/gamescope
-goverlay           /usr/bin/goverlay
-mangohud           /usr/bin/mangohud
-gamemoderun        /usr/bin/gamemoderun
-protonup-qt        /usr/bin/protonup-qt
-protontricks       /usr/bin/protontricks
-protonplus         /usr/bin/protonplus
-portproton         /usr/bin/portproton
-wine               /usr/bin/wine
-winetricks         /usr/bin/winetricks
-bottles            not found
-flatpak            /usr/bin/flatpak
+=== Existing Steam Proton prefixes ===
+0
+0
+548430
+548430
+
+=== Processed markers ===
+
+=== Steam DWProton runners ===
+/home/xiii/.local/share/Steam/compatibilitytools.d/dwproton-10.0-26
+/home/xiii/.steam/root/compatibilitytools.d/dwproton-10.0-26

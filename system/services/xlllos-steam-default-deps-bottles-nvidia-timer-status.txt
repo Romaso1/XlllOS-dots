@@ -1,0 +1,8 @@
+● xlllos-steam-default-deps-bottles-nvidia.timer - XlllOS periodically install default deps into new Steam Proton prefixes
+     Loaded: loaded (/home/xiii/.config/systemd/user/xlllos-steam-default-deps-bottles-nvidia.timer; enabled; preset: enabled)
+     Active: active (waiting) since Sun 2026-05-03 02:05:47 EEST; 1s ago
+ Invocation: c108437cc0c94dd3a24e498ba05d3033
+    Trigger: Sun 2026-05-03 02:35:47 EEST; 29min left
+   Triggers: ● xlllos-steam-default-deps-bottles-nvidia.service
+
+тра 03 02:05:47 neko systemd[873]: Started XlllOS periodically install default deps into new Steam Proton prefixes.
