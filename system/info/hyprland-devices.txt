@@ -1,0 +1,150 @@
+mice:
+	Mouse at 55f5d769ba70:
+		zxzk-ysx-68----usb-keyboard-consumer-control-1
+			default speed: 0.00000
+			scroll factor: -1.00
+	Mouse at 55f5d7776c60:
+		hid-1bcf:08a0-keyboard-1
+			default speed: 0.00000
+			scroll factor: -1.00
+	Mouse at 55f5d77bf0a0:
+		hid-1bcf:08a0-mouse
+			default speed: 0.00000
+			scroll factor: -1.00
+	Mouse at 55f5d77e3660:
+		logitech-m705
+			default speed: 0.00000
+			scroll factor: -1.00
+	Mouse at 55f5d78070a0:
+		logitech-k350-1
+			default speed: 0.00000
+			scroll factor: -1.00
+	Mouse at 55f5d7968d00:
+		ydotoold-virtual-device-1
+			default speed: 0.00000
+			scroll factor: -1.00
+
+
+Keyboards:
+	Keyboard at 55f5d74688f0:
+		razer-razer-kraken-kitty-v2-consumer-control
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d75e85d0:
+		razer-razer-kraken-kitty-v2
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d760bcb0:
+		zxzk-ysx-68----usb-keyboard
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: yes
+	Keyboard at 55f5d7653c50:
+		zxzk-ysx-68----usb-keyboard-consumer-control
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d76c4730:
+		zxzk-ysx-68----usb-keyboard-system-control
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d76e2db0:
+		zxzk-ysx-68----usb-keyboard-1
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d772fb80:
+		hid-1bcf:08a0-keyboard
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d7777090:
+		hid-1bcf:08a0
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d77e3a90:
+		logitech-k350
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d782d080:
+		power-button
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d7833630:
+		power-button-1
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d787a3e0:
+		sleep-button
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d78dd700:
+		eee-pc-wmi-hotkeys
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+	Keyboard at 55f5d7905ff0:
+		ydotoold-virtual-device
+			rules: r "", m "", l "us,ru,ua", v "", o "grp:alt_shift_toggle"
+			active layout index: 0
+			active keymap: English (US)
+			capsLock: no
+			numLock: yes
+			main: no
+
+
+Tablets:
+
+
+Touch:
+
+
+Switches:
+

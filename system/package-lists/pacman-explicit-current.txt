@@ -4,6 +4,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 ark
+asciiquarium-transparent-git
 awesome-terminal-fonts
 awww
 base
@@ -15,11 +16,13 @@ bluez-hid2hci
 bluez-libs
 bluez-obex
 bluez-utils
+bottles
 btop
 btrfs-assistant
 btrfs-progs
 cachy-update
 cachyos-fish-config
+cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -38,6 +41,7 @@ cachyos-v4-mirrorlist
 cachyos-wallpapers
 cachyos-zsh-config
 cantarell-fonts
+cbonsai
 chafa
 chwd
 cloudflare-warp-bin
@@ -53,6 +57,7 @@ dmraid
 dnsmasq
 dosfstools
 duf
+dwproton-bin
 e2fsprogs
 efibootmgr
 efitools
@@ -68,6 +73,7 @@ firefox
 firefox-i18n-ru
 flatpak
 fsarchiver
+game-devices-udev
 gamemode
 gamescope
 git
@@ -82,6 +88,20 @@ hdparm
 hwdetect
 hwinfo
 icoutils
+illogical-impulse-audio
+illogical-impulse-backlight
+illogical-impulse-basic
+illogical-impulse-bibata-modern-classic-bin
+illogical-impulse-fonts-themes
+illogical-impulse-hyprland
+illogical-impulse-kde
+illogical-impulse-microtex-git
+illogical-impulse-portal
+illogical-impulse-python
+illogical-impulse-quickshell-git
+illogical-impulse-screencapture
+illogical-impulse-toolkit
+illogical-impulse-widgets
 inetutils
 inotify-tools
 intel-ucode
@@ -144,6 +164,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
+nvflash
 nvidia-settings
 nvidia-utils
 opencl-icd-loader
@@ -152,13 +173,16 @@ openssh
 os-prober
 pacman-contrib
 paru
+peaclock
 perl
+pipes.sh
 pipewire-alsa
 pkgfile
 plasma-browser-integration
 plocate
 plymouth
 poppler-glib
+portproton
 power-profiles-daemon
 profile-sync-daemon
 proton-cachyos
@@ -184,6 +208,7 @@ smartmontools
 snapper
 sof-firmware
 spotify-launcher
+steam
 sudo
 sysfsutils
 telegram-desktop
@@ -201,6 +226,7 @@ ufw-extras
 umu-launcher
 unrar
 unzip
+upscayl-bin
 usb_modeswitch
 usbutils
 uwsm

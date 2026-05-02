@@ -20,6 +20,7 @@ btrfs-assistant
 btrfs-progs
 cachy-update
 cachyos-fish-config
+cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -184,6 +185,7 @@ smartmontools
 snapper
 sof-firmware
 spotify-launcher
+steam
 sudo
 sysfsutils
 telegram-desktop
