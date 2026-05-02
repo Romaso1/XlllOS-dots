@@ -1,0 +1,68 @@
+=== Steam compatibilitytools.d ===
+
+=== Bottles runners ===
+/home/xiii/.local/share/bottles/runners/caffe-9.7
+/home/xiii/.local/share/bottles/runners/caffe-9.7/bin
+/home/xiii/.local/share/bottles/runners/caffe-9.7/include
+/home/xiii/.local/share/bottles/runners/caffe-9.7/lib
+/home/xiii/.local/share/bottles/runners/caffe-9.7/lib32
+/home/xiii/.local/share/bottles/runners/caffe-9.7/share
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/files
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/protonfixes
+/home/xiii/.local/share/bottles/runners/ge-proton10-34
+/home/xiii/.local/share/bottles/runners/ge-proton10-34/files
+/home/xiii/.local/share/bottles/runners/ge-proton10-34/protonfixes
+/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64
+/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/bin
+/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/include
+/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/lib
+/home/xiii/.local/share/bottles/runners/kron4ek-wine-11.7-amd64/share
+/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12
+/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/bin
+/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/lib
+/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/lib64
+/home/xiii/.local/share/bottles/runners/lutris-ge-lol-p8-12/share
+/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34
+/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34/files
+/home/xiii/.local/share/bottles/runners/proton-EM-10.0-34/protonfixes
+/home/xiii/.local/share/bottles/runners/soda-9.0-1
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/bin
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/include
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib32
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/share
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/bin
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/lib
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/lib64
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-25/share
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/bin
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/lib
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/lib64
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-26/share
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/bin
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/lib
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/lib64
+/home/xiii/.local/share/bottles/runners/wine-ge-proton8-27-lol/share
+
+=== PortProton files ===
+/home/xiii/PortProton/data/dxvk.conf
+/home/xiii/PortProton/data/user.conf
+/home/xiii/PortProton/data/vkBasalt.conf
+
+=== Wine/Proton tools in PATH ===
+wine             /usr/bin/wine
+winetricks       /usr/bin/winetricks
+protontricks     /usr/bin/protontricks
+protonup-qt      /usr/bin/protonup-qt
+protonplus       /usr/bin/protonplus
+portproton       /usr/bin/portproton
+gamemoderun      /usr/bin/gamemoderun
+mangohud         /usr/bin/mangohud
+goverlay         not found
+bottles          /usr/bin/bottles
+steam            not found
+steam-native     not found

@@ -1,0 +1,10 @@
+Hytale Launcher	com.hypixel.HytaleLauncher		master	hytalelauncher-origin	system
+Mesa	org.freedesktop.Platform.GL.default	26.0.5	25.08	flathub	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	26.0.5	25.08-extra	flathub	system
+nvidia-595-71-05	org.freedesktop.Platform.GL.nvidia-595-71-05		1.4	flathub	system
+Nvidia VAAPI driver	org.freedesktop.Platform.VAAPI.nvidia		25.08	flathub	system
+Codecs Extra Extension	org.freedesktop.Platform.codecs-extra		25.08-extra	flathub	system
+GNOME Application Platform version 49	org.gnome.Platform		49	flathub	system
+GNOME Application Platform version 50	org.gnome.Platform		50	flathub	system
+adw-gtk3 GTK Theme	org.gtk.Gtk3theme.adw-gtk3-dark	6.5	3.22	flathub	system
+Sober	org.vinegarhq.Sober	1.6.7	stable	flathub	system

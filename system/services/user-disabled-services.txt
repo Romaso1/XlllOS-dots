@@ -1,0 +1,31 @@
+UNIT FILE                                    STATE    PRESET
+cliphist.service                             disabled enabled
+dbus-broker.service                          disabled enabled
+filter-chain.service                         disabled enabled
+fluidsynth.service                           disabled enabled
+fumon.service                                disabled enabled
+gcr-ssh-agent.service                        disabled enabled
+gnome-keyring-daemon.service                 disabled enabled
+hypridle.service                             disabled enabled
+kde-baloo.service                            disabled enabled
+mpris-proxy.service                          disabled enabled
+obex.service                                 disabled enabled
+p11-kit-server.service                       disabled enabled
+pipewire-pulse.service                       disabled enabled
+pipewire.service                             disabled enabled
+plasma-kcminit.service                       disabled enabled
+plasma-ksmserver.service                     disabled enabled
+plasma-plasmashell.service                   disabled enabled
+systemd-nspawn@.service                      disabled enabled
+systemd-tmpfiles-setup.service               disabled enabled
+systemd-vmspawn@.service                     disabled enabled
+warp-taskbar.service                         disabled enabled
+wireplumber@.service                         disabled enabled
+xdg-desktop-portal-rewrite-launchers.service disabled enabled
+gcr-ssh-agent.socket                         disabled enabled
+gssuserproxy.socket                          disabled enabled
+ssh-agent.socket                             disabled enabled
+machines.target                              disabled enabled
+systemd-tmpfiles-clean.timer                 disabled enabled
+
+28 unit files listed.

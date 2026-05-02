@@ -1,0 +1,11 @@
+=== ananicy-cpp ===
+disabled
+inactive
+
+=== ananicy ===
+not-found
+inactive
+
+=== gamemoded ===
+enabled
+active

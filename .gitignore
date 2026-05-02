@@ -67,3 +67,9 @@ home/.gnupg/
 home/.ssh/
 
 home/.config/hypr/hyprland.conf.backup-*
+
+# Local private cloud/token files
+home/.config/quickshell/ii/services/gCloud/
+dotfiles/.config/quickshell/ii/services/gCloud/
+**/token_from_key.py
+**/token-from-key-venv.sh
