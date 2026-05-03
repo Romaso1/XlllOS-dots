@@ -1,5 +1,5 @@
-NEXT                          LEFT LAST                               PASSED UNIT              ACTIVATES
-Sun 2026-05-03 03:00:00 EEST 33min Sun 2026-05-03 02:00:16 EEST    26min ago psd-resync.timer  psd-resync.service
-Mon 2026-05-04 00:13:34 EEST   21h Sat 2026-05-02 23:40:38 EEST 2h 45min ago arch-update.timer arch-update.service
+NEXT                          LEFT LAST PASSED UNIT              ACTIVATES
+Sun 2026-05-03 03:34:10 EEST 16min -         - arch-update.timer arch-update.service
+Sun 2026-05-03 04:00:00 EEST 42min -         - psd-resync.timer  psd-resync.service
 
 2 timers listed.
