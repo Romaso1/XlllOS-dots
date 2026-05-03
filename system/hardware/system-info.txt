@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 03:50:32 +0300
+неділя, 3 травня 2026 04:37:28 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -23,7 +23,7 @@ LOGO=cachyos
        Icon name: computer-desktop
          Chassis: desktop 🖥️
       Machine ID: da6bdcff9639441180f7d3280ab30b7c
-         Boot ID: 669032cbf74c4fd6a37c9b07eb9ee20e
+         Boot ID: 38ec7bd4772d4fb99e199ba68b887e30
 Operating System: CachyOS
           Kernel: Linux 7.0.3-1-cachyos
     Architecture: x86-64
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      95%
+CPU(s) scaling MHz:                      87%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00
@@ -83,15 +83,75 @@ Vulnerability Tsa:                       Not affected
 Vulnerability Tsx async abort:           Mitigation; TSX disabled
 Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
 
-=== GPU ===
+=== lsblk ===
+NAME        FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sda                                                                                
+├─sda1                                                                             
+└─sda2      ntfs               3ECC3871CC382615                                    
+sr0                                                                                
+zram0       swap   1     zram0 c4938e08-eca7-4941-bbd9-bf2f330478bb                [SWAP]
+nvme0n1                                                                            
+├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,3G    17% /boot
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  894,8G     5% /var/tmp
+                                                                                   /var/log
+                                                                                   /var/cache
+                                                                                   /home
+                                                                                   /root
+                                                                                   /srv
+                                                                                   /
+
+=== mounts ===
+TARGET                                                         SOURCE                  FSTYPE              OPTIONS
+/                                                              /dev/nvme0n1p2[/@]      btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@
+├─/dev                                                         devtmpfs                devtmpfs            rw,nosuid,size=16242228k,nr_inodes=4060557,mode=755,inode64,huge=within_size
+│ ├─/dev/mqueue                                                mqueue                  mqueue              rw,nosuid,nodev,noexec,relatime
+│ ├─/dev/hugepages                                             hugetlbfs               hugetlbfs           rw,nosuid,nodev,relatime,pagesize=2M
+│ ├─/dev/shm                                                   tmpfs                   tmpfs               rw,nosuid,nodev,inode64,huge=within_size,usrquota
+│ └─/dev/pts                                                   devpts                  devpts              rw,nosuid,noexec,relatime,gid=5,mode=600,ptmxmode=000
+├─/sys                                                         sysfs                   sysfs               rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/tracing                                        tracefs                 tracefs             rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/debug                                          debugfs                 debugfs             rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/fuse/connections                                   fusectl                 fusectl             rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security                                       securityfs              securityfs          rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup                                             cgroup2                 cgroup2             rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting
+│ ├─/sys/fs/pstore                                             none                    pstore              rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/firmware/efi/efivars                                  efivarfs                efivarfs            rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/bpf                                                bpf                     bpf                 rw,nosuid,nodev,noexec,relatime,mode=700
+│ └─/sys/kernel/config                                         configfs                configfs            rw,nosuid,nodev,noexec,relatime
+├─/proc                                                        proc                    proc                rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc                                   systemd-1               autofs              rw,relatime,fd=43,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=917
+│   └─/proc/sys/fs/binfmt_misc                                 binfmt_misc             binfmt_misc         rw,nosuid,nodev,noexec,relatime
+├─/run                                                         tmpfs                   tmpfs               rw,nosuid,nodev,size=6560832k,nr_inodes=819200,mode=755,inode64,huge=within_size
+│ ├─/run/credentials/systemd-journald.service                  none                    tmpfs               ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=within_size,noswap
+│ ├─/run/credentials/systemd-resolved.service                  none                    tmpfs               ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=within_size,noswap
+│ └─/run/user/1000                                             tmpfs                   tmpfs               rw,nosuid,nodev,relatime,size=3280412k,nr_inodes=820103,mode=700,uid=1000,gid=1000,inode64,huge=within_size
+│   ├─/run/user/1000/doc                                       portal                  fuse.portal         rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
+│   ├─/run/user/1000/psd/xiii-firefox-zibtxnr1.default         fuse-overlayfs          fuse.fuse-overlayfs rw,nosuid,nodev,noatime,user_id=1000,group_id=1000,default_permissions
+│   ├─/run/user/1000/psd/xiii-firefox-wknic38i.default-release fuse-overlayfs          fuse.fuse-overlayfs rw,nosuid,nodev,noatime,user_id=1000,group_id=1000,default_permissions
+│   └─/run/user/1000/gvfs                                      gvfsd-fuse              fuse.gvfsd-fuse     rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
+├─/root                                                        /dev/nvme0n1p2[/@root]  btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@root
+├─/home                                                        /dev/nvme0n1p2[/@home]  btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home
+├─/srv                                                         /dev/nvme0n1p2[/@srv]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@srv
+├─/var/cache                                                   /dev/nvme0n1p2[/@cache] btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=260,subvol=/@cache
+├─/tmp                                                         tmpfs                   tmpfs               rw,noatime,inode64,huge=within_size
+├─/var/log                                                     /dev/nvme0n1p2[/@log]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=262,subvol=/@log
+├─/var/tmp                                                     /dev/nvme0n1p2[/@tmp]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=261,subvol=/@tmp
+└─/boot                                                        /dev/nvme0n1p1          vfat                rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
+
+=== memory ===
+               total        used        free      shared  buff/cache   available
+Mem:            31Gi       5,8Gi        17Gi       229Mi       8,6Gi        25Gi
+Swap:           31Gi          0B        31Gi
+
+=== gpu lspci ===
 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA104 [GeForce RTX 3070 Lite Hash Rate] [10de:2488] (rev a1)
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Device [1462:3901]
 	Kernel driver in use: nvidia
 	Kernel modules: nouveau, nvidia_drm, nvidia
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
-=== NVIDIA ===
-Sun May  3 03:50:32 2026       
+=== nvidia-smi ===
+Sun May  3 04:37:28 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -100,7 +160,7 @@ Sun May  3 03:50:32 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   51C    P8             23W /  280W |    1029MiB /   8192MiB |     38%      Default |
+|  0%   54C    P0             49W /  280W |    1104MiB /   8192MiB |      4%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -109,27 +169,105 @@ Sun May  3 03:50:32 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            1463      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1530      G   Hyprland                                129MiB |
-|    0   N/A  N/A            1565      G   qs                                      105MiB |
-|    0   N/A  N/A            1599      G   Xwayland                                  4MiB |
-|    0   N/A  N/A            1666      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
-|    0   N/A  N/A            2026      G   kitty                                    51MiB |
-|    0   N/A  N/A            2085      G   kitty                                    43MiB |
-|    0   N/A  N/A            2140      G   kitty                                    75MiB |
-|    0   N/A  N/A            2195      G   kitty                                    35MiB |
-|    0   N/A  N/A            2737      G   /usr/bin/kded6                            3MiB |
-|    0   N/A  N/A            6694      G   /usr/lib/firefox/firefox                156MiB |
-|    0   N/A  N/A           22892      G   kitty                                    85MiB |
-|    0   N/A  N/A           23450      G   /usr/bin/dolphin                          3MiB |
-|    0   N/A  N/A           23455      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A            1454      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1523      G   Hyprland                                157MiB |
+|    0   N/A  N/A            1557      G   qs                                      106MiB |
+|    0   N/A  N/A            1596      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1673      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2024      G   kitty                                    55MiB |
+|    0   N/A  N/A            2078      G   kitty                                    37MiB |
+|    0   N/A  N/A            2128      G   kitty                                    75MiB |
+|    0   N/A  N/A            2205      G   kitty                                    35MiB |
+|    0   N/A  N/A           12469      G   /usr/lib/firefox/firefox                173MiB |
+|    0   N/A  N/A           13275      G   /usr/bin/Telegram                        69MiB |
+|    0   N/A  N/A           15131      G   kitty                                    45MiB |
+|    0   N/A  N/A           15897      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A           16069      G   /usr/lib/kactivitymanagerd                3MiB |
 +-----------------------------------------------------------------------------------------+
 
-=== Vulkan packages ===
+=== nvidia modules ===
+nvidia_drm            159744  99
+drm_ttm_helper         20480  1 nvidia_drm
+nvidia_uvm           2404352  0
+nvidia_modeset       2048000  30 nvidia_drm
+nvidia              15544320  608 nvidia_uvm,nvidia_modeset
+video                  81920  2 asus_wmi,nvidia_modeset
+
+=== vulkan packages ===
 vulkan-icd-loader 1.4.341.0-1.1
 lib32-vulkan-icd-loader 1.4.341.0-1
 nvidia-utils 595.71.05-1
 lib32-nvidia-utils 595.71.05-1
+
+=== vulkan summary ===
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.4.341
+
+
+Instance Extensions: count = 25
+-------------------------------
+VK_EXT_acquire_drm_display             : extension revision 1
+VK_EXT_acquire_xlib_display            : extension revision 1
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_EXT_direct_mode_display             : extension revision 1
+VK_EXT_display_surface_counter         : extension revision 1
+VK_EXT_surface_maintenance1            : extension revision 1
+VK_EXT_swapchain_colorspace            : extension revision 5
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_display                         : extension revision 23
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_display_properties2         : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_portability_enumeration         : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_maintenance1            : extension revision 1
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_wayland_surface                 : extension revision 6
+VK_KHR_xcb_surface                     : extension revision 6
+VK_KHR_xlib_surface                    : extension revision 6
+VK_LUNARG_direct_driver_loading        : extension revision 1
+VK_NV_display_stereo                   : extension revision 1
+
+Instance Layers: count = 10
+---------------------------
+VK_LAYER_FROG_gamescope_wsi_x86_64 Gamescope WSI (XWayland Bypass) Layer (x86_64) 1.3.221  version 1
+VK_LAYER_LS_frame_generation       Lossless Scaling frame generation layer        1.4.313  version 1
+VK_LAYER_MANGOHUD_overlay_x86      Vulkan Hud Overlay                             1.3.0    version 1
+VK_LAYER_MANGOHUD_overlay_x86_64   Vulkan Hud Overlay                             1.3.0    version 1
+VK_LAYER_NV_optimus                NVIDIA Optimus layer                           1.4.329  version 1
+VK_LAYER_NV_present                NVIDIA Presentation Layer                      1.4.329  version 1
+VK_LAYER_VALVE_steam_fossilize_32  Steam Pipeline Caching Layer                   1.3.207  version 1
+VK_LAYER_VALVE_steam_fossilize_64  Steam Pipeline Caching Layer                   1.3.207  version 1
+VK_LAYER_VALVE_steam_overlay_32    Steam Overlay Layer                            1.3.207  version 1
+VK_LAYER_VALVE_steam_overlay_64    Steam Overlay Layer                            1.3.207  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 1.4.329
+	driverVersion      = 595.71.5.0
+	vendorID           = 0x10de
+	deviceID           = 0x2488
+	deviceType         = PHYSICAL_DEVICE_TYPE_DISCRETE_GPU
+	deviceName         = NVIDIA GeForce RTX 3070
+	driverID           = DRIVER_ID_NVIDIA_PROPRIETARY
+	driverName         = NVIDIA
+	driverInfo         = 595.71.05
+	conformanceVersion = 1.4.3.3
+	deviceUUID         = 84f12198-21be-c5be-8f8e-0f479a0e916d
+	driverUUID         = eec1eba6-4484-5d12-ab32-1ef922507ba0
+
+=== opengl renderer ===
+OpenGL vendor string: NVIDIA Corporation
+OpenGL renderer string: NVIDIA GeForce RTX 3070/PCIe/SSE2
+OpenGL version string: 4.6.0 NVIDIA 595.71.05
 
 === Hyprland monitors ===
 Monitor DP-1 (ID 0):
@@ -165,24 +303,18 @@ Monitor DP-1 (ID 0):
 
 
 
-=== lsblk ===
-NAME        FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-sda                                                                                
-├─sda1                                                                             
-└─sda2      ntfs               3ECC3871CC382615                                    
-sr0                                                                                
-zram0       swap   1     zram0 2d7da230-9af2-453d-91d3-8680cc38019e                [SWAP]
-nvme0n1                                                                            
-├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  878,8G     7% /var/log
-                                                                                   /var/tmp
-                                                                                   /var/cache
-                                                                                   /home
-                                                                                   /root
-                                                                                   /srv
-                                                                                   /
+=== Hyprland version ===
+Hyprland 0.54.3 built from branch v0.54.3 at commit 521ece463c4a9d3d128670688a34756805a4328f clean (version: bump to 0.54.3).
+Date: Fri Mar 27 18:17:50 2026
+Tag: v0.54.3, commits: 7014
 
-=== memory ===
-               total        used        free      shared  buff/cache   available
-Mem:            31Gi       4,9Gi        17Gi       105Mi       8,9Gi        26Gi
-Swap:           31Gi          0B        31Gi
+Libraries:
+Hyprgraphics: built against 0.5.1, system has 0.5.1
+Hyprutils: built against 0.13.0, system has 0.13.0
+Hyprcursor: built against 0.1.13, system has 0.1.13
+Hyprlang: built against 0.6.8, system has 0.6.8
+Aquamarine: built against 0.11.0, system has 0.11.0
+
+Version ABI string: 521ece463c4a9d3d128670688a34756805a4328f_aq_0.11_hu_0.13_hg_0.5_hc_0.1_hlg_0.6
+no flags were set
+

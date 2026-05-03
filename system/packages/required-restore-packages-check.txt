@@ -1,0 +1,13 @@
+=== required restore packages check ===
+неділя, 3 травня 2026 04:37:25 +0300
+
+--- cachyos-gaming-meta ---
+cachyos-gaming-meta 1:1.0.0-7
+/home/xiii/XlllOS-dots/system/packages/pacman-explicit.txt:25:cachyos-gaming-meta
+/home/xiii/XlllOS-dots/system/packages/pacman-native-explicit.txt:23:cachyos-gaming-meta
+
+--- bottles ---
+bottles 2:63.2-1
+/home/xiii/XlllOS-dots/system/packages/pacman-explicit.txt:19:bottles
+/home/xiii/XlllOS-dots/system/packages/aur-foreign-explicit.txt:2:bottles
+

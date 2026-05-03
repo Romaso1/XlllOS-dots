@@ -70,3 +70,17 @@ dotfiles/.config/quickshell/ii/services/gCloud/
 # XlllOS local backups/private files
 *.backup-*
 *.bak-private
+
+# XlllOS secret/system key material - never commit
+system/etc/etc/pacman.d/gnupg/
+system/etc/etc/pacman.d/.gnupg/
+system/etc/etc/ssh/
+system/etc/etc/wireguard/
+system/etc/etc/openvpn/
+system/etc/etc/NetworkManager/system-connections/
+*.pem
+*.key
+.env
+*.env
+id_rsa
+id_ed25519

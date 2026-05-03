@@ -1,0 +1,12 @@
+=== date ===
+неділя, 3 травня 2026 04:37:25 +0300
+
+=== flatpak apps ===
+Hytale Launcher	com.hypixel.HytaleLauncher		master	hytalelauncher-origin	system
+Sober	org.vinegarhq.Sober	1.6.7	stable	flathub	system
+
+=== flatpak overrides ===
+
+## com.hypixel.HytaleLauncher
+
+## org.vinegarhq.Sober

@@ -1,0 +1,52 @@
+# STARTED AT: 2026-05-03 03:30:49.044051203 +03:00
+# VERSION: 0.28.2
+# ARGS: rate-mirrors --save /tmp/tmp.clJnruGMZL cachyos
+# MIRRORS LEFT AFTER FILTERING: 26
+# JUMP #1
+# EXPLORING UA
+# VISITED UA
+# BLANK ITERATION
+# COUNTRY JUMPING YIELDED TOO FEW MIRRORS (0), ADDING OTHERS TO UNLABELED
+# 
+
+# TESTING UNLABELED MIRRORS
+# SpeedTestResult { speed: 114.1 MB/s; elapsed: 50ms; connection_time: 97ms }
+# SpeedTestResult { speed: 17.4 MB/s; elapsed: 265ms; connection_time: 139ms }
+# SpeedTestResult { speed: 845.6 KB/s; elapsed: 94ms; connection_time: 272ms }
+# TOO FEW BYTES LOADED https://mirror.mergedcloud.de/cachyos/repo/
+# FAILED TO CONNECT TO https://ca.mirror.cx/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.limda.net/cachy/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirrors.lansing2600.org/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://cachyos.next-works.it/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.nju.edu.cn/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://cachyos.doridian.net/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://us.cachyos.org/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.hb9hil.org/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://no.mirror.cx/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://cachyos-mirror.m1k.cloud/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.zyner.org/mirror/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://nl.mirror.cx/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://archlinux.gay/cachy/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://cdn.lansing2600.org/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://us-mnz.soulharsh007.dev/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.jura12.ru/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirrors.ustc.edu.cn/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://wan.metrosg.ru/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.cachy-arch.ru/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror.keiminem.com/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://distrohub.kyiv.ua/cachyos/repo/x86_64/cachyos/cachyos.files
+# FAILED TO CONNECT TO https://mirror2.keiminem.com/cachyos/repo/x86_64/cachyos/cachyos.files
+# 
+
+# RE-TESTING TOP MIRRORS
+# SpeedTestResult { speed: 115.0 MB/s; elapsed: 50ms; connection_time: 2.05s }
+# SpeedTestResult { speed: 13.9 MB/s; elapsed: 415ms; connection_time: 347ms }
+# SpeedTestResult { speed: 15.2 MB/s; elapsed: 379ms; connection_time: 186ms }
+# ==== RESULTS (top re-tested) ====
+#   1. SpeedTestResult { speed: 115.0 MB/s; elapsed: 50ms; connection_time: 2.05s } -> https://cdn77.cachyos.org/repo/
+#   2. SpeedTestResult { speed: 15.2 MB/s; elapsed: 379ms; connection_time: 186ms } -> https://mirror.lesviallon.fr/cachy/repo/
+#   3. SpeedTestResult { speed: 13.9 MB/s; elapsed: 415ms; connection_time: 347ms } -> https://at.cachyos.org/repo/
+# FINISHED AT: 2026-05-03 03:31:00.659375117 +03:00
+Server = https://cdn77.cachyos.org/repo/$arch_v3/$repo
+Server = https://mirror.lesviallon.fr/cachy/repo/$arch_v3/$repo
+Server = https://at.cachyos.org/repo/$arch_v3/$repo

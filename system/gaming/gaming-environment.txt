@@ -1,9 +1,126 @@
 === date ===
-неділя, 3 травня 2026 04:35:47 +0300
+неділя, 3 травня 2026 04:37:28 +0300
 
 === CachyOS gaming meta ===
 cachyos-gaming-meta 1:1.0.0-7
 
+=== Steam ===
+
 === Bottles ===
 /usr/bin/bottles
 bottles 2:63.2-1
+
+=== Flatpak Bottles ===
+Flatpak Bottles not installed
+
+=== Bottles runners ===
+/home/xiii/.local/share/bottles/runners
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/bin
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/bin-wow64
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/lib
+/home/xiii/.local/share/bottles/runners/dwproton-10.0-26/share
+/home/xiii/.local/share/bottles/runners/soda-9.0-1
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/bin
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/include
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/lib32
+/home/xiii/.local/share/bottles/runners/soda-9.0-1/share
+
+=== Bottles components ===
+/home/xiii/.local/share/bottles/dxvk
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x32/dxgi.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1-15-dd4b432/x64/dxgi.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/dxgi.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/dxgi.dll
+/home/xiii/.local/share/bottles/latencyflex
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/layer
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/layer/usr
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/il2cpp-2019.3
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/mono-2018.1
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/mono-2019.3
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/wine
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/wine/usr
+/home/xiii/.local/share/bottles/nvapi
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer/libdxvk_nvapi_vkreflex_layer.so
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer/VkLayer_DXVK_NVAPI_reflex.json
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/LICENSE
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/README.md
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x32
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x32/nvapi.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvapi64.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvapi64-tests.exe
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvofapi64.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvofapi64-tests.exe
+/home/xiii/.local/share/bottles/vkd3d
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/setup_vkd3d_proton.sh
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64/d3d12.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/setup_vkd3d_proton.sh
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x64
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x64/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x64/d3d12.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x86
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x86/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0/x86/d3d12.dll
+/home/xiii/.local/share/bottles/winebridge
+/home/xiii/.local/share/bottles/winebridge/VERSION
+/home/xiii/.local/share/bottles/winebridge/WineBridge.exe
+
+=== Wine ===
+/usr/bin/wine
+wine-11.8
+
+=== GameMode ===
+/usr/bin/gamemoded
+● gamemoded.service - gamemoded
+     Loaded: loaded (/usr/lib/systemd/user/gamemoded.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-05-03 04:22:28 EEST; 15min ago
+ Invocation: b7459582f8c04b65bc64a8edb19cfd38
+   Main PID: 889 (gamemoded)
+     Status: "[1;36mGameMode is ready to be activated.[0m"
+      Tasks: 2 (limit: 38316)
+     Memory: 604K (peak: 2.2M)
+        CPU: 8ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gamemoded.service
+             └─889 /usr/bin/gamemoded
+
+тра 03 04:22:28 neko systemd[879]: Starting gamemoded...
+тра 03 04:22:28 neko systemd[879]: Started gamemoded.
+
+=== MangoHud ===
+/usr/bin/mangohud
+mangohud 0.8.3-2
