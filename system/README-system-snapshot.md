@@ -1,12 +1,14 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-03_03-16-00
+Updated: 2026-05-03_03-32-37
 
 Current setup:
 
 - AUR/native Bottles installed
 - Flatpak Bottles removed
+- Bottles data was fully reset and re-created cleanly
 - DWProton auto-installs into AUR/native Bottles
+- Hyprland Bottles/Wine windows use PortProton-like native floating rules
 - Full system snapshots and dotfiles synced
 
 Restore:

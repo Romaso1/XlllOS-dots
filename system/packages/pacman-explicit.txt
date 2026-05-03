@@ -72,6 +72,7 @@ firefox-i18n-ru
 flatpak
 fsarchiver
 game-devices-udev
+gamemode
 git
 glances
 glow
@@ -79,6 +80,7 @@ gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-ugly
+gvfs
 hdparm
 hwdetect
 hwinfo
@@ -108,6 +110,7 @@ kdegraphics-thumbnailers
 konsole
 kvantum
 less
+lib32-gamemode
 lib32-libpulse
 lib32-nvidia-utils
 lib32-opencl-icd-loader
@@ -220,6 +223,7 @@ vlc
 vlc-plugins-all
 vulkan-icd-loader
 vulkan-tools
+webkit2gtk-4.1
 which
 wine-gecko
 wine-mono

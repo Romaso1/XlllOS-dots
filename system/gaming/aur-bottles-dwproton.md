@@ -25,3 +25,11 @@ bash scripts/install-from-current-system-snapshot.sh
 ```
 
 The DWProton archive itself is not stored in this repo. The repo stores the installer script.
+
+If Bottles has no default runner after clean reset, open:
+
+```text
+Bottles -> Preferences -> Runners
+```
+
+and download a default runner such as Soda/Caffe/Vaniglia if needed.

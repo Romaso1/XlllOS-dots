@@ -291,6 +291,7 @@ gtksourceviewmm
 guile
 gupnp
 gupnp-igd
+gvfs
 gzip
 harfbuzz
 harfbuzz-icu
@@ -497,6 +498,7 @@ lib32-flac
 lib32-fontconfig
 lib32-freetype2
 lib32-fribidi
+lib32-gamemode
 lib32-gcc-libs
 lib32-gdk-pixbuf2
 lib32-gettext
@@ -640,6 +642,7 @@ libcap
 libcap-ng
 libcddb
 libcdio
+libcdio-paranoia
 libcdr
 libcgif
 libcloudproviders
