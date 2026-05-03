@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 04:06:17 +0300
+неділя, 3 травня 2026 04:18:58 +0300
 
 === Bottles package ===
 /usr/bin/bottles
@@ -71,5 +71,6 @@ Flatpak Bottles not installed
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12core.dll
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12.dll
 /home/xiii/.local/share/bottles/winebridge
-/home/xiii/.local/share/bottles/winebridge/VERSION
-/home/xiii/.local/share/bottles/winebridge/WineBridge.exe
+
+=== CachyOS gaming meta ===
+cachyos-gaming-meta 1:1.0.0-7

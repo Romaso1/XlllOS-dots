@@ -64,3 +64,30 @@ Restore:
 ```bash
 bash scripts/install-from-current-system-snapshot.sh
 ```
+
+## Guaranteed Bottles restore
+
+Restore now explicitly runs:
+
+```bash
+bash scripts/install-bottles-full-setup.sh
+```
+
+This guarantees:
+
+```text
+AUR/native Bottles
+Soda
+DWProton
+DXVK
+VKD3D-Proton
+DXVK-NVAPI
+LatencyFleX
+```
+
+Main restore command:
+
+```bash
+bash scripts/install-from-current-system-snapshot.sh
+```
+
