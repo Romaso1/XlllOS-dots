@@ -1,7 +1,6 @@
 asciiquarium-transparent-git
 bottles
 cbonsai
-dwproton-bin
 game-devices-udev
 illogical-impulse-audio
 illogical-impulse-backlight
@@ -20,5 +19,4 @@ illogical-impulse-widgets
 nvflash
 peaclock
 pipes.sh
-portproton
 upscayl-bin

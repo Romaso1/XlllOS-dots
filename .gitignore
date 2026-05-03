@@ -78,9 +78,19 @@ system/etc/etc/ssh/
 system/etc/etc/wireguard/
 system/etc/etc/openvpn/
 system/etc/etc/NetworkManager/system-connections/
-*.pem
-*.key
-.env
-*.env
-id_rsa
-id_ed25519
+
+# XlllOS generated backups/logs
+XlllOS-*-backup-*/
+XlllOS-*.log
+
+
+# Heavy/private app data
+dotfiles/home/.mozilla/
+dotfiles/home/.steam/
+dotfiles/home/.local/share/Steam/
+dotfiles/home/PortProton/
+dotfiles/home/.local/share/bottles/
+dotfiles/home/.config/bottles/
+dotfiles/home/.cache/bottles/
+dotfiles/.local/share/bottles/
+dotfiles/.config/bottles/

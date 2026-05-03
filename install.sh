@@ -1,144 +1,53 @@
 #!/usr/bin/env bash
-set -euo pipefail
-
-echo "=== XlllOS Hyprland dots installer ==="
-
-if ! command -v pacman >/dev/null 2>&1; then
-    echo "This installer is intended for Arch/CachyOS-based systems."
-    exit 1
-fi
+set -Eeuo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-echo "[1/11] Updating system..."
-sudo pacman -Syu --noconfirm
+echo "=== XlllOS installer ==="
+echo "Repo: $REPO_DIR"
+echo
 
-echo "[1.5/11] Enabling multilib and installing Linux Steam..."
-
-echo "[2/11] Installing base packages..."
-sudo pacman -S --needed --noconfirm \
-    git curl wget rsync base-devel \
-    hyprland xdg-desktop-portal-hyprland \
-    kitty fish \
-    awww matugen \
-    lutris \
-    gamemode lib32-gamemode \
-    mangohud goverlay protonup-qt \
-    gamescope vulkan-tools \
-    power-profiles-daemon cpupower \
-    vulkan-icd-loader lib32-vulkan-icd-loader \
-    proton-vpn-daemon proton-vpn-gtk-app \
-    firefox
-
-echo "[2.5/11] Enabling Proton VPN daemon..."
-sudo systemctl enable --now proton-vpn-daemon 2>/dev/null || true
-
-echo "[2.6/11] Installing pacman packages from packages-pacman.txt..."
-if [ -f "$REPO_DIR/packages-pacman.txt" ]; then
-    xargs -r sudo pacman -S --needed --noconfirm < "$REPO_DIR/packages-pacman.txt" || true
+if ! command -v pacman >/dev/null 2>&1; then
+  echo "ERROR: this installer is intended for Arch/CachyOS-based systems with pacman."
+  exit 1
 fi
 
-echo "[2.7/11] Installing AUR packages from packages-aur.txt..."
-if [ -f "$REPO_DIR/packages-aur.txt" ]; then
-    AUR_HELPER=""
-    if command -v paru >/dev/null 2>&1; then
-        AUR_HELPER="paru"
-    elif command -v yay >/dev/null 2>&1; then
-        AUR_HELPER="yay"
-    fi
+echo "=== 1) Update system and install base tools ==="
+sudo pacman -Syu --needed --noconfirm \
+  git base-devel rsync curl wget tar xz zstd python \
+  desktop-file-utils xdg-utils || true
 
-    if [ -n "$AUR_HELPER" ]; then
-        xargs -r "$AUR_HELPER" -S --needed --noconfirm < "$REPO_DIR/packages-aur.txt" || true
-    else
-        echo "AUR helper not found. Install paru/yay manually if AUR packages are needed."
-    fi
+echo
+echo "=== 2) Ensure AUR helper exists ==="
+if ! command -v paru >/dev/null 2>&1 && ! command -v yay >/dev/null 2>&1; then
+  sudo pacman -S --needed --noconfirm paru || sudo pacman -S --needed --noconfirm yay || true
 fi
 
-echo "[3/11] Backing up old configs..."
-BACKUP="$HOME/.config-backup-xlllos-$(date +%F-%H%M%S)"
-mkdir -p "$BACKUP"
-
-for dir in hypr illogical-impulse kitty fish; do
-    if [ -e "$HOME/.config/$dir" ]; then
-        mv "$HOME/.config/$dir" "$BACKUP/$dir"
-        echo "Backup: ~/.config/$dir -> $BACKUP/$dir"
-    fi
-done
-
-echo "[4/11] Copying configs..."
-mkdir -p "$HOME/.config"
-
-if [ -d "$REPO_DIR/home/.config" ]; then
-    rsync -a "$REPO_DIR/home/.config/" "$HOME/.config/"
+if ! command -v paru >/dev/null 2>&1 && ! command -v yay >/dev/null 2>&1; then
+  echo "WARNING: paru/yay not found. AUR packages may be skipped."
 fi
 
-if [ -d "$REPO_DIR/home/Pictures" ]; then
-    mkdir -p "$HOME/Pictures"
-    rsync -a "$REPO_DIR/home/Pictures/" "$HOME/Pictures/"
+echo
+echo "=== 3) Make scripts executable ==="
+chmod +x "$REPO_DIR"/scripts/*.sh 2>/dev/null || true
+
+echo
+echo "=== 4) Restore packages, Flatpaks, Bottles setup, and dotfiles ==="
+if [ -x "$REPO_DIR/scripts/install-from-current-system-snapshot.sh" ]; then
+  bash "$REPO_DIR/scripts/install-from-current-system-snapshot.sh"
+else
+  echo "ERROR: scripts/install-from-current-system-snapshot.sh is missing."
+  exit 1
 fi
 
-if [ -d "$REPO_DIR/home/Wallpapers" ]; then
-    mkdir -p "$HOME/Wallpapers"
-    rsync -a "$REPO_DIR/home/Wallpapers/" "$HOME/Wallpapers/"
-fi
+echo
+echo "=== 5) Apply gaming/performance defaults ==="
+sudo systemctl disable --now ananicy-cpp 2>/dev/null || true
+sudo systemctl disable --now ananicy 2>/dev/null || true
 
-if [ -d "$REPO_DIR/home/.local" ]; then
-    mkdir -p "$HOME/.local"
-    rsync -a "$REPO_DIR/home/.local/" "$HOME/.local/"
-fi
-
-
-echo "[4.5/11] Copying command.txt..."
-
-if [ -f "$REPO_DIR/home/command.txt" ]; then
-
- mkdir -p "$HOME"
- cp -f "$REPO_DIR/home/command.txt" "$HOME/command.txt"
- chmod 644 "$HOME/command.txt" 2>/dev/null || true
- echo "Installed: ~/command.txt"
-
-fi
-
-echo "[5/11] Fixing user-specific paths..."
-python3 - <<'PYUSERPATH'
-import json
-from pathlib import Path
-
-p = Path.home() / ".config/illogical-impulse/config.json"
-
-if p.exists():
-    try:
-        cfg = json.loads(p.read_text(encoding="utf-8"))
-    except Exception as exc:
-        print(f"Could not read {p}: {exc}")
-    else:
-        def fix_paths(x):
-            if isinstance(x, dict):
-                return {k: fix_paths(v) for k, v in x.items()}
-            if isinstance(x, list):
-                return [fix_paths(v) for v in x]
-            if isinstance(x, str):
-                return x.replace("/home/xiii", str(Path.home()))
-            return x
-        p.write_text(json.dumps(fix_paths(cfg), indent=4, ensure_ascii=False), encoding="utf-8")
-PYUSERPATH
-
-echo "[6/11] Setting monitor config in custom..."
-mkdir -p "$HOME/.config/hypr/custom"
-printf "%s\n" "# Universal monitor config" "monitor=,preferred,auto,1" > "$HOME/.config/hypr/custom/monitors.conf"
-
-echo "[7/11] Setting fish as default shell..."
-if command -v fish >/dev/null 2>&1; then
-    if ! grep -q "$(command -v fish)" /etc/shells; then
-        command -v fish | sudo tee -a /etc/shells
-    fi
-    chsh -s "$(command -v fish)" "$USER" || true
-fi
-
-echo "[8/11] Performance mode..."
-sudo systemctl enable --now power-profiles-daemon.service || true
-sudo systemctl enable --now cpupower.service || true
-powerprofilesctl set performance || true
+sudo systemctl enable --now power-profiles-daemon.service 2>/dev/null || true
+sudo systemctl enable --now cpupower.service 2>/dev/null || true
+powerprofilesctl set performance 2>/dev/null || true
 
 sudo tee /etc/systemd/system/force-cpu-performance.service >/dev/null <<'FORCECPU'
 [Unit]
@@ -148,37 +57,33 @@ Wants=power-profiles-daemon.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash -lc 'sleep 3; shopt -s nullglob; for g in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > "$g" 2>/dev/null || true; done; for e in /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo performance > "$e" 2>/dev/null || true; done; exit 0'
+ExecStart=/usr/bin/bash -lc 'sleep 3; shopt -s nullglob; for g in /sys/devices/system/cpu/cpufreq/policy*/scaling_governor /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance > "$g" 2>/dev/null || true; done; for e in /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference /sys/devices/system/cpu/cpu*/energy_performance_preference /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference /sys/devices/system/cpu/cpu*/cpufreq/energy_performance_preference; do echo performance > "$e" 2>/dev/null || true; done; exit 0'
 
 [Install]
 WantedBy=multi-user.target
 FORCECPU
 
 sudo systemctl daemon-reload
-sudo systemctl enable --now force-cpu-performance.service || true
+sudo systemctl enable --now force-cpu-performance.service 2>/dev/null || true
 
-echo "[9/11] Setting SDDM autologin..."
-sudo mkdir -p /etc/sddm.conf.d
-printf "%s\n" "[Autologin]" "User=$USER" "Session=hyprland.desktop" | sudo tee /etc/sddm.conf.d/autologin.conf >/dev/null
-
-echo "[10/11] Applying Firefox prefs..."
-FIREFOX_PROFILE="$(find "$HOME/.mozilla/firefox" -maxdepth 1 -type d -name "*.default-release" 2>/dev/null | head -n1 || true)"
-if [ -n "$FIREFOX_PROFILE" ]; then
-    printf "%s\n" "// XlllOS" "user_pref(\"layout.frame_rate\", 180);" >> "$FIREFOX_PROFILE/user.js"
-fi
-
-echo "[11/11] Disabling yellow night filter..."
+echo
+echo "=== 6) Disable yellow night filter if present ==="
 systemctl --user disable --now hyprsunset.service 2>/dev/null || true
 pkill -f hyprsunset 2>/dev/null || true
 
+echo
+echo "=== 7) Firefox 180 FPS preference if profile exists ==="
+FIREFOX_PROFILE="$(find "$HOME/.mozilla/firefox" -maxdepth 1 -type d -name "*.default-release" 2>/dev/null | head -n1 || true)"
+if [ -n "$FIREFOX_PROFILE" ]; then
+  if ! grep -q 'layout.frame_rate' "$FIREFOX_PROFILE/user.js" 2>/dev/null; then
+    printf "%s\n" "// XlllOS" "user_pref(\"layout.frame_rate\", 180);" >> "$FIREFOX_PROFILE/user.js"
+  fi
+fi
+
+echo
+echo "=== 8) Reload Hyprland if running ==="
+hyprctl reload 2>/dev/null || true
+
+echo
 echo "=== XlllOS install complete ==="
 echo "Reboot is recommended."
-
-echo "Configuring SSH firewall exception..."
-
-SCRIPT_DIR="${SCRIPT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
-REPO_DIR="${REPO_DIR:-$SCRIPT_DIR}"
-
-if [ -x "$REPO_DIR/scripts/setup-ssh-firewall.sh" ]; then
-  bash "$REPO_DIR/scripts/setup-ssh-firewall.sh"
-fi
