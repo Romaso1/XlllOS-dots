@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 03:50:33 +0300
+неділя, 3 травня 2026 03:59:41 +0300
 
 === AUR/native Bottles ===
 /usr/bin/bottles
@@ -26,37 +26,40 @@ Flatpak Bottles not installed
 /home/xiii/.local/share/bottles/dxvk
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x32/dxgi.dll
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d10core.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d11.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d8.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d9.dll
+/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/dxgi.dll
 /home/xiii/.local/share/bottles/nvapi
-/home/xiii/.local/share/bottles/nvapi/x64
-/home/xiii/.local/share/bottles/nvapi/x64/nvapi64.dll
-/home/xiii/.local/share/bottles/nvapi/x64/nvapi64-tests.exe
-/home/xiii/.local/share/bottles/nvapi/x64/nvofapi64.dll
-/home/xiii/.local/share/bottles/nvapi/x64/nvofapi64-tests.exe
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer/libdxvk_nvapi_vkreflex_layer.so
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer/VkLayer_DXVK_NVAPI_reflex.json
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/LICENSE
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/README.md
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x32
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x32/nvapi.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvapi64.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvapi64-tests.exe
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvofapi64.dll
+/home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/x64/nvofapi64-tests.exe
 /home/xiii/.local/share/bottles/vkd3d
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/setup_vkd3d_proton.sh
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x64/d3d12.dll
 /home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86
-
-=== Bottles folders ===
-/home/xiii/.cache/bottles
-/home/xiii/.config/bottles
-/home/xiii/.local/share/bottles
-/home/xiii/.local/share/bottles/bottles
-/home/xiii/.local/share/bottles/components
-/home/xiii/.local/share/bottles/downloads
-/home/xiii/.local/share/bottles/dxvk
-/home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1
-/home/xiii/.local/share/bottles/nvapi
-/home/xiii/.local/share/bottles/nvapi/x64
-/home/xiii/.local/share/bottles/runners
-/home/xiii/.local/share/bottles/runners/dwproton-10.0-26
-/home/xiii/.local/share/bottles/runners/soda-9.0-1
-/home/xiii/.local/share/bottles/temp
-/home/xiii/.local/share/bottles/vkd3d
-/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12core.dll
+/home/xiii/.local/share/bottles/vkd3d/vkd3d-proton-3.0b/x86/d3d12.dll
 /home/xiii/.local/share/bottles/winebridge
-
-=== CachyOS gaming meta ===
-cachyos-gaming-meta 1:1.0.0-7
+/home/xiii/.local/share/bottles/winebridge/VERSION
+/home/xiii/.local/share/bottles/winebridge/WineBridge.exe

@@ -30,6 +30,14 @@ Restore helper automatically runs it:
 bash scripts/install-from-current-system-snapshot.sh
 ```
 
-The runner archives themselves are not stored in this repo. The repo stores the installer script.
+The helper preloads DXVK/VKD3D/NVAPI components. NVAPI must be installed into a versioned folder, for example:
 
-The helper also preloads DXVK/VKD3D/NVAPI components to avoid Bottles create-bottle errors caused by empty component lists.
+```bash
+~/.local/share/bottles/nvapi/dxvk-nvapi-vX.Y.Z
+```
+
+Not directly into:
+
+```bash
+~/.local/share/bottles/nvapi/x64
+```
