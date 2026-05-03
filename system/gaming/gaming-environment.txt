@@ -1,10 +1,8 @@
 === date ===
-неділя, 3 травня 2026 04:37:28 +0300
+неділя, 3 травня 2026 05:21:01 +0300
 
 === CachyOS gaming meta ===
 cachyos-gaming-meta 1:1.0.0-7
-
-=== Steam ===
 
 === Bottles ===
 /usr/bin/bottles
@@ -108,18 +106,18 @@ wine-11.8
 /usr/bin/gamemoded
 ● gamemoded.service - gamemoded
      Loaded: loaded (/usr/lib/systemd/user/gamemoded.service; enabled; preset: enabled)
-     Active: active (running) since Sun 2026-05-03 04:22:28 EEST; 15min ago
- Invocation: b7459582f8c04b65bc64a8edb19cfd38
-   Main PID: 889 (gamemoded)
+     Active: active (running) since Sun 2026-05-03 04:56:39 EEST; 24min ago
+ Invocation: 200c6c6a624d43c78018448f2a1031df
+   Main PID: 893 (gamemoded)
      Status: "[1;36mGameMode is ready to be activated.[0m"
       Tasks: 2 (limit: 38316)
-     Memory: 604K (peak: 2.2M)
-        CPU: 8ms
+     Memory: 604K (peak: 2M)
+        CPU: 9ms
      CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/gamemoded.service
-             └─889 /usr/bin/gamemoded
+             └─893 /usr/bin/gamemoded
 
-тра 03 04:22:28 neko systemd[879]: Starting gamemoded...
-тра 03 04:22:28 neko systemd[879]: Started gamemoded.
+тра 03 04:56:39 neko systemd[883]: Starting gamemoded...
+тра 03 04:56:39 neko systemd[883]: Started gamemoded.
 
 === MangoHud ===
 /usr/bin/mangohud

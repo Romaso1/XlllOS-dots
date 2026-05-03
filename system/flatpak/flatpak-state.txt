@@ -1,9 +1,12 @@
 === date ===
-неділя, 3 травня 2026 04:37:25 +0300
+неділя, 3 травня 2026 05:20:53 +0300
 
 === flatpak apps ===
 Hytale Launcher	com.hypixel.HytaleLauncher		master	hytalelauncher-origin	system
 Sober	org.vinegarhq.Sober	1.6.7	stable	flathub	system
+
+=== flatpak remotes ===
+flathub	Flathub	https://dl.flathub.org/repo/	-	-	-	1	system	Central repository of Flatpak applications	Central repository of Flatpak applications	https://flathub.org/	https://dl.flathub.org/repo/logo.svg
 
 === flatpak overrides ===
 

@@ -1,12 +1,12 @@
-NEXT                             LEFT LAST                               PASSED UNIT                             ACTIVATES
-Sun 2026-05-03 05:32:39 EEST    55min Sun 2026-05-03 04:32:39 EEST 4min 47s ago snapper-cleanup.timer            snapper-cleanup.service
-Mon 2026-05-04 00:00:00 EEST      19h Sun 2026-05-03 00:00:08 EEST            - shadow.timer                     shadow.service
-Mon 2026-05-04 00:29:52 EEST      19h Tue 2026-04-28 03:05:57 EEST            - fstrim.timer                     fstrim.service
-Mon 2026-05-04 00:40:36 EEST      20h Sun 2026-05-03 00:24:38 EEST            - logrotate.timer                  logrotate.service
-Mon 2026-05-04 00:50:31 EEST      20h Sun 2026-05-03 00:29:31 EEST            - plocate-updatedb.timer           plocate-updatedb.service
-Mon 2026-05-04 04:37:20 EEST      23h Sun 2026-05-03 04:37:20 EEST       6s ago systemd-tmpfiles-clean.timer     systemd-tmpfiles-clean.service
-Mon 2026-05-04 07:29:32 EEST 1 day 2h Sun 2026-05-03 04:25:58 EEST    11min ago man-db.timer                     man-db.service
-Thu 2026-05-07 02:30:56 EEST   3 days Tue 2026-04-28 03:05:57 EEST            - archlinux-keyring-wkd-sync.timer archlinux-keyring-wkd-sync.service
-Fri 2026-05-08 04:33:24 EEST   4 days Sun 2026-05-03 04:32:39 EEST 4min 47s ago cachyos-rate-mirrors.timer       cachyos-rate-mirrors.service
+NEXT                              LEFT LAST                            PASSED UNIT                             ACTIVATES
+Sun 2026-05-03 06:06:33 EEST     45min Sun 2026-05-03 05:06:33 EEST 14min ago snapper-cleanup.timer            snapper-cleanup.service
+Mon 2026-05-04 00:00:00 EEST       18h Sun 2026-05-03 00:00:08 EEST         - shadow.timer                     shadow.service
+Mon 2026-05-04 00:17:07 EEST       18h Sun 2026-05-03 00:29:31 EEST         - plocate-updatedb.timer           plocate-updatedb.service
+Mon 2026-05-04 00:42:06 EEST       19h Sun 2026-05-03 00:24:38 EEST         - logrotate.timer                  logrotate.service
+Mon 2026-05-04 00:55:21 EEST       19h Tue 2026-04-28 03:05:57 EEST         - fstrim.timer                     fstrim.service
+Mon 2026-05-04 01:13:34 EEST       19h Sun 2026-05-03 04:25:58 EEST         - man-db.timer                     man-db.service
+Mon 2026-05-04 05:11:33 EEST       23h Sun 2026-05-03 05:11:33 EEST  9min ago systemd-tmpfiles-clean.timer     systemd-tmpfiles-clean.service
+Tue 2026-05-05 04:18:32 EEST 1 day 22h Tue 2026-04-28 03:05:57 EEST         - archlinux-keyring-wkd-sync.timer archlinux-keyring-wkd-sync.service
+Fri 2026-05-08 05:08:16 EEST    4 days Sun 2026-05-03 05:07:33 EEST 13min ago cachyos-rate-mirrors.timer       cachyos-rate-mirrors.service
 
 9 timers listed.

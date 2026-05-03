@@ -2,7 +2,6 @@
   avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack
   bluetooth.service             loaded active running Bluetooth service
   dbus-broker.service           loaded active running D-Bus System Message Bus
-  flatpak-system-helper.service loaded active running flatpak system helper
   limine-snapper-sync.service   loaded active running [limine-snapper-sync.service] automatically synchronizes boot entries with the Snapper snapshot list.
   NetworkManager.service        loaded active running Network Manager
   polkit.service                loaded active running Authorization Manager
@@ -26,4 +25,4 @@ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
         ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
         SUB    → The low-level unit activation state, values depend on unit type.
 
-22 loaded units listed.
+21 loaded units listed.

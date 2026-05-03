@@ -39,6 +39,19 @@ need_file system/packages/flatpak-apps.txt
 need_file dotfiles
 
 echo
+echo "=== README command blocks ==="
+bash_blocks="$(grep -c '^```bash$' README.md || true)"
+if [ "$bash_blocks" = "2" ]; then
+  echo "OK: README has exactly 2 bash install command blocks."
+else
+  echo "BAD: README should have exactly 2 bash command blocks, found: $bash_blocks"
+  ok=0
+fi
+
+grep -n "XLLLOS_GPU=nvidia" README.md >/dev/null || { echo "MISSING: NVIDIA command"; ok=0; }
+grep -n "XLLLOS_GPU=amd" README.md >/dev/null || { echo "MISSING: AMD command"; ok=0; }
+
+echo
 echo "=== Required packages in snapshots ==="
 for pkg in cachyos-gaming-meta bottles; do
   echo "--- $pkg ---"

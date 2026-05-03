@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 04:37:28 +0300
+неділя, 3 травня 2026 05:20:55 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -23,7 +23,7 @@ LOGO=cachyos
        Icon name: computer-desktop
          Chassis: desktop 🖥️
       Machine ID: da6bdcff9639441180f7d3280ab30b7c
-         Boot ID: 38ec7bd4772d4fb99e199ba68b887e30
+         Boot ID: 7481f5b7992c42fba94218dbf5623fd5
 Operating System: CachyOS
           Kernel: Linux 7.0.3-1-cachyos
     Architecture: x86-64
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      87%
+CPU(s) scaling MHz:                      97%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00
@@ -89,58 +89,20 @@ sda
 ├─sda1                                                                             
 └─sda2      ntfs               3ECC3871CC382615                                    
 sr0                                                                                
-zram0       swap   1     zram0 c4938e08-eca7-4941-bbd9-bf2f330478bb                [SWAP]
+zram0       swap   1     zram0 b8c14cf1-2c9b-406e-a1ca-a636a5021db6                [SWAP]
 nvme0n1                                                                            
-├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,3G    17% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  894,8G     5% /var/tmp
-                                                                                   /var/log
+├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  885,3G     6% /var/log
+                                                                                   /var/tmp
                                                                                    /var/cache
                                                                                    /home
                                                                                    /root
                                                                                    /srv
                                                                                    /
 
-=== mounts ===
-TARGET                                                         SOURCE                  FSTYPE              OPTIONS
-/                                                              /dev/nvme0n1p2[/@]      btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/@
-├─/dev                                                         devtmpfs                devtmpfs            rw,nosuid,size=16242228k,nr_inodes=4060557,mode=755,inode64,huge=within_size
-│ ├─/dev/mqueue                                                mqueue                  mqueue              rw,nosuid,nodev,noexec,relatime
-│ ├─/dev/hugepages                                             hugetlbfs               hugetlbfs           rw,nosuid,nodev,relatime,pagesize=2M
-│ ├─/dev/shm                                                   tmpfs                   tmpfs               rw,nosuid,nodev,inode64,huge=within_size,usrquota
-│ └─/dev/pts                                                   devpts                  devpts              rw,nosuid,noexec,relatime,gid=5,mode=600,ptmxmode=000
-├─/sys                                                         sysfs                   sysfs               rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/kernel/tracing                                        tracefs                 tracefs             rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/kernel/debug                                          debugfs                 debugfs             rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/fs/fuse/connections                                   fusectl                 fusectl             rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/kernel/security                                       securityfs              securityfs          rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/fs/cgroup                                             cgroup2                 cgroup2             rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting
-│ ├─/sys/fs/pstore                                             none                    pstore              rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/firmware/efi/efivars                                  efivarfs                efivarfs            rw,nosuid,nodev,noexec,relatime
-│ ├─/sys/fs/bpf                                                bpf                     bpf                 rw,nosuid,nodev,noexec,relatime,mode=700
-│ └─/sys/kernel/config                                         configfs                configfs            rw,nosuid,nodev,noexec,relatime
-├─/proc                                                        proc                    proc                rw,nosuid,nodev,noexec,relatime
-│ └─/proc/sys/fs/binfmt_misc                                   systemd-1               autofs              rw,relatime,fd=43,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=917
-│   └─/proc/sys/fs/binfmt_misc                                 binfmt_misc             binfmt_misc         rw,nosuid,nodev,noexec,relatime
-├─/run                                                         tmpfs                   tmpfs               rw,nosuid,nodev,size=6560832k,nr_inodes=819200,mode=755,inode64,huge=within_size
-│ ├─/run/credentials/systemd-journald.service                  none                    tmpfs               ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=within_size,noswap
-│ ├─/run/credentials/systemd-resolved.service                  none                    tmpfs               ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,huge=within_size,noswap
-│ └─/run/user/1000                                             tmpfs                   tmpfs               rw,nosuid,nodev,relatime,size=3280412k,nr_inodes=820103,mode=700,uid=1000,gid=1000,inode64,huge=within_size
-│   ├─/run/user/1000/doc                                       portal                  fuse.portal         rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
-│   ├─/run/user/1000/psd/xiii-firefox-zibtxnr1.default         fuse-overlayfs          fuse.fuse-overlayfs rw,nosuid,nodev,noatime,user_id=1000,group_id=1000,default_permissions
-│   ├─/run/user/1000/psd/xiii-firefox-wknic38i.default-release fuse-overlayfs          fuse.fuse-overlayfs rw,nosuid,nodev,noatime,user_id=1000,group_id=1000,default_permissions
-│   └─/run/user/1000/gvfs                                      gvfsd-fuse              fuse.gvfsd-fuse     rw,nosuid,nodev,relatime,user_id=1000,group_id=1000
-├─/root                                                        /dev/nvme0n1p2[/@root]  btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=258,subvol=/@root
-├─/home                                                        /dev/nvme0n1p2[/@home]  btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/@home
-├─/srv                                                         /dev/nvme0n1p2[/@srv]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=259,subvol=/@srv
-├─/var/cache                                                   /dev/nvme0n1p2[/@cache] btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=260,subvol=/@cache
-├─/tmp                                                         tmpfs                   tmpfs               rw,noatime,inode64,huge=within_size
-├─/var/log                                                     /dev/nvme0n1p2[/@log]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=262,subvol=/@log
-├─/var/tmp                                                     /dev/nvme0n1p2[/@tmp]   btrfs               rw,noatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=261,subvol=/@tmp
-└─/boot                                                        /dev/nvme0n1p1          vfat                rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro
-
 === memory ===
                total        used        free      shared  buff/cache   available
-Mem:            31Gi       5,8Gi        17Gi       229Mi       8,6Gi        25Gi
+Mem:            31Gi       5,3Gi        23Gi       110Mi       3,0Gi        26Gi
 Swap:           31Gi          0B        31Gi
 
 === gpu lspci ===
@@ -151,7 +113,7 @@ Swap:           31Gi          0B        31Gi
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
 === nvidia-smi ===
-Sun May  3 04:37:28 2026       
+Sun May  3 05:20:55 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -160,7 +122,7 @@ Sun May  3 04:37:28 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   54C    P0             49W /  280W |    1104MiB /   8192MiB |      4%      Default |
+|  0%   41C    P3             35W /  280W |    1028MiB /   8192MiB |     17%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -169,28 +131,27 @@ Sun May  3 04:37:28 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            1454      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1523      G   Hyprland                                157MiB |
-|    0   N/A  N/A            1557      G   qs                                      106MiB |
-|    0   N/A  N/A            1596      G   Xwayland                                  3MiB |
-|    0   N/A  N/A            1673      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
-|    0   N/A  N/A            2024      G   kitty                                    55MiB |
-|    0   N/A  N/A            2078      G   kitty                                    37MiB |
-|    0   N/A  N/A            2128      G   kitty                                    75MiB |
-|    0   N/A  N/A            2205      G   kitty                                    35MiB |
-|    0   N/A  N/A           12469      G   /usr/lib/firefox/firefox                173MiB |
-|    0   N/A  N/A           13275      G   /usr/bin/Telegram                        69MiB |
-|    0   N/A  N/A           15131      G   kitty                                    45MiB |
-|    0   N/A  N/A           15897      G   /usr/bin/dolphin                          3MiB |
-|    0   N/A  N/A           16069      G   /usr/lib/kactivitymanagerd                3MiB |
+|    0   N/A  N/A            1459      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1528      G   Hyprland                                127MiB |
+|    0   N/A  N/A            1562      G   qs                                      104MiB |
+|    0   N/A  N/A            1600      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1678      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2023      G   kitty                                    51MiB |
+|    0   N/A  N/A            2078      G   kitty                                    43MiB |
+|    0   N/A  N/A            2127      G   kitty                                   103MiB |
+|    0   N/A  N/A            2186      G   kitty                                    49MiB |
+|    0   N/A  N/A            2294      G   /usr/lib/firefox/firefox                173MiB |
+|    0   N/A  N/A            6155      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A            6314      G   /usr/lib/kactivitymanagerd                3MiB |
+|    0   N/A  N/A            6340      G   kitty                                    45MiB |
 +-----------------------------------------------------------------------------------------+
 
 === nvidia modules ===
-nvidia_drm            159744  99
+nvidia_drm            159744  92
 drm_ttm_helper         20480  1 nvidia_drm
 nvidia_uvm           2404352  0
-nvidia_modeset       2048000  30 nvidia_drm
-nvidia              15544320  608 nvidia_uvm,nvidia_modeset
+nvidia_modeset       2048000  28 nvidia_drm
+nvidia              15544320  561 nvidia_uvm,nvidia_modeset
 video                  81920  2 asus_wmi,nvidia_modeset
 
 === vulkan packages ===

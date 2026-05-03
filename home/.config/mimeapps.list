@@ -1,8 +1,0 @@
-[Added Associations]
-text/plain=org.kde.kate.desktop;micro.desktop;vim.desktop;libreoffice-writer.desktop;org.kde.kwrite.desktop;
-text/x-log=org.kde.kate.desktop;micro.desktop;org.kde.kwrite.desktop;libreoffice-writer.desktop;vim.desktop;
-
-[Default Applications]
-application/x-ms-dos-executable;application/x-wine-extension-msp;application/x-msi;application/x-msdos-program;text/win-bat;=PortProton.desktop
-text/plain=org.kde.kate.desktop;
-text/x-log=org.kde.kate.desktop;

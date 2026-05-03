@@ -1,6 +1,6 @@
 # Full sync notes
 
-Updated: 2026-05-03_04-37-21
+Updated: 2026-05-03_05-20-50
 
 This sync copied safe configs from HOME and selected non-secret system configs from /etc.
 
@@ -16,8 +16,4 @@ Not synced by design:
 - Steam userdata/libraries
 - caches/logs/sessions
 
-Main restore script:
-
-```bash
-scripts/install-from-current-system-snapshot.sh
-```
+Main user-facing install commands are the NVIDIA and AMD one-liners in README.md.

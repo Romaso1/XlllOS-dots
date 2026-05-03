@@ -1,6 +1,6 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-03_04-37-21
+Updated: 2026-05-03_05-20-50
 
 This repo stores a safe snapshot of the current system:
 
@@ -12,37 +12,25 @@ This repo stores a safe snapshot of the current system:
 - services/timers state
 - hardware/gaming state
 
-Restore command:
+Install commands are in README.md.
 
-```bash
-bash scripts/install-from-current-system-snapshot.sh
-```
+Restore flow is handled by:
 
-The restore helper explicitly installs:
+- install.sh
+- scripts/install-from-current-system-snapshot.sh
+- scripts/install-bottles-full-setup.sh
 
-```text
-cachyos-gaming-meta
-AUR/native Bottles
-Soda runner
-DWProton runner
-DXVK
-VKD3D-Proton
-DXVK-NVAPI
-LatencyFleX
-Flatpak apps from snapshot
-dotfiles
-```
+The installer explicitly restores:
 
-Secrets are intentionally excluded:
+- cachyos-gaming-meta
+- AUR/native Bottles
+- Soda
+- DWProton
+- DXVK
+- VKD3D-Proton
+- DXVK-NVAPI
+- LatencyFleX
+- Flatpak apps
+- dotfiles
 
-```text
-SSH keys
-GPG keys
-browser profiles/cookies/passwords
-keyrings
-tokens
-.env files
-VPN/network secrets
-Bottles prefixes/user bottles
-Steam libraries/user data
-```
+Secrets are intentionally excluded.
