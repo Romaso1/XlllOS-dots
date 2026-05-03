@@ -33,3 +33,11 @@ rsync -a "$REPO_DIR/dotfiles/.local/" "$HOME/.local/" 2>/dev/null || true
 
 echo
 echo "Done. Reboot or relogin is recommended."
+
+echo
+echo "=== Installing Bottles LatencyFleX component ==="
+if [ -x "$REPO_DIR/scripts/install-bottles-latencyflex.sh" ]; then
+  bash "$REPO_DIR/scripts/install-bottles-latencyflex.sh" || echo "WARNING: Bottles LatencyFleX install failed; continuing."
+else
+  echo "WARNING: install-bottles-latencyflex.sh not found."
+fi

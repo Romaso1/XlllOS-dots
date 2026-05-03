@@ -1,7 +1,7 @@
 === date ===
-неділя, 3 травня 2026 03:59:41 +0300
+неділя, 3 травня 2026 04:06:17 +0300
 
-=== AUR/native Bottles ===
+=== Bottles package ===
 /usr/bin/bottles
 bottles 2:63.2-1
 
@@ -37,6 +37,16 @@ Flatpak Bottles not installed
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d8.dll
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/d3d9.dll
 /home/xiii/.local/share/bottles/dxvk/dxvk-2.7.1/x64/dxgi.dll
+/home/xiii/.local/share/bottles/latencyflex
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/layer
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/layer/usr
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/il2cpp-2019.3
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/mono-2018.1
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/unity/mono-2019.3
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/wine
+/home/xiii/.local/share/bottles/latencyflex/latencyflex-v0.1.1/wine/usr
 /home/xiii/.local/share/bottles/nvapi
 /home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1
 /home/xiii/.local/share/bottles/nvapi/dxvk-nvapi-v0.9.1/layer

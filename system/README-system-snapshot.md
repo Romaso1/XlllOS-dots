@@ -42,3 +42,25 @@ DWProton target:
 ```bash
 ~/.local/share/bottles/runners/dwproton-10.0-26
 ```
+
+## Bottles LatencyFleX
+
+Bottles essential component auto-install is enabled.
+
+Target:
+
+```bash
+~/.local/share/bottles/latencyflex/latencyflex-v0.1.1
+```
+
+Manual install:
+
+```bash
+bash scripts/install-bottles-latencyflex.sh
+```
+
+Restore:
+
+```bash
+bash scripts/install-from-current-system-snapshot.sh
+```
