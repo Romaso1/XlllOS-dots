@@ -18,11 +18,11 @@ else
 fi
 
 echo
-echo "=== Installing DWProton for AUR/native Bottles ==="
-if [ -x "$REPO_DIR/scripts/install-dwproton-aur-bottles.sh" ]; then
-  bash "$REPO_DIR/scripts/install-dwproton-aur-bottles.sh" || echo "WARNING: DWProton AUR Bottles install failed; continuing."
+echo "=== Installing Bottles Soda/DWProton runners and components ==="
+if [ -x "$REPO_DIR/scripts/install-bottles-aur-soda-dwproton.sh" ]; then
+  bash "$REPO_DIR/scripts/install-bottles-aur-soda-dwproton.sh" || echo "WARNING: Bottles Soda/DWProton install failed; continuing."
 else
-  echo "WARNING: install-dwproton-aur-bottles.sh not found."
+  echo "WARNING: install-bottles-aur-soda-dwproton.sh not found."
 fi
 
 echo

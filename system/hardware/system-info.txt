@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 03:33:58 +0300
+неділя, 3 травня 2026 03:50:32 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -51,7 +51,7 @@ Thread(s) per core:                      2
 Сокетов:                                 1
 Степпинг:                                9
 Microcode version:                       0xf8
-CPU(s) scaling MHz:                      97%
+CPU(s) scaling MHz:                      95%
 CPU max MHz:                             4200,0000
 CPU min MHz:                             800,0000
 BogoMIPS:                                7200,00
@@ -91,7 +91,7 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
 === NVIDIA ===
-Sun May  3 03:33:58 2026       
+Sun May  3 03:50:32 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -100,7 +100,7 @@ Sun May  3 03:33:58 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   54C    P3             42W /  280W |    1062MiB /   8192MiB |     46%      Default |
+|  0%   51C    P8             23W /  280W |    1029MiB /   8192MiB |     38%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -110,18 +110,19 @@ Sun May  3 03:33:58 2026
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
 |    0   N/A  N/A            1463      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1530      G   Hyprland                                147MiB |
-|    0   N/A  N/A            1565      G   qs                                      129MiB |
+|    0   N/A  N/A            1530      G   Hyprland                                129MiB |
+|    0   N/A  N/A            1565      G   qs                                      105MiB |
 |    0   N/A  N/A            1599      G   Xwayland                                  4MiB |
 |    0   N/A  N/A            1666      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
 |    0   N/A  N/A            2026      G   kitty                                    51MiB |
 |    0   N/A  N/A            2085      G   kitty                                    43MiB |
 |    0   N/A  N/A            2140      G   kitty                                    75MiB |
 |    0   N/A  N/A            2195      G   kitty                                    35MiB |
-|    0   N/A  N/A            2576      G   /usr/bin/dolphin                          3MiB |
 |    0   N/A  N/A            2737      G   /usr/bin/kded6                            3MiB |
-|    0   N/A  N/A            6694      G   /usr/lib/firefox/firefox                193MiB |
-|    0   N/A  N/A            8562      G   kitty                                    47MiB |
+|    0   N/A  N/A            6694      G   /usr/lib/firefox/firefox                156MiB |
+|    0   N/A  N/A           22892      G   kitty                                    85MiB |
+|    0   N/A  N/A           23450      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A           23455      G   /usr/bin/dolphin                          3MiB |
 +-----------------------------------------------------------------------------------------+
 
 === Vulkan packages ===
@@ -138,7 +139,7 @@ Monitor DP-1 (ID 0):
 	model: MSI MAG345CQR
 	physical size (mm): 790x350
 	serial: DD1H215200680
-	active workspace: 3 (3)
+	active workspace: 2 (2)
 	special workspace: 0 ()
 	reserved: 0 40 0 0
 	scale: 1.00
@@ -173,7 +174,7 @@ sr0
 zram0       swap   1     zram0 2d7da230-9af2-453d-91d3-8680cc38019e                [SWAP]
 nvme0n1                                                                            
 ├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  880,6G     7% /var/log
+└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  878,8G     7% /var/log
                                                                                    /var/tmp
                                                                                    /var/cache
                                                                                    /home
@@ -183,5 +184,5 @@ nvme0n1
 
 === memory ===
                total        used        free      shared  buff/cache   available
-Mem:            31Gi       6,5Gi        16Gi       135Mi       8,1Gi        24Gi
+Mem:            31Gi       4,9Gi        17Gi       105Mi       8,9Gi        26Gi
 Swap:           31Gi          0B        31Gi
