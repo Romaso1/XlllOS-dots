@@ -21,25 +21,18 @@
 ### NVIDIA
 
 ```bash
-bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; [ -x ./scripts/gpu-nvidia.sh ] && ./scripts/gpu-nvidia.sh || true; sudo reboot'
+bash -lc 'set -euo pipefail; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull --ff-only || git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; if [ -x scripts/gpu-nvidia.sh ]; then bash scripts/gpu-nvidia.sh; else sudo pacman -S --needed --noconfirm nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader; fi; sudo reboot'
 ```
 
 ### AMD
 
 ```bash
-bash -lc 'set -e; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; [ -x ./scripts/gpu-amd.sh ] && ./scripts/gpu-amd.sh || true; sudo reboot'
+bash -lc 'set -euo pipefail; sudo pacman -Syu --needed --noconfirm git base-devel; if [ -d "$HOME/XlllOS-dots/.git" ]; then git -C "$HOME/XlllOS-dots" pull --ff-only || git -C "$HOME/XlllOS-dots" pull; else git clone https://github.com/Romaso1/XlllOS-dots.git "$HOME/XlllOS-dots"; fi; cd "$HOME/XlllOS-dots"; chmod +x install.sh scripts/*.sh 2>/dev/null || true; ./install.sh; if [ -x scripts/gpu-amd.sh ]; then bash scripts/gpu-amd.sh; else sudo pacman -S --needed --noconfirm mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader; fi; sudo reboot'
 ```
 
-## Основная restore-команда
+## Что восстанавливается
 
-```bash
-cd ~/XlllOS-dots
-bash scripts/install-from-current-system-snapshot.sh
-```
-
-## Что гарантированно восстанавливается
-
-Restore helper делает отдельные шаги:
+Установка через `install.sh` запускает restore-логику из репозитория и восстанавливает:
 
 ```text
 pacman native packages from system/packages/pacman-native-explicit.txt
@@ -68,6 +61,7 @@ LatencyFleX
 install.sh
 scripts/install-from-current-system-snapshot.sh
 scripts/install-bottles-full-setup.sh
+scripts/check-restore-readiness.sh
 system/packages/pacman-native-explicit.txt
 system/packages/aur-foreign-explicit.txt
 system/packages/flatpak-apps.txt
@@ -90,6 +84,13 @@ find ~/.local/share/bottles/dxvk \
      ~/.local/share/bottles/latencyflex \
      ~/.local/share/bottles/winebridge \
      -maxdepth 3 \( -type d -o -type f \) 2>/dev/null | sort
+```
+
+## Проверка готовности репозитория
+
+```bash
+cd ~/XlllOS-dots
+bash scripts/check-restore-readiness.sh
 ```
 
 ## Что не хранится в репозитории
