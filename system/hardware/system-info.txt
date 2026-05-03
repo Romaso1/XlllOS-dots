@@ -1,5 +1,5 @@
 === date ===
-неділя, 3 травня 2026 02:26:22 +0300
+неділя, 3 травня 2026 03:06:59 +0300
 
 === uname ===
 Linux neko 7.0.3-1-cachyos #1 SMP PREEMPT Fri, 01 May 2026 19:46:26 +0000 x86_64 GNU/Linux
@@ -26,7 +26,7 @@ LOGO=cachyos
 01:00.1 Audio device [0403]: NVIDIA Corporation GA104 High Definition Audio Controller [10de:228b] (rev a1)
 
 === NVIDIA ===
-Sun May  3 02:26:22 2026       
+Sun May  3 03:06:59 2026       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
 +-----------------------------------------+------------------------+----------------------+
@@ -35,7 +35,7 @@ Sun May  3 02:26:22 2026
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA GeForce RTX 3070        Off |   00000000:01:00.0  On |                  N/A |
-|  0%   52C    P8             23W /  280W |    1068MiB /   8192MiB |     40%      Default |
+|  0%   49C    P8             23W /  280W |    1010MiB /   8192MiB |     10%      Default |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
 
@@ -44,20 +44,18 @@ Sun May  3 02:26:22 2026
 |  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
 |        ID   ID                                                               Usage      |
 |=========================================================================================|
-|    0   N/A  N/A            1450      G   /usr/lib/Xorg                            26MiB |
-|    0   N/A  N/A            1543      G   Hyprland                                127MiB |
-|    0   N/A  N/A            1576      G   qs                                      105MiB |
-|    0   N/A  N/A            1611      G   Xwayland                                  5MiB |
-|    0   N/A  N/A            1678      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
-|    0   N/A  N/A            2002      G   kitty                                    55MiB |
-|    0   N/A  N/A            2055      G   kitty                                    43MiB |
-|    0   N/A  N/A            2104      G   kitty                                    75MiB |
-|    0   N/A  N/A            2162      G   kitty                                    35MiB |
-|    0   N/A  N/A            6725      G   /usr/bin/dolphin                          3MiB |
-|    0   N/A  N/A           13278      G   /usr/lib/kactivitymanagerd                3MiB |
-|    0   N/A  N/A           41372      G   /usr/bin/kded6                            3MiB |
-|    0   N/A  N/A           59855      G   /usr/lib/firefox/firefox                235MiB |
-|    0   N/A  N/A           95098      G   kitty                                    45MiB |
+|    0   N/A  N/A            1464      G   /usr/lib/Xorg                            26MiB |
+|    0   N/A  N/A            1533      G   Hyprland                                127MiB |
+|    0   N/A  N/A            1566      G   qs                                      129MiB |
+|    0   N/A  N/A            1601      G   Xwayland                                  3MiB |
+|    0   N/A  N/A            1668      G   /usr/lib/xdg-desktop-portal-kde           3MiB |
+|    0   N/A  N/A            2013      G   kitty                                    51MiB |
+|    0   N/A  N/A            2070      G   kitty                                    37MiB |
+|    0   N/A  N/A            2119      G   kitty                                    75MiB |
+|    0   N/A  N/A            2176      G   kitty                                    35MiB |
+|    0   N/A  N/A            2284      G   /usr/lib/firefox/firefox                188MiB |
+|    0   N/A  N/A            3028      G   /usr/bin/dolphin                          3MiB |
+|    0   N/A  N/A            4944      G   kitty                                    47MiB |
 +-----------------------------------------------------------------------------------------+
 
 === Vulkan packages ===
@@ -65,59 +63,3 @@ vulkan-icd-loader 1.4.341.0-1.1
 lib32-vulkan-icd-loader 1.4.341.0-1
 nvidia-utils 595.71.05-1
 lib32-nvidia-utils 595.71.05-1
-
-=== Hyprland monitors ===
-Monitor DP-1 (ID 0):
-	3440x1440@180.00000 at 0x0
-	description: Microstep MSI MAG345CQR DD1H215200680
-	make: Microstep
-	model: MSI MAG345CQR
-	physical size (mm): 790x350
-	serial: DD1H215200680
-	active workspace: 4 (4)
-	special workspace: 0 ()
-	reserved: 0 40 0 0
-	scale: 1.00
-	transform: 0
-	focused: yes
-	dpmsStatus: 1
-	vrr: false
-	solitary: 0
-	solitaryBlockedBy: windowed mode,missing candidate
-	activelyTearing: false
-	tearingBlockedBy: next frame is not torn,user settings,missing candidate
-	directScanoutTo: 0
-	directScanoutBlockedBy: user settings,missing candidate
-	disabled: false
-	currentFormat: XRGB8888
-	mirrorOf: none
-	availableModes: 3440x1440@60.00Hz 3440x1440@180.00Hz 3440x1440@165.00Hz 3440x1440@144.00Hz 3440x1440@120.00Hz 3440x1440@100.00Hz 3440x1440@50.00Hz 2560x1440@144.00Hz 2560x1440@120.00Hz 2560x1440@60.00Hz 1720x1440@60.00Hz 1920x1200@59.88Hz 1920x1080@119.88Hz 1920x1080@99.90Hz 1920x1080@60.00Hz 1920x1080@59.94Hz 1600x1200@60.00Hz 1680x1050@99.85Hz 1680x1050@59.95Hz 1280x1024@99.96Hz 1280x1024@75.03Hz 1280x1024@60.02Hz 1440x900@99.92Hz 1440x900@59.89Hz 1280x800@59.81Hz 1280x720@59.94Hz 1280x720@50.00Hz 1024x768@75.03Hz 1024x768@60.00Hz 800x600@75.00Hz 800x600@72.19Hz 800x600@60.32Hz 720x576@50.00Hz 720x480@59.94Hz 640x480@75.00Hz 640x480@59.95Hz 640x480@59.94Hz 
-	colorManagementPreset: srgb
-	sdrBrightness: 1.00
-	sdrSaturation: 1.00
-	sdrMinLuminance: 0.20
-	sdrMaxLuminance: 80
-
-
-
-=== lsblk ===
-NAME        FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
-sda                                                                                
-├─sda1                                                                             
-└─sda2      ntfs               3ECC3871CC382615                                    
-sr0                                                                                
-zram0       swap   1     zram0 f7b2ed99-1b10-42b0-988f-e36e4489488e                [SWAP]
-nvme0n1                                                                            
-├─nvme0n1p1 vfat   FAT32       8A9B-0E0F                               3,5G    12% /boot
-└─nvme0n1p2 btrfs              179d6064-65bd-4690-96fe-0f90af86adff  773,3G    18% /var/tmp
-                                                                                   /var/log
-                                                                                   /var/cache
-                                                                                   /home
-                                                                                   /root
-                                                                                   /srv
-                                                                                   /
-
-=== memory ===
-               total        used        free      shared  buff/cache   available
-Mem:            31Gi       5,8Gi        12Gi        96Mi        13Gi        25Gi
-Swap:           31Gi       388Mi        30Gi

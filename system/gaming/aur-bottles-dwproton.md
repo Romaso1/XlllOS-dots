@@ -1,6 +1,6 @@
 # AUR/native Bottles + DWProton
 
-Current setup uses native/AUR Bottles:
+Bottles command:
 
 ```bash
 bottles

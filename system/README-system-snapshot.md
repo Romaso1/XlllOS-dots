@@ -1,13 +1,13 @@
 # XlllOS system snapshot
 
-Updated: 2026-05-03_02-51-48
+Updated: 2026-05-03_03-06-00
 
 Current setup:
 
 - AUR/native Bottles installed
 - Flatpak Bottles removed
-- cachyos-gaming-meta installed
-- DWProton auto-installs into AUR/native Bottles from repo restore
+- DWProton auto-installs into AUR/native Bottles
+- cachyos-gaming-meta may be installed if present in package snapshot
 
 Restore:
 
