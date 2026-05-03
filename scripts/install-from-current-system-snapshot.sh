@@ -3,7 +3,12 @@ set -Eeuo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-echo "=== Installing native packages from snapshot ==="
+echo
+echo "=== Installing CachyOS gaming meta ==="
+if command -v pacman >/dev/null 2>&1; then
+  sudo pacman -S --needed cachyos-gaming-meta || echo "WARNING: cachyos-gaming-meta install failed; continuing."
+fi
+\necho "=== Installing native packages from snapshot ==="
 
 if command -v pacman >/dev/null 2>&1 && [ -f "$REPO_DIR/system/packages/pacman-native-explicit.txt" ]; then
   sudo pacman -S --needed - < "$REPO_DIR/system/packages/pacman-native-explicit.txt" || true
